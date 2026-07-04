@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.kkubaniandco.com
+
+# Sitemaps
+Sitemap: https://www.kkubaniandco.com/sitemap.xml
