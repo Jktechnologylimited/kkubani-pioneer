@@ -1,30 +1,24 @@
-# K.K. Ubani: private settings to add
+# K.K. Ubani: use the existing JKTL Business environment
 
-In **Vercel → existing K.K. Ubani project → Settings → Environment Variables**, add these for **Production**. Mark private values Sensitive. Redeploy after saving. Do not add a NEXT_PUBLIC prefix.
+**No new private environment variables are required on K.K. Ubani.**
 
-| Name | Value/source |
-| --- | --- |
-| `JKTL_CMS_ENABLED` | `true` when ready for the controlled connection test |
-| `JKTL_CUSTOM_PROJECT_ID` | `a88f0b0d-6c51-43d2-8a8d-00e37c18c339` (verified existing project) |
-| `JKTL_CUSTOM_ORGANIZATION_ID` | `5efc5a2b-3117-4993-9d04-cfd5db0bd5b3` (verified existing client) |
-| `JKTL_CUSTOM_API_KEY` | Generate the project's integration key in Business; copy the one-time value directly into Vercel |
-| `JKTL_CMS_SESSION_SECRET` | Generate a new private value with `openssl rand -hex 32` and save the output directly in Vercel |
+Website editing now runs inside JKTL Business. It uses Business's existing DATABASE_URL, session/login system and configured email provider. Do not copy any of those secrets into the client website.
 
-Do not put the Business DATABASE_URL, GitHub credentials, Vercel API tokens or the client's SMTP password into these fields. Existing SMTP settings remain unchanged. Integration IDs are references; the API key, session secret and storage token are private. Preview deployments must not share production project credentials; otherwise preview edits could affect production.
+The K.K. Ubani source contains only its public project reference (`a88f0b0d-6c51-43d2-8a8d-00e37c18c339`) and the public Business origin. It can fetch published website content and public images; it cannot fetch drafts, write content or change permissions. All editing, publication and uploads require the client's normal Business session.
 
-In **Business → Team → Custom Projects**, use:
+## Client workflow
 
-- Client: **K.K. Ubani and Co**.
-- Owner: **info@kkubaniandco.com** (find existing user/organization before creating one).
-- Website: **https://www.kkubaniandco.com** (confirm the deployed canonical domain).
-- CMS callback: **https://www.kkubaniandco.com/api/jktl/callback**.
-- Approved field identifiers: **site.text**, **site.images**, **site.navigation**, **site.seo**. The website independently enforces its complete 538-field manifest. These four identifiers describe supported groups; they are not wildcard permission to execute code.
-- Scope: read initially; add write and publish for the authorized client once the controlled validation is ready. Changing fields/scopes clears the Business CMS-test confirmation, so reconfirm only after reviewing the updated adapter.
+1. JKTL sends the existing client a secure invitation from **Team → Custom Projects**.
+2. The owner, **info@kkubaniandco.com**, accepts and signs into Business.
+3. Under **My Projects → K.K. Ubani and Co → Manage website**, the owner edits, saves drafts and publishes.
+4. Published content appears on the independently deployed client website.
 
-The account must be invited/activated through the existing secure Business invitation flow, not by emailing a password. Readiness confirmations are operator assertions, not proof of a completed live test. Verify draft, publication, revocation, support and independent redeployment before declaring the connection live. No billing price is assumed or automatically charged.
+The editor covers the site's 538 registered content fields and images. It does not expose code, deployment settings, other businesses or database credentials.
 
-## Database verification
+## Deployment
 
-The Business database connection is now available and was verified through the workspace proxy. Migration 063 has been applied, and the existing K.K. Ubani owner, client organization and project were found and preserved. No duplicate account/project was created. The site does not need DATABASE_URL.
+Deploy the updated Business and K.K. Ubani repositories. Migration 064 adds the managed-editor configuration to existing project records; migration 063 stores content/images in Business PostgreSQL. The existing owner and project are reused. Account activation remains required; configuration never silently activates an owner.
 
-The existing project currently has no integration key, no confirmed CMS connection and an owner invitation that has not been activated. Generate the integration key in Business, add the five website settings above and deploy both applications. Configure the approved field groups/scopes, then perform the controlled client invitation/editor validation. No live client email was sent or website content changed during these storage changes.
+If you previously added JKTL_CMS_ENABLED, JKTL_CUSTOM_PROJECT_ID, JKTL_CUSTOM_ORGANIZATION_ID, JKTL_CUSTOM_API_KEY or JKTL_CMS_SESSION_SECRET to K.K. Ubani, this managed editor no longer uses them. After the new deployment, they may be removed. Keep the site's existing SMTP/contact-form variables.
+
+No Blob account, client database or separate CMS login is required. Public rendering falls back to original website content if Business is unavailable. Existing external-CMS integrations for other websites retain their existing authentication behavior.

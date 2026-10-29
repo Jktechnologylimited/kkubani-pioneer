@@ -7,9 +7,7 @@ export async function GET(
 ) {
   try {
     const file = mediaFile((await context.params).file),
-      response = await businessStorage("media", {
-        mediaId: file.split(".")[0],
-      });
+      response = await businessStorage("media", file);
     const type = file.endsWith(".jpg")
       ? "image/jpeg"
       : file.endsWith(".png")
