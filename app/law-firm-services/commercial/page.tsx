@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/commercial/",
     languages: {
@@ -9,7 +10,6 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
- 
 
   title: "Commercial law service",
   description:
@@ -36,59 +36,52 @@ export const metadata: Metadata = {
   },
 };
 
-const CommercialLaw = () => {
+const CommercialLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Commercial Law
+          {t("pages.law.firm.services.commercial.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Trusted Legal Advisors for Commercial Transactions
+          {t("pages.law.firm.services.commercial.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Our commercial law services ensure smooth business transactions,
-          contract enforcement, and legal risk mitigation for entrepreneurs and
-          corporations. We assist clients in drafting, reviewing, and enforcing
-          contracts, ensuring business operations run seamlessly
+          {t("pages.law.firm.services.commercial.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Commercial Law is Important
+          {t("pages.law.firm.services.commercial.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          A strong commercial legal foundation is crucial for any business.
-          Poorly drafted contracts, regulatory non-compliance, or business
-          disputes can lead to significant financial losses. Our legal expertise
-          helps businesses safeguard their interests and maintain competitive
-          advantage
+          {t("pages.law.firm.services.commercial.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.commercial.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Contract Drafting & Negotiation</strong>
-            Creating legally sound agreements to protect business interests.
+            <strong>{t("pages.law.firm.services.commercial.field7")}</strong>
+            {t("pages.law.firm.services.commercial.field8")}
           </li>
           <li>
-            <strong>Business Transactions & Dispute Resolution</strong>
-            Assisting in corporate deals, supplier agreements, and dispute
-            resolution.
+            <strong>{t("pages.law.firm.services.commercial.field9")}</strong>
+            {t("pages.law.firm.services.commercial.field10")}
           </li>
           <li>
-            <strong>Trade & Commerce Regulations</strong>
-            Ensuring businesses comply with Nigeria’s commercial and trade laws.
+            <strong>{t("pages.law.firm.services.commercial.field11")}</strong>
+            {t("pages.law.firm.services.commercial.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.commercial.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We offer tailored legal solutions that support businesses in achieving
-          their commercial objectives while minimizing legal risks.
+          {t("pages.law.firm.services.commercial.field14")}
         </p>
       </div>
     </>
@@ -96,3 +89,14 @@ const CommercialLaw = () => {
 };
 
 export default CommercialLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.commercial.seo.title"),
+    description: t("pages.law.firm.services.commercial.seo.description"),
+    alternates: { canonical: "/law-firm-services/commercial" },
+  };
+}

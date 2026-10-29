@@ -1,8 +1,9 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import React from "react";
 
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/entertainment/",
     languages: {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
- 
+
   title: "Entertainment law service ",
   description:
     "Expert Entertainment legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -36,62 +37,54 @@ export const metadata: Metadata = {
   },
 };
 
-const entertainment = () => {
+const entertainment = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Entertainment Law
+          {t("pages.law.firm.services.entertainment.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Protection for Creatives and Media Professionals
+          {t("pages.law.firm.services.entertainment.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          K.K. Ubani & Co. offers specialized legal services for artists,
-          musicians, filmmakers, producers, and digital creators, safeguarding
-          intellectual property, managing contracts, and resolving
-          entertainment-related disputes.
+          {t("pages.law.firm.services.entertainment.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Entertainment Law Matters
+          {t("pages.law.firm.services.entertainment.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          The entertainment industry is fast-paced and highly competitive.
-          Creatives need legal protection to secure rights, profits, and
-          creative control over their work. From contracts to copyright and
-          licensing, strong legal guidance prevents exploitation and fosters
-          career growth.
+          {t("pages.law.firm.services.entertainment.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.entertainment.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Contract Drafting & Negotiation</strong>
-            Crafting agreements for talent, production, licensing, publishing,
-            and endorsement deals.
+            <strong>{t("pages.law.firm.services.entertainment.field7")}</strong>
+            {t("pages.law.firm.services.entertainment.field8")}
           </li>
           <li>
-            <strong>Copyright & IP Protection</strong>
-            Securing intellectual property rights and managing royalties and
-            licensing.
+            <strong>{t("pages.law.firm.services.entertainment.field9")}</strong>
+            {t("pages.law.firm.services.entertainment.field10")}
           </li>
           <li>
-            <strong>Dispute Resolution </strong>
-            Resolving conflicts related to ownership, royalties, and content
-            distribution.
+            <strong>
+              {t("pages.law.firm.services.entertainment.field11")}
+            </strong>
+            {t("pages.law.firm.services.entertainment.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.entertainment.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We understand the unique legal challenges of the entertainment
-          industry and provide creatives with the legal tools to protect their
-          work, manage contracts confidently, and thrive in their careers.
+          {t("pages.law.firm.services.entertainment.field14")}
         </p>
       </div>
     </>
@@ -99,3 +92,14 @@ const entertainment = () => {
 };
 
 export default entertainment;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.entertainment.seo.title"),
+    description: t("pages.law.firm.services.entertainment.seo.description"),
+    alternates: { canonical: "/law-firm-services/entertainment" },
+  };
+}

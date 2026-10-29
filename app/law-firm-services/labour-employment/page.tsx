@@ -1,15 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/labour-employment/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/labour-employment/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Labour and Employment law service ",
   description:
     "Expert labour and employment services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,59 +37,58 @@ export const metadata: Metadata = {
   },
 };
 
-const LabourAndEmployment = () => {
+const LabourAndEmployment = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Labour & Employment Law
+          {t("pages.law.firm.services.labour.employment.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Protecting Employers and Employees
+          {t("pages.law.firm.services.labour.employment.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          K.K. Ubani & Co. provides expert legal guidance on employment rights,
-          workplace policies, and labor disputes, ensuring compliance with
-          Nigerian labor laws.
+          {t("pages.law.firm.services.labour.employment.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Labour Law Matters?
+          {t("pages.law.firm.services.labour.employment.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          A well-structured employment framework is essential for maintaining a
-          productive work environment. Employers must adhere to labor laws
-          regarding hiring, termination, employee rights, and workplace
-          disputes.
+          {t("pages.law.firm.services.labour.employment.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.labour.employment.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Employment Contracts & Policies</strong>
-            Drafting and reviewing contracts, employee handbooks, and workplace
-            policies.
+            <strong>
+              {t("pages.law.firm.services.labour.employment.field7")}
+            </strong>
+            {t("pages.law.firm.services.labour.employment.field8")}
           </li>
           <li>
-            <strong>Workplace Dispute Resolution</strong>
-            Handling wrongful termination, discrimination claims, and labor
-            disputes.
+            <strong>
+              {t("pages.law.firm.services.labour.employment.field9")}
+            </strong>
+            {t("pages.law.firm.services.labour.employment.field10")}
           </li>
           <li>
-            <strong>Regulatory Compliance</strong>
-            Ensuring businesses comply with Nigerian labor laws and
-            international labor standards.
+            <strong>
+              {t("pages.law.firm.services.labour.employment.field11")}
+            </strong>
+            {t("pages.law.firm.services.labour.employment.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.labour.employment.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide strategic legal advice to businesses and employees,
-          ensuring fair labor practices and workplace stability.
+          {t("pages.law.firm.services.labour.employment.field14")}
         </p>
       </div>
     </>
@@ -95,3 +96,14 @@ const LabourAndEmployment = () => {
 };
 
 export default LabourAndEmployment;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.labour.employment.seo.title"),
+    description: t("pages.law.firm.services.labour.employment.seo.description"),
+    alternates: { canonical: "/law-firm-services/labour-employment" },
+  };
+}

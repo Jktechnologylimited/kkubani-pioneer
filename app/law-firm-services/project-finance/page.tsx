@@ -1,15 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/project-finance/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/project-finance/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Project Finance law service ",
   description:
     "Expert  project finance legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,53 +37,58 @@ export const metadata: Metadata = {
   },
 };
 
-const ProjectFinance = () => {
+const ProjectFinance = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Project Finance Law
+          {t("pages.law.firm.services.project.finance.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Advisory for Large-Scale Projects
+          {t("pages.law.firm.services.project.finance.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide legal support for infrastructure projects, public-private
-          partnerships (PPP), and private-sector investments in Nigeria.
+          {t("pages.law.firm.services.project.finance.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Project Finance Matters
+          {t("pages.law.firm.services.project.finance.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Large-scale infrastructure projects require careful legal structuring
-          to mitigate risks, ensure compliance, and secure funding.
+          {t("pages.law.firm.services.project.finance.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.project.finance.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>PPP Agreements</strong>
-            Structuring partnerships between public and private entities.
+            <strong>
+              {t("pages.law.firm.services.project.finance.field7")}
+            </strong>
+            {t("pages.law.firm.services.project.finance.field8")}
           </li>
           <li>
-            <strong>Risk Assessment & Mitigation </strong>
-            Identifying and minimizing legal risks in project financing.
+            <strong>
+              {t("pages.law.firm.services.project.finance.field9")}
+            </strong>
+            {t("pages.law.firm.services.project.finance.field10")}
           </li>
           <li>
-            <strong>Regulatory Compliance</strong>
-            Ensuring projects meet Nigerian and international legal standards.
+            <strong>
+              {t("pages.law.firm.services.project.finance.field11")}
+            </strong>
+            {t("pages.law.firm.services.project.finance.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.project.finance.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide comprehensive legal solutions to support successful project
-          execution and financing.
+          {t("pages.law.firm.services.project.finance.field14")}
         </p>
       </div>
     </>
@@ -89,3 +96,14 @@ const ProjectFinance = () => {
 };
 
 export default ProjectFinance;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.project.finance.seo.title"),
+    description: t("pages.law.firm.services.project.finance.seo.description"),
+    alternates: { canonical: "/law-firm-services/project-finance" },
+  };
+}

@@ -1,5 +1,5 @@
 "use client";
-
+import { useSiteCopy } from "@/lib/jktl/site-copy";
 import { useState } from "react";
 import { DayPicker } from "react-day-picker";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,8 @@ import { Label } from "@/components/ui/label";
 import { format } from "date-fns";
 
 export default function BookingForm() {
+  const t = useSiteCopy();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,7 +29,7 @@ export default function BookingForm() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -42,7 +44,7 @@ export default function BookingForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus(t("components.BookingForm.field1"));
 
     try {
       const res = await fetch("/api/send-booking", {
@@ -54,11 +56,11 @@ export default function BookingForm() {
       });
 
       if (res.ok) {
-        setStatus("Booking successful.");
+        setStatus(t("components.BookingForm.field2"));
         setFormData({ name: "", email: "", number: "", date: "", time: "" });
         setSelectedDate(undefined);
       } else {
-        setStatus("Failed to book.");
+        setStatus(t("components.BookingForm.field3"));
       }
     } catch (error: unknown) {
       // Handle error with type guard
@@ -67,7 +69,7 @@ export default function BookingForm() {
       } else {
         console.error("An unknown error occurred during form submission");
       }
-      setStatus("Error occurred.");
+      setStatus(t("components.BookingForm.field4"));
     }
   };
 
@@ -82,11 +84,11 @@ export default function BookingForm() {
       className="space-y-6 max-w-xl mx-auto p-6 border rounded-xl shadow-md"
     >
       <div>
-        <Label htmlFor="name">Full Name</Label>
+        <Label htmlFor="name">{t("components.BookingForm.field5")}</Label>
         <Input
           id="name"
           name="name"
-          placeholder="John Doe"
+          placeholder={t("components.BookingForm.field6")}
           value={formData.name}
           onChange={handleChange}
           required
@@ -94,12 +96,12 @@ export default function BookingForm() {
       </div>
 
       <div>
-        <Label htmlFor="email">Email Address</Label>
+        <Label htmlFor="email">{t("components.BookingForm.field7")}</Label>
         <Input
           id="email"
           type="email"
           name="email"
-          placeholder="john@example.com"
+          placeholder={t("components.BookingForm.field8")}
           value={formData.email}
           onChange={handleChange}
           required
@@ -107,11 +109,11 @@ export default function BookingForm() {
       </div>
 
       <div>
-        <Label htmlFor="number">Phone Number</Label>
+        <Label htmlFor="number">{t("components.BookingForm.field9")}</Label>
         <Input
           id="number"
           name="number"
-          placeholder="+234 801 234 5678"
+          placeholder={t("components.BookingForm.field10")}
           value={formData.number}
           onChange={handleChange}
           required
@@ -119,7 +121,7 @@ export default function BookingForm() {
       </div>
 
       <div>
-        <Label htmlFor="date">Select a Date</Label>
+        <Label htmlFor="date">{t("components.BookingForm.field11")}</Label>
         <DayPicker
           selected={selectedDate}
           onDayClick={handleDateChange}
@@ -139,7 +141,7 @@ export default function BookingForm() {
       </div>
 
       <div>
-        <Label htmlFor="time">Select a Time</Label>
+        <Label htmlFor="time">{t("components.BookingForm.field12")}</Label>
         <select
           id="time"
           name="time"
@@ -148,7 +150,7 @@ export default function BookingForm() {
           onChange={handleChange}
           required
         >
-          <option value="">Select Time</option>
+          <option value="">{t("components.BookingForm.field13")}</option>
           {availableTimes.map((time, index) => (
             <option key={index} value={time}>
               {time}
@@ -157,8 +159,12 @@ export default function BookingForm() {
         </select>
       </div>
 
-      <Button type="submit" className="bg-orange-500 text-black" disabled={!selectedDate || !formData.time}>
-        Book Appointment
+      <Button
+        type="submit"
+        className="bg-orange-500 text-black"
+        disabled={!selectedDate || !formData.time}
+      >
+        {t("components.BookingForm.field14")}
       </Button>
 
       {status && <p className="text-sm text-muted-foreground">{status}</p>}

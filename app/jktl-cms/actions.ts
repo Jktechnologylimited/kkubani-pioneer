@@ -1,4 +1,7 @@
 "use server";
+import { randomUUID } from "node:crypto";
+import { put } from "@vercel/blob";
+import { MAX_IMAGE_BYTES, imageType } from "@/lib/jktl/media-model.mjs";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { requireCms, CMS_COOKIE } from "@/lib/jktl/authorize";
@@ -20,7 +23,7 @@ export async function saveHomepage(
       publish ? "publish" : "draft",
       identity,
     );
-    if (publish) revalidatePath("/");
+    if (publish) revalidatePath("/", "layout");
     return { ok: true as const, revision: next.revision };
   } catch {
     return {
@@ -33,4 +36,33 @@ export async function saveHomepage(
 export async function leaveEditor() {
   (await cookies()).delete({ name: CMS_COOKIE, path: "/jktl-cms" });
   revalidatePath("/jktl-cms");
+}
+export async function uploadWebsiteImage(data: FormData) {
+  try {
+    const { config } = await requireCms("content:write");
+    const image = data.get("image");
+    if (
+      !(image instanceof File) ||
+      image.size > MAX_IMAGE_BYTES ||
+      image.size < 12
+    )
+      throw Error();
+    const buffer = Buffer.from(await image.arrayBuffer()),
+      format = imageType(buffer),
+      name = randomUUID() + "." + format.ext;
+    await put(`jktl-content/${config.projectId}/images/${name}`, buffer, {
+      access: "private",
+      addRandomSuffix: false,
+      allowOverwrite: false,
+      contentType: format.type,
+      abortSignal: AbortSignal.timeout(8000),
+    });
+    return { ok: true as const, url: "/api/jktl/media/" + name };
+  } catch {
+    return {
+      ok: false as const,
+      error:
+        "Image upload failed. Use PNG, JPEG or WebP up to 3 MB and check your editing access.",
+    };
+  }
 }

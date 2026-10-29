@@ -1,9 +1,11 @@
-import React from 'react'
+"use client";
+import { useSiteCopy } from "@/lib/jktl/site-copy";
+import React from "react";
 
-const trustbadges = () => {
-  return (
-    <div>trustbadges</div>
-  )
-}
+const Trustbadges = () => {
+  const t = useSiteCopy();
 
-export default trustbadges
+  return <div>{t("components.trustbadges.field1")}</div>;
+};
+
+export default Trustbadges;

@@ -1,6 +1,12 @@
 import "server-only";
 import { get, put } from "@vercel/blob";
-import { defaults, initialRecord, record, change } from "./content-model.mjs";
+import {
+  defaults,
+  initialRecord,
+  record,
+  change,
+  MAX_RECORD_BYTES,
+} from "./content-model.mjs";
 export async function readContent(projectId: string) {
   if (!process.env.BLOB_READ_WRITE_TOKEN)
     throw Error("Website content storage is not configured");
@@ -10,10 +16,11 @@ export async function readContent(projectId: string) {
     abortSignal: AbortSignal.timeout(8000),
   });
   if (!value) return { data: initialRecord(projectId), etag: null };
-  if (value.statusCode !== 200 || value.blob.size > 65536)
+  if (value.statusCode !== 200 || value.blob.size > MAX_RECORD_BYTES)
     throw Error("Invalid website content record");
   const raw = await new Response(value.stream).text();
-  if (raw.length > 65536) throw Error("Invalid website content record");
+  if (new TextEncoder().encode(raw).length > MAX_RECORD_BYTES)
+    throw Error("Invalid website content record");
   return { data: record(JSON.parse(raw), projectId), etag: value.blob.etag };
 }
 export async function saveContent(

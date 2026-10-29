@@ -1,4 +1,4 @@
-import { publishedHomepage } from "@/lib/jktl/content-store";
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import AboutUs from "@/components/AboutUs";
 import ClientLogos from "@/components/clients";
@@ -11,7 +11,7 @@ import React from "react";
 import Testimonials from "../components/Testimonial";
 import BookingButton from "../components/BookingButton";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   metadataBase: new URL("https://www.kkubaniandco.com"),
   alternates: {
     canonical: "https://www.kkubaniandco.com",
@@ -39,11 +39,12 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 const page = async () => {
-  const content = await publishedHomepage();
+  const t = await siteCopy();
+
   return (
     <div>
-      <Hero content={content} />
-      <Welcome content={content} />
+      <Hero />
+      <Welcome />
       <AboutUs />
       <BookingButton />
       <OurServices />
@@ -55,3 +56,14 @@ const page = async () => {
 };
 
 export default page;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.seo.title"),
+    description: t("pages.seo.description"),
+    alternates: { canonical: "/" },
+  };
+}

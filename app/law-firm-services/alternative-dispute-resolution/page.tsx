@@ -1,15 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/alternative-dispute-resolution/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/alternative-dispute-resolution/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
- 
+
   title: "Alternative Dispute Resolution (ADR) law service",
   description:
     "Expert alternative dispute resolution (adr) legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,56 +37,68 @@ export const metadata: Metadata = {
   },
 };
 
-const ADR = () => {
+const ADR = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Alternative Dispute Resolution (ADR) Law
+          {t("pages.law.firm.services.alternative.dispute.resolution.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Effective & Strategic Conflict Resolution
+          {t("pages.law.firm.services.alternative.dispute.resolution.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Litigation isn’t always the best option. Our ADR services help clients
-          resolve disputes efficiently through mediation, arbitration, and
-          negotiation.
+          {t("pages.law.firm.services.alternative.dispute.resolution.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why ADR Matters
+          {t("pages.law.firm.services.alternative.dispute.resolution.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          ADR offers a faster, cost-effective, and confidential way to settle
-          disputes without resorting to litigation. It is particularly
-          beneficial for commercial conflicts, contract disputes, and corporate
-          disagreements.
+          {t("pages.law.firm.services.alternative.dispute.resolution.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.alternative.dispute.resolution.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Mediation & Arbitration</strong>
-            Providing legally binding dispute resolution outside of court.
+            <strong>
+              {t(
+                "pages.law.firm.services.alternative.dispute.resolution.field7",
+              )}
+            </strong>
+            {t("pages.law.firm.services.alternative.dispute.resolution.field8")}
           </li>
           <li>
-            <strong>Corporate Dispute Resolution </strong>
-            Resolving conflicts in partnerships, contracts, and joint ventures.
+            <strong>
+              {t(
+                "pages.law.firm.services.alternative.dispute.resolution.field9",
+              )}
+            </strong>
+            {t(
+              "pages.law.firm.services.alternative.dispute.resolution.field10",
+            )}
           </li>
           <li>
-            <strong>International Arbitration</strong>
-            Handling cross-border commercial disputes.
+            <strong>
+              {t(
+                "pages.law.firm.services.alternative.dispute.resolution.field11",
+              )}
+            </strong>
+            {t(
+              "pages.law.firm.services.alternative.dispute.resolution.field12",
+            )}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.alternative.dispute.resolution.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Our ADR approach helps clients achieve favorable resolutions while
-          avoiding lengthy court proceedings.
+          {t("pages.law.firm.services.alternative.dispute.resolution.field14")}
         </p>
       </div>
     </>
@@ -92,3 +106,20 @@ const ADR = () => {
 };
 
 export default ADR;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t(
+      "pages.law.firm.services.alternative.dispute.resolution.seo.title",
+    ),
+    description: t(
+      "pages.law.firm.services.alternative.dispute.resolution.seo.description",
+    ),
+    alternates: {
+      canonical: "/law-firm-services/alternative-dispute-resolution",
+    },
+  };
+}

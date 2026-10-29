@@ -11,11 +11,11 @@ export default function ServiceAreaLayout({
   children: React.ReactNode;
 }) {
   return (
-    <body>
+    <div>
       {children}
 
       <AboutUs />
       <Hero />
-    </body>
+    </div>
   );
 }

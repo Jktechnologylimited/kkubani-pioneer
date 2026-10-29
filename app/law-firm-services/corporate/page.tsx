@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/corporate/",
     languages: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
- 
+
   title: "Corporate Law Services",
   description:
     "Expert corporate legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,68 +36,56 @@ export const metadata: Metadata = {
   },
 };
 
-const CorporateLaw = () => {
+const CorporateLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Corporate Law
+          {t("pages.law.firm.services.corporate.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Expert Corporate Legal Services in Nigeria
+          {t("pages.law.firm.services.corporate.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          K.K. Ubani & Co. provides comprehensive corporate legal services,
-          ensuring businesses operate within the legal framework while
-          optimizing their operations. We help clients navigate complex
-          regulations, mergers, acquisitions, and compliance matters. Our legal
-          team is dedicated to offering innovative solutions that support
-          corporate growth and stability.
+          {t("pages.law.firm.services.corporate.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Corporate Law Matters
+          {t("pages.law.firm.services.corporate.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Corporate law is the backbone of any business entity. Whether you're
-          launching a startup, expanding internationally, or restructuring your
-          company, compliance with Nigerian corporate regulations is essential.
-          Failure to adhere to legal requirements can result in penalties, loss
-          of business opportunities, or litigation.
+          {t("pages.law.firm.services.corporate.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.corporate.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Business Formation & Structuring</strong> – Guidance on
-            choosing the right business entity and structuring operations for
-            tax and legal efficiency.
+            <strong>{t("pages.law.firm.services.corporate.field7")}</strong>{" "}
+            {t("pages.law.firm.services.corporate.field8")}
           </li>
           <li>
-            <strong>Corporate Governance & Compliance</strong> – Ensuring
-            businesses adhere to regulatory requirements, board governance best
-            practices, and corporate policies.
+            <strong>{t("pages.law.firm.services.corporate.field9")}</strong>{" "}
+            {t("pages.law.firm.services.corporate.field10")}
           </li>
           <li>
-            <strong>Mergers & Acquisitions</strong> – Legal support for mergers,
-            acquisitions, due diligence, and contract negotiations.
+            <strong>{t("pages.law.firm.services.corporate.field11")}</strong>{" "}
+            {t("pages.law.firm.services.corporate.field12")}
           </li>
           <li>
-            <strong>Regulatory Approvals & Licensing</strong> – Assistance in
-            obtaining the necessary business permits and regulatory approvals.
+            <strong>{t("pages.law.firm.services.corporate.field13")}</strong>{" "}
+            {t("pages.law.firm.services.corporate.field14")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.corporate.field15")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide strategic legal solutions tailored to your business needs,
-          ensuring full compliance and risk management. Our corporate law
-          experts offer sound legal advice to protect your company's interests
-          and help you achieve sustainable growth.
+          {t("pages.law.firm.services.corporate.field16")}
         </p>
       </div>
     </>
@@ -104,3 +93,14 @@ const CorporateLaw = () => {
 };
 
 export default CorporateLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.corporate.seo.title"),
+    description: t("pages.law.firm.services.corporate.seo.description"),
+    alternates: { canonical: "/law-firm-services/corporate" },
+  };
+}

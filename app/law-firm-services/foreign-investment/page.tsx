@@ -1,15 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/foreign-investment/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/foreign-investment/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Foreign investment law service ",
   description:
     "Expert foreign investment legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,54 +37,58 @@ export const metadata: Metadata = {
   },
 };
 
-const ForeignInvestment = () => {
+const ForeignInvestment = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Foreign Investment Law
+          {t("pages.law.firm.services.foreign.investment.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Solutions for International Investors
+          {t("pages.law.firm.services.foreign.investment.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We assist foreign investors in navigating Nigerian business laws,
-          ensuring seamless market entry, regulatory compliance, and risk
-          mitigation.
+          {t("pages.law.firm.services.foreign.investment.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Foreign Investment Law Matters?
+          {t("pages.law.firm.services.foreign.investment.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          International investments require a strong legal foundation to prevent
-          regulatory issues and optimize business operations.
+          {t("pages.law.firm.services.foreign.investment.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.foreign.investment.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Market Entry Strategy</strong>
-            Structuring investments for legal and tax efficiency.
+            <strong>
+              {t("pages.law.firm.services.foreign.investment.field7")}
+            </strong>
+            {t("pages.law.firm.services.foreign.investment.field8")}
           </li>
           <li>
-            <strong>Regulatory Compliance </strong>
-            Navigating foreign direct investment laws.
+            <strong>
+              {t("pages.law.firm.services.foreign.investment.field9")}
+            </strong>
+            {t("pages.law.firm.services.foreign.investment.field10")}
           </li>
           <li>
-            <strong>Joint Ventures & Mergers</strong>
-            Structuring profitable partnerships and acquisitions.
+            <strong>
+              {t("pages.law.firm.services.foreign.investment.field11")}
+            </strong>
+            {t("pages.law.firm.services.foreign.investment.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.foreign.investment.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Our legal team ensures secure investments and regulatory compliance,
-          making Nigeria’s business environment accessible to global investors
+          {t("pages.law.firm.services.foreign.investment.field14")}
         </p>
       </div>
     </>
@@ -90,3 +96,16 @@ const ForeignInvestment = () => {
 };
 
 export default ForeignInvestment;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.foreign.investment.seo.title"),
+    description: t(
+      "pages.law.firm.services.foreign.investment.seo.description",
+    ),
+    alternates: { canonical: "/law-firm-services/foreign-investment" },
+  };
+}

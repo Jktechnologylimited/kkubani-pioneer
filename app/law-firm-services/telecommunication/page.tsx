@@ -1,15 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/telecommunication/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/telecommunication/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Telecommunication law service ",
   description:
     "Expert telecommunication legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,61 +37,58 @@ export const metadata: Metadata = {
   },
 };
 
-const TelecommunicationLaw = () => {
+const TelecommunicationLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Telecommunication Law
+          {t("pages.law.firm.services.telecommunication.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Support for Telecom Companies
+          {t("pages.law.firm.services.telecommunication.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          With the increasing reliance on digital communication, the
-          telecommunications industry faces unique regulatory challenges. We
-          provide expert legal guidance on licensing, compliance, and dispute
-          resolution in Nigeria’s telecom sector.
+          {t("pages.law.firm.services.telecommunication.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Telecommunication Law is Important
+          {t("pages.law.firm.services.telecommunication.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Important Telecommunication law ensures fair competition, protects
-          consumer rights, and regulates licensing and spectrum use. It plays a
-          key role in national security, emergency services, and the development
-          of digital infrastructure. With telecom being the backbone of modern
-          communication and commerce, clear legal frameworks are essential for
-          innovation, investment, and connectivity.
+          {t("pages.law.firm.services.telecommunication.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.telecommunication.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Licensing & Regulatory Compliance </strong>
-            Helping businesses secure necessary telecom licenses and approvals.
+            <strong>
+              {t("pages.law.firm.services.telecommunication.field7")}
+            </strong>
+            {t("pages.law.firm.services.telecommunication.field8")}
           </li>
           <li>
-            <strong>Contract Negotiations</strong>
-            Drafting agreements for infrastructure development and service
-            provisions.
+            <strong>
+              {t("pages.law.firm.services.telecommunication.field9")}
+            </strong>
+            {t("pages.law.firm.services.telecommunication.field10")}
           </li>
           <li>
-            <strong>Consumer Protection & Disputes</strong>
-            Resolving telecom-related disputes and regulatory issues.
+            <strong>
+              {t("pages.law.firm.services.telecommunication.field11")}
+            </strong>
+            {t("pages.law.firm.services.telecommunication.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.telecommunication.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We have extensive knowledge of Nigeria’s telecommunications landscape,
-          ensuring compliance with industry regulations and protecting business
-          interests.
+          {t("pages.law.firm.services.telecommunication.field14")}
         </p>
       </div>
     </>
@@ -97,3 +96,14 @@ const TelecommunicationLaw = () => {
 };
 
 export default TelecommunicationLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.telecommunication.seo.title"),
+    description: t("pages.law.firm.services.telecommunication.seo.description"),
+    alternates: { canonical: "/law-firm-services/telecommunication" },
+  };
+}

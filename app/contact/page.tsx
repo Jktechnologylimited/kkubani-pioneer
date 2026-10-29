@@ -1,12 +1,12 @@
-import Moreabout from '@/components/Moreabout'
-import Testimonials from '@/components/Testimonial'
-import ContactForm from '@/components/ContactForm'
-import React from 'react'
+import { siteCopy } from "@/lib/jktl/public-content";
+import Moreabout from "@/components/Moreabout";
+import Testimonials from "@/components/Testimonial";
+import ContactForm from "@/components/ContactForm";
+import React from "react";
 
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
-
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
@@ -42,14 +42,25 @@ export const metadata: Metadata = {
   },
 };
 
-const page = () => {
+const page = async () => {
+  const t = await siteCopy();
+
   return (
-    <div className='pt-25'>
-      <ContactForm/>
-        <Testimonials/>
-
+    <div className="pt-25">
+      <ContactForm />
+      <Testimonials />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.contact.seo.title"),
+    description: t("pages.contact.seo.description"),
+    alternates: { canonical: "/contact" },
+  };
+}

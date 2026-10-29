@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/real-estate/",
     languages: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Real estate law service | K.K. Ubani & Co. ",
   description:
     "Expert real estate legal services in Lagos, Port Harcourt and Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,71 +36,60 @@ export const metadata: Metadata = {
   },
 };
 
-const RealEstate = () => {
+const RealEstate = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Real Estate Law
+          {t("pages.law.firm.services.real.estate.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Expertise in Property Transactions and Real Estate Development
+          {t("pages.law.firm.services.real.estate.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          K.K. Ubani & Co. provides legal services in real estate transactions,
-          property acquisitions, lease agreements, land use, and development
-          projects. Our firm ensures that real estate dealings comply with
-          Nigerian property laws while safeguarding our clients’ investments.
+          {t("pages.law.firm.services.real.estate.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Real Estate Law Matters?
+          {t("pages.law.firm.services.real.estate.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Real estate investments require thorough legal scrutiny to avoid
-          disputes, fraud, and regulatory issues. Whether buying, selling,
-          leasing, or developing property, legal expertise is essential to
-          ensure a seamless process and avoid litigation.
+          {t("pages.law.firm.services.real.estate.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.real.estate.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Property Acquisition & Sales</strong>
-            Assisting individuals and businesses in purchasing and selling real
-            estate properties.
+            <strong>{t("pages.law.firm.services.real.estate.field7")}</strong>
+            {t("pages.law.firm.services.real.estate.field8")}
           </li>
           <li>
-            <strong>Lease & Tenancy Agreements</strong>
-            Drafting and reviewing lease contracts for residential, commercial,
-            and industrial properties.
+            <strong>{t("pages.law.firm.services.real.estate.field9")}</strong>
+            {t("pages.law.firm.services.real.estate.field10")}
           </li>
           <li>
-            <strong> Real Estate Development & Land Use</strong>
-            Providing legal support for large-scale developments, zoning laws,
-            and land use regulations.
+            <strong> {t("pages.law.firm.services.real.estate.field11")}</strong>
+            {t("pages.law.firm.services.real.estate.field12")}
           </li>
           <li>
-            <strong>Mortgage & Financing Agreements</strong>
-            Structuring legal frameworks for property financing, including
-            mortgages and loans.
+            <strong>{t("pages.law.firm.services.real.estate.field13")}</strong>
+            {t("pages.law.firm.services.real.estate.field14")}
           </li>
           <li>
-            <strong>Title Verification & Due Diligence</strong>
-            Conducting thorough legal checks to verify property ownership and
-            prevent land disputes.
+            <strong>{t("pages.law.firm.services.real.estate.field15")}</strong>
+            {t("pages.law.firm.services.real.estate.field16")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.real.estate.field17")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We help clients navigate the complexities of real estate transactions
-          with strategic legal advice, ensuring compliance, security, and
-          profitability in every deal.
+          {t("pages.law.firm.services.real.estate.field18")}
         </p>
       </div>
     </>
@@ -107,3 +97,14 @@ const RealEstate = () => {
 };
 
 export default RealEstate;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.real.estate.seo.title"),
+    description: t("pages.law.firm.services.real.estate.seo.description"),
+    alternates: { canonical: "/law-firm-services/real-estate" },
+  };
+}

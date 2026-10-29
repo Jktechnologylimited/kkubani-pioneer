@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical:
       "https://www.kkubaniandco.com/law-firm-services/energy-and-natural-resources/",
@@ -35,58 +36,60 @@ export const metadata: Metadata = {
   },
 };
 
-const EnergyandNaturalResourcesLaw = () => {
+const EnergyandNaturalResourcesLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Energy & Natural Resources Law
+          {t("pages.law.firm.services.energy.and.natural.resources.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Legal Solutions for the Energy Sector
+          {t("pages.law.firm.services.energy.and.natural.resources.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          The energy and natural resources sector is one of the most regulated
-          industries in Nigeria. K.K. Ubani & Co. provides specialized legal
-          services to oil, gas, and renewable energy companies, ensuring
-          compliance and smooth project execution.
+          {t("pages.law.firm.services.energy.and.natural.resources.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Energy Law Matters
+          {t("pages.law.firm.services.energy.and.natural.resources.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Energy companies face complex regulatory frameworks, contractual
-          obligations, and environmental compliance requirements. Legal guidance
-          is crucial for mitigating risks and ensuring project success.
+          {t("pages.law.firm.services.energy.and.natural.resources.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.energy.and.natural.resources.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Oil & Gas Contracts</strong>
-            Drafting and negotiating agreements for exploration, production, and
-            distribution.
+            <strong>
+              {t("pages.law.firm.services.energy.and.natural.resources.field7")}
+            </strong>
+            {t("pages.law.firm.services.energy.and.natural.resources.field8")}
           </li>
           <li>
-            <strong>Energy Regulations & Compliance</strong>
-            Ensuring businesses adhere to government policies and environmental
-            regulations.
+            <strong>
+              {t("pages.law.firm.services.energy.and.natural.resources.field9")}
+            </strong>
+            {t("pages.law.firm.services.energy.and.natural.resources.field10")}
           </li>
           <li>
-            <strong>Renewable Energy Projects </strong>
-            Providing legal guidance for solar, wind, and hydro projects.
+            <strong>
+              {t(
+                "pages.law.firm.services.energy.and.natural.resources.field11",
+              )}
+            </strong>
+            {t("pages.law.firm.services.energy.and.natural.resources.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.energy.and.natural.resources.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We help businesses navigate the regulatory environment and maximize
-          investment returns while ensuring compliance with industry standards.
+          {t("pages.law.firm.services.energy.and.natural.resources.field14")}
         </p>
       </div>
     </>
@@ -94,3 +97,18 @@ const EnergyandNaturalResourcesLaw = () => {
 };
 
 export default EnergyandNaturalResourcesLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.energy.and.natural.resources.seo.title"),
+    description: t(
+      "pages.law.firm.services.energy.and.natural.resources.seo.description",
+    ),
+    alternates: {
+      canonical: "/law-firm-services/energy-and-natural-resources",
+    },
+  };
+}

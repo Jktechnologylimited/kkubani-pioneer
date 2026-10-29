@@ -1,15 +1,16 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/commercial-litigation/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/commercial-litigation/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  
 
   title: "Commercial Litigation law service",
   description:
@@ -36,58 +37,58 @@ export const metadata: Metadata = {
   },
 };
 
-const CommercialLitigationLaw = () => {
+const CommercialLitigationLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Commercial Litigation
+          {t("pages.law.firm.services.commercial.litigation.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Resolving Business Disputes Efficiently
+          {t("pages.law.firm.services.commercial.litigation.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Our firm specializes in handling commercial disputes through
-          litigation and alternative dispute resolution (ADR). We represent
-          clients in high-stakes business disputes, contractual breaches, and
-          corporate conflicts
+          {t("pages.law.firm.services.commercial.litigation.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Commercial Litigation Matters
+          {t("pages.law.firm.services.commercial.litigation.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Legal disputes can disrupt business operations and damage reputations.
-          Our experienced litigators work to resolve disputes effectively while
-          protecting our clients’ interests.
+          {t("pages.law.firm.services.commercial.litigation.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.commercial.litigation.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Contract Disputes</strong>
-            Resolving breaches of business agreements and enforcement of
-            contractual terms.
+            <strong>
+              {t("pages.law.firm.services.commercial.litigation.field7")}
+            </strong>
+            {t("pages.law.firm.services.commercial.litigation.field8")}
           </li>
           <li>
-            <strong>Shareholder & Partnership Disputes </strong>
-            Protecting stakeholder interests in corporate conflicts.
+            <strong>
+              {t("pages.law.firm.services.commercial.litigation.field9")}
+            </strong>
+            {t("pages.law.firm.services.commercial.litigation.field10")}
           </li>
           <li>
-            <strong>Debt Recovery & Enforcemen</strong>
-            Assisting clients in recovering outstanding debts through legal
-            channels.
+            <strong>
+              {t("pages.law.firm.services.commercial.litigation.field11")}
+            </strong>
+            {t("pages.law.firm.services.commercial.litigation.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.commercial.litigation.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We prioritize cost-effective and timely dispute resolution strategies,
-          ensuring minimal disruption to business operations.
+          {t("pages.law.firm.services.commercial.litigation.field14")}
         </p>
       </div>
     </>
@@ -95,3 +96,16 @@ const CommercialLitigationLaw = () => {
 };
 
 export default CommercialLitigationLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.commercial.litigation.seo.title"),
+    description: t(
+      "pages.law.firm.services.commercial.litigation.seo.description",
+    ),
+    alternates: { canonical: "/law-firm-services/commercial-litigation" },
+  };
+}

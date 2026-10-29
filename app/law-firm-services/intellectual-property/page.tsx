@@ -1,17 +1,17 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-
-
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
-    canonical: "https://www.kkubaniandco.com/law-firm-services/intellectual-property/",
+    canonical:
+      "https://www.kkubaniandco.com/law-firm-services/intellectual-property/",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
- 
+
   title: "Intellectual property law service ",
   description:
     "Expert Intellectual property services in Lagos, Port Harcourt and Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -37,68 +37,64 @@ export const metadata: Metadata = {
   },
 };
 
-const IntellectualProperty = () => {
+const IntellectualProperty = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl pt-20 font-bold text-gray-900">
-          Intellectual Property Law
+          {t("pages.law.firm.services.intellectual.property.field1")}
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Protecting Your Innovations and Creative Works
+          {t("pages.law.firm.services.intellectual.property.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          At K.K. Ubani & Co., we help businesses and individuals secure and
-          enforce their intellectual property rights. Our legal team specializes
-          in trademarks, copyrights, patents, and trade secrets, ensuring our
-          clients maintain exclusive control over their innovations and brand
-          assets.
+          {t("pages.law.firm.services.intellectual.property.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Intellectual Property Law Matters?
+          {t("pages.law.firm.services.intellectual.property.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Intellectual property (IP) is a valuable asset for businesses and
-          creatives. Unauthorized use or infringement can lead to financial
-          losses, brand dilution, and competitive disadvantages. Proper IP
-          protection safeguards your work, ensuring legal exclusivity and
-          monetization rights
+          {t("pages.law.firm.services.intellectual.property.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.intellectual.property.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Trademark Registration & Enforcement</strong>
-            Securing brand identity through trademark filings, renewals, and
-            litigation against infringers.
+            <strong>
+              {t("pages.law.firm.services.intellectual.property.field7")}
+            </strong>
+            {t("pages.law.firm.services.intellectual.property.field8")}
           </li>
           <li>
-            <strong>Patent Protection & Licensing</strong>
-            Assisting inventors in patent applications, licensing agreements,
-            and infringement cases.
+            <strong>
+              {t("pages.law.firm.services.intellectual.property.field9")}
+            </strong>
+            {t("pages.law.firm.services.intellectual.property.field10")}
           </li>
           <li>
-            <strong>Copyright Law & Creative Rights</strong>
-            Protecting original works, including literature, music, software,
-            and artistic creations.
+            <strong>
+              {t("pages.law.firm.services.intellectual.property.field11")}
+            </strong>
+            {t("pages.law.firm.services.intellectual.property.field12")}
           </li>
           <li>
-            <strong>Trade Secrets & Confidentiality Agreements </strong>
-            Safeguarding proprietary business information through legally
-            binding agreements.
+            <strong>
+              {t("pages.law.firm.services.intellectual.property.field13")}
+            </strong>
+            {t("pages.law.firm.services.intellectual.property.field14")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.intellectual.property.field15")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide expert legal guidance in securing, enforcing, and
-          monetizing intellectual property rights, ensuring our clients maintain
-          a competitive edge in their industries.
+          {t("pages.law.firm.services.intellectual.property.field16")}
         </p>
       </div>
     </>
@@ -106,3 +102,16 @@ const IntellectualProperty = () => {
 };
 
 export default IntellectualProperty;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.intellectual.property.seo.title"),
+    description: t(
+      "pages.law.firm.services.intellectual.property.seo.description",
+    ),
+    alternates: { canonical: "/law-firm-services/intellectual-property" },
+  };
+}

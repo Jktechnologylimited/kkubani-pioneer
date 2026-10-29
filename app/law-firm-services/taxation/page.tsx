@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/taxation/",
     languages: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Taxation law service",
   description:
     "Expert taxation legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,56 +36,52 @@ export const metadata: Metadata = {
   },
 };
 
-const TaxationLaw = () => {
+const TaxationLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl pt-20 font-bold text-gray-900">Taxation Law</h1>
+        <h1 className="text-3xl pt-20 font-bold text-gray-900">
+          {t("pages.law.firm.services.taxation.field1")}
+        </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Tax Compliance and Advisory Services
+          {t("pages.law.firm.services.taxation.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          K.K. Ubani & Co. provides expert legal support in taxation, ensuring
-          businesses comply with Nigerian tax laws while optimizing tax
-          efficiency. We assist in tax structuring, compliance, audits, and
-          dispute resolution.
+          {t("pages.law.firm.services.taxation.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Taxation Law Matters
+          {t("pages.law.firm.services.taxation.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Tax laws in Nigeria are constantly evolving, and non-compliance can
-          lead to significant penalties. Businesses must navigate corporate
-          taxes, VAT, and personal tax obligations while maximizing deductions
-          and exemptions.
+          {t("pages.law.firm.services.taxation.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.taxation.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Tax Compliance & Advisory</strong>
-            Helping businesses stay compliant with Nigerian tax regulations.
+            <strong>{t("pages.law.firm.services.taxation.field7")}</strong>
+            {t("pages.law.firm.services.taxation.field8")}
           </li>
           <li>
-            <strong>Tax Dispute Resolution </strong>
-            Representing clients in tax audits, appeals, and litigation.
+            <strong>{t("pages.law.firm.services.taxation.field9")}</strong>
+            {t("pages.law.firm.services.taxation.field10")}
           </li>
           <li>
-            <strong>Corporate Tax Structuring</strong>
-            Advising businesses on tax-efficient structures for growth and
-            sustainability.
+            <strong>{t("pages.law.firm.services.taxation.field11")}</strong>
+            {t("pages.law.firm.services.taxation.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.taxation.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We help businesses reduce tax liabilities while ensuring full
-          compliance with Nigeria’s taxation laws
+          {t("pages.law.firm.services.taxation.field14")}
         </p>
       </div>
     </>
@@ -92,3 +89,14 @@ const TaxationLaw = () => {
 };
 
 export default TaxationLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.taxation.seo.title"),
+    description: t("pages.law.firm.services.taxation.seo.description"),
+    alternates: { canonical: "/law-firm-services/taxation" },
+  };
+}

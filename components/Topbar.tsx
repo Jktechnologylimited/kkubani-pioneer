@@ -1,14 +1,16 @@
 "use client";
-
+import { useSiteCopy } from "@/lib/jktl/site-copy";
 import { Facebook, Linkedin, Mail, Phone } from "lucide-react";
 
 const Topbar = () => {
+  const t = useSiteCopy();
+
   return (
     <div className="bg-gray-900 text-white py-2 px-4 flex justify-between items-center md:text-sm text-xs">
       {/* Left Side - Social Media Icons */}
-     <div className="flex gap-4">
+      <div className="flex gap-4">
         <a
-          href="https://facebook.com/KKubaniandco"
+          href={t("components.Topbar.field1")}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-500"
@@ -26,7 +28,7 @@ const Topbar = () => {
         {/* <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">
           <Whatsapp size={18} />
         </a> */}
-      </div> 
+      </div>
 
       {/* Right Side - Contact Details */}
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
@@ -35,14 +37,14 @@ const Topbar = () => {
           <span>
             <span className="border rounded-2xl px-1 bg-orange-500 hover:bg-yellow-200 capitalize font-bold text-gray-900">
               {" "}
-              call 
+              {t("components.Topbar.field2")}
             </span>{" "}
-            (234) 809 900 0582
+            {t("components.Topbar.field3")}
           </span>
         </div>
         <div className="flex items-center gap-2">
           <Mail size={18} />
-          <span>info@kkubaniandco.com</span>
+          <span>{t("components.Topbar.field4")}</span>
         </div>
       </div>
     </div>

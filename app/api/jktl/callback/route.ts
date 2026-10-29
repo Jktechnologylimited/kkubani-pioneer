@@ -27,7 +27,7 @@ export async function GET(request: Request) {
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/jktl-cms",
-      maxAge: 300,
+      maxAge: 1800,
     });
     return response;
   } catch {

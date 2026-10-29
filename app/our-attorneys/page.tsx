@@ -1,3 +1,4 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import Hero from "@/components/Hero";
 
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
@@ -50,47 +51,45 @@ export const metadata: Metadata = {
   },
 };
 
-const attorneys = [
-  {
-    name: "Kenneth K. Ubani",
-    office: "Principal Partner",
-    image: "/our-attorneys/kennethkelechiubani.PNG",
-    bioUrl: "/our-attorneys/kenneth-kelechi-ubani",
-    intro:
-      "Kenneth K. Ubani is a seasoned corporate lawyer with 15+ years of experience in litigation, business law, and regulatory compliance.",
-  },
-  {
-    name: "Victor Ubochi",
-    office: "Senior Associate",
-    image: "/our-attorneys/victor.PNG",
-    bioUrl: "/our-attorneys/victor-ubochi",
-    intro:
-      "Throughout his career, he has been extensively involved in settling high-ranking and sensitive legal claims for multinational corporations",
-  },
-  {
-    name: "Emeka M. Peters",
-    office: "Senior Associate",
-    image: "/our-attorneys/emeka.PNG",
-    bioUrl: "/our-attorneys/emeka-peters",
-    intro:
-      "Emeka is a Member of the Firm’s Property Law and Real estate Practice.",
-  },
-  {
-    name: "James E.Uro",
-    office: "Litigation Manager",
-    image: "/our-attorneys/james.PNG",
-    bioUrl: "/our-attorneys/james-uro",
-    intro:
-      "James E. Uro is known for his dedication to his clients' interests, meticulous attention to detail, and ability to unravel complex legal challenges",
-  },
-];
+const OurAttorneys = async () => {
+  const t = await siteCopy();
 
-const OurAttorneys = () => {
+  const attorneys = [
+    {
+      name: t("pages.our.attorneys.field1"),
+      office: t("pages.our.attorneys.field2"),
+      image: t("pages.our.attorneys.field3"),
+      bioUrl: t("pages.our.attorneys.field4"),
+      intro: t("pages.our.attorneys.field5"),
+    },
+    {
+      name: t("pages.our.attorneys.field6"),
+      office: t("pages.our.attorneys.field7"),
+      image: t("pages.our.attorneys.field8"),
+      bioUrl: t("pages.our.attorneys.field9"),
+      intro: t("pages.our.attorneys.field10"),
+    },
+    {
+      name: t("pages.our.attorneys.field11"),
+      office: t("pages.our.attorneys.field12"),
+      image: t("pages.our.attorneys.field13"),
+      bioUrl: t("pages.our.attorneys.field14"),
+      intro: t("pages.our.attorneys.field15"),
+    },
+    {
+      name: t("pages.our.attorneys.field16"),
+      office: t("pages.our.attorneys.field17"),
+      image: t("pages.our.attorneys.field18"),
+      bioUrl: t("pages.our.attorneys.field19"),
+      intro: t("pages.our.attorneys.field20"),
+    },
+  ];
+
   return (
     <div>
       <div className="container mx-auto py-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-8 pt-6">
-          Our Attorneys
+          {t("pages.our.attorneys.field21")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {attorneys.map((attorney, index) => (
@@ -110,7 +109,7 @@ const OurAttorneys = () => {
                 <p className="text-gray-700 text-sm mt-2">{attorney.intro}</p>
                 <Link href={attorney.bioUrl} rel="noopener noreferrer">
                   <Button className="mt-4 w-full bg-blue-900">
-                    Read Full Bio
+                    {t("pages.our.attorneys.field22")}
                   </Button>
                 </Link>
               </CardContent>
@@ -125,3 +124,14 @@ const OurAttorneys = () => {
 };
 
 export default OurAttorneys;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.our.attorneys.seo.title"),
+    description: t("pages.our.attorneys.seo.description"),
+    alternates: { canonical: "/our-attorneys" },
+  };
+}

@@ -1,5 +1,5 @@
 "use client";
-
+import { useSiteCopy } from "@/lib/jktl/site-copy";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -10,34 +10,33 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 
-const slides = [
-  {
-    image: "/hero/justice.jpg",
-    title: "Expert Legal Counsel",
-    description: "Providing strategic legal solutions tailored to your needs.",
-    buttonText: "Call K.K.Ubani & Co. Now",
-    link: "/contact-law-firm", // Add your consultation page link here
-  },
-  {
-    image: "/hero/gavel.jpg",
-    title: "Advocating for Justice",
-    description:
-      "Committed to protecting your rights with diligence and integrity.",
-    buttonText: "Learn More About Our Services",
-    link: "/law-firm-services", // Add your services page link here
-  },
-  {
-    image: "/hero/book.jpg",
-    title: "Your Trusted Legal Partner",
-    description:
-      "Guiding you through complex legal matters with confidence and expertise.",
-    buttonText: "Open A Case",
-    link: "/contact-law-firm", // Add your contact page link here
-  },
-];
+export default function Hero() {
+  const t = useSiteCopy();
 
-export default function Hero({content}:{content?:{heroTitle:string;heroDescription:string}}) {
-  const displaySlides = slides.map((slide,i)=>i === 0 && content ? {...slide,title:content.heroTitle,description:content.heroDescription} : slide);
+  const slides = [
+    {
+      image: t("components.Hero.field1"),
+      title: t("heroTitle"),
+      description: t("heroDescription"),
+      buttonText: t("components.Hero.field4"),
+      link: t("components.Hero.field5"), // Add your consultation page link here
+    },
+    {
+      image: t("components.Hero.field6"),
+      title: t("components.Hero.field7"),
+      description: t("components.Hero.field8"),
+      buttonText: t("components.Hero.field9"),
+      link: t("components.Hero.field10"), // Add your services page link here
+    },
+    {
+      image: t("components.Hero.field11"),
+      title: t("components.Hero.field12"),
+      description: t("components.Hero.field13"),
+      buttonText: t("components.Hero.field14"),
+      link: t("components.Hero.field15"), // Add your contact page link here
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -52,7 +51,7 @@ export default function Hero({content}:{content?:{heroTitle:string;heroDescripti
     <Carousel className="w-full h-[500px] relative">
       <CarouselContent>
         <AnimatePresence mode="wait">
-          {displaySlides.map((slide, index) =>
+          {slides.map((slide, index) =>
             index === currentIndex ? (
               <CarouselItem key={index} className="relative w-full h-[500px]">
                 <motion.div
@@ -81,7 +80,7 @@ export default function Hero({content}:{content?:{heroTitle:string;heroDescripti
                   </div>
                 </motion.div>
               </CarouselItem>
-            ) : null
+            ) : null,
           )}
         </AnimatePresence>
       </CarouselContent>

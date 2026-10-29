@@ -1,45 +1,38 @@
+import type { Metadata } from "next";
+import { siteCopy } from "@/lib/jktl/public-content";
 import Testimonials from "@/components/Testimonial";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const JamesBio = () => {
+const JamesBio = async () => {
+  const t = await siteCopy();
+
   return (
     <div className="">
       <div className="container mx-auto py-12 px-6 pt-30 max-w-3xl ">
         <div className="flex justify-center items-center">
           <Image
-            src="/our-attorneys/james.PNG"
-            alt="Emeka M. Peters"
+            src={t("pages.our.attorneys.james.uro.field1")}
+            alt={t("pages.our.attorneys.james.uro.field2")}
             width={300}
             height={300}
             className="rounded-lg object-cover"
           />
         </div>
-        <h2 className="text-4xl font-bold text-center mb-4">James E.Uro</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">
+          {t("pages.our.attorneys.james.uro.field3")}
+        </h2>
         <p className="text-gray-500 text-center text-lg mb-6">
-          Litigation manager
+          {t("pages.our.attorneys.james.uro.field4")}
         </p>
 
         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
           <p className="text-lg  text-gray-700 leading-relaxed">
-            James E. Uro, Esq. is a highly accomplished legal professional with
-            a strong academic background and a passion for the practice of law.
-            Graduating with First Class Honours from the Nigerian Law School, he
-            has consistently demonstrated exceptional skills and expertise in
-            various areas of law, particularly in Corporate/Commercial Law,
-            Asset Recovery, Energy Law, Competition Law, Tax Law, Property Law,
-            Election Petition, and Litigation. He holds a Master's Degree in
-            Corporate/Commercial Law.
+            {t("pages.our.attorneys.james.uro.field5")}
             <br />
-            <br /> James E. Uro is known for his dedication to his clients'
-            interests, meticulous attention to detail, and ability to unravel
-            complex legal challenges. He is an avid learner who stays updated
-            with the latest legal developments and continuously seeks innovative
-            approaches to provide effective legal solutions.
+            <br /> {t("pages.our.attorneys.james.uro.field6")}
             <br />
-            <br /> With his extensive knowledge and expertise, James E. Uro,
-            Esq. is a valuable asset to any legal team or organization seeking a
-            skilled and versatile legal professional.
+            <br /> {t("pages.our.attorneys.james.uro.field7")}
           </p>
         </div>
       </div>
@@ -49,3 +42,13 @@ const JamesBio = () => {
 };
 
 export default JamesBio;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.our.attorneys.james.uro.seo.title"),
+    description: t("pages.our.attorneys.james.uro.seo.description"),
+    alternates: { canonical: "/our-attorneys/james-uro" },
+  };
+}

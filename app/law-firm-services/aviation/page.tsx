@@ -1,7 +1,8 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import type { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/aviation/",
     languages: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
- 
+
   title: "Aviation law service ",
   description:
     "Expert aviation legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
@@ -35,59 +36,52 @@ export const metadata: Metadata = {
   },
 };
 
-const AviationLaw = () => {
+const AviationLaw = async () => {
+  const t = await siteCopy();
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl pt-20 font-bold text-gray-900">Aviation Law</h1>
+        <h1 className="text-3xl pt-20 font-bold text-gray-900">
+          {t("pages.law.firm.services.aviation.field1")}
+        </h1>
         <h2 className="text-xl font-semibold text-gray-700 mt-4">
-          Expert Legal Services for the Aviation Industry
+          {t("pages.law.firm.services.aviation.field2")}
         </h2>
         <p className="mt-2 text-gray-600">
-          The aviation sector requires a deep understanding of regulatory
-          policies, leasing arrangements, and operational agreements. Our firm
-          provides comprehensive legal services to airlines, operators, and
-          investors.
+          {t("pages.law.firm.services.aviation.field3")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Aviation Law is Important
+          {t("pages.law.firm.services.aviation.field4")}
         </h2>
         <p className="mt-2 text-gray-600">
-          Aviation law ensures the safety, security, and regulation of air
-          travel. It governs aircraft operations, passenger rights, airport
-          usage, and international airspace. With the complexity of global air
-          transport, strong legal frameworks are essential for accident
-          prevention, dispute resolution, and compliance with international
-          aviation standards. It supports smooth airline operations and protects
-          both carriers and passengers.
+          {t("pages.law.firm.services.aviation.field5")}
         </p>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Our Expertise
+          {t("pages.law.firm.services.aviation.field6")}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           <li>
-            <strong>Aircraft Leasing & Financing</strong>
-            Structuring agreements for aircraft acquisition and leasing.
+            <strong>{t("pages.law.firm.services.aviation.field7")}</strong>
+            {t("pages.law.firm.services.aviation.field8")}
           </li>
           <li>
-            <strong>Regulatory Compliance </strong>
-            Ensuring compliance with Nigerian and international aviation laws.
+            <strong>{t("pages.law.firm.services.aviation.field9")}</strong>
+            {t("pages.law.firm.services.aviation.field10")}
           </li>
           <li>
-            <strong>Aviation Litigation & Dispute Resolution</strong>
-            Representing clients in regulatory disputes and contractual
-            disagreements.
+            <strong>{t("pages.law.firm.services.aviation.field11")}</strong>
+            {t("pages.law.firm.services.aviation.field12")}
           </li>
         </ul>
 
         <h2 className="text-xl font-semibold text-gray-700 mt-6">
-          Why Choose Us?
+          {t("pages.law.firm.services.aviation.field13")}
         </h2>
         <p className="mt-2 text-gray-600">
-          We provide legal strategies that support seamless aviation operations
-          while ensuring regulatory compliance and business efficiency.
+          {t("pages.law.firm.services.aviation.field14")}
         </p>
       </div>
     </>
@@ -95,3 +89,14 @@ const AviationLaw = () => {
 };
 
 export default AviationLaw;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.aviation.seo.title"),
+    description: t("pages.law.firm.services.aviation.seo.description"),
+    alternates: { canonical: "/law-firm-services/aviation" },
+  };
+}

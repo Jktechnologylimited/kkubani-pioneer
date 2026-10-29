@@ -1,19 +1,36 @@
 "use client";
-
+import { useSiteCopy } from "@/lib/jktl/site-copy";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About Our Firm" },
-  { href: "/our-attorneys", label: "Our Attorneys" },
-  { href: "/law-firm-services", label: "Service Areas" },
-  { href: "/contact", label: "Contact" },
-];
-
 const Navbar = () => {
+  const t = useSiteCopy();
+
+  const navLinks = [
+    {
+      href: t("components.Navbar.field1"),
+      label: t("components.Navbar.field2"),
+    },
+    {
+      href: t("components.Navbar.field3"),
+      label: t("components.Navbar.field4"),
+    },
+    {
+      href: t("components.Navbar.field5"),
+      label: t("components.Navbar.field6"),
+    },
+    {
+      href: t("components.Navbar.field7"),
+      label: t("components.Navbar.field8"),
+    },
+    {
+      href: t("components.Navbar.field9"),
+      label: t("components.Navbar.field10"),
+    },
+  ];
+
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -22,17 +39,17 @@ const Navbar = () => {
         <div className="justify-between px-4 mx-auto  lg:max-w-7xl md:items-center md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block ">
             {/* LOGO */}
-            <Link href="/" className="flex ">
+            <Link href={t("components.Navbar.field11")} className="flex ">
               <Image
-                src="/kkubani&cologo.png"
-                alt="Kk Ubani & Co Logo"
+                src={t("components.Navbar.field12")}
+                alt={t("components.Navbar.field13")}
                 width={50}
                 height={50}
                 className="h-12 w-auto"
               />
 
               <h2 className="text-2xl lg:text-4xl text-blue-900 font-bold cursor-pointer ">
-                K.K. Ubani & Co.
+                {t("components.Navbar.field14")}
               </h2>
             </Link>
 

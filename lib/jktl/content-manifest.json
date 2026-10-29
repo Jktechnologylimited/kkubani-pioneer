@@ -1,0 +1,4306 @@
+{
+  "components.AboutUs.field1": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "About Us",
+    "kind": "text",
+    "default": "About Us",
+    "max": 2008
+  },
+  "components.AboutUs.field2": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "src: /kennethkelechiubani.PNG",
+    "kind": "image",
+    "default": "/kennethkelechiubani.PNG",
+    "max": 1000
+  },
+  "components.AboutUs.field3": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "alt: Principal Partner",
+    "kind": "text",
+    "default": "Principal Partner",
+    "max": 2017
+  },
+  "components.AboutUs.field4": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "Principal Partner",
+    "kind": "text",
+    "default": "Principal Partner",
+    "max": 2017
+  },
+  "components.AboutUs.field5": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "K. K. Ubani & Co. is a full service commercial and dispute resolution law f",
+    "kind": "text",
+    "default": "K. K. Ubani & Co. is a full service commercial and dispute resolution law firm with the requisite expertise to meet our individual client’s legal needs. In addition, our deep knowledge of Nigeria’s unique business environment enhances clients’ attainment of their set business goals. We merge legal expertise, industrial and wide political connections in pursuit of our clients’ best business interest while keeping with international best practices. ",
+    "max": 2451
+  },
+  "components.AboutUs.field6": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "We work closely with our clients throughout every stage of what is usually ",
+    "kind": "text",
+    "default": "We work closely with our clients throughout every stage of what is usually a long and tough ordeal so that they can accomplish their goals and desires. With our combined experience of handling complex trials and litigations for over 30 years, you can trust us to be forthright and diligent in meeting your needs. ",
+    "max": 2313
+  },
+  "components.AboutUs.field7": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "At K. K. Ubani & Co., we pride ourselves on our goal to always undertake le",
+    "kind": "text",
+    "default": "At K. K. Ubani & Co., we pride ourselves on our goal to always undertake legal services for our wide range of clientele at its optimum and in the process keeping to the highest ethical standards. We not only meet clients’ expectations, we exceed them. ",
+    "max": 2252
+  },
+  "components.AboutUs.field8": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "Kenneth K. Ubani",
+    "kind": "text",
+    "default": "Kenneth K. Ubani",
+    "max": 2016
+  },
+  "components.AboutUs.field9": {
+    "group": "About the firm",
+    "source": "components/AboutUs.tsx",
+    "label": "Principal Partner",
+    "kind": "text",
+    "default": "Principal Partner",
+    "max": 2017
+  },
+  "components.BookingButton.field1": {
+    "group": "Appointment button",
+    "source": "components/BookingButton.tsx",
+    "label": "href: /booking",
+    "kind": "link",
+    "default": "/booking",
+    "max": 1000
+  },
+  "components.BookingButton.field2": {
+    "group": "Appointment button",
+    "source": "components/BookingButton.tsx",
+    "label": "Book Your Appointment",
+    "kind": "text",
+    "default": "Book Your Appointment ",
+    "max": 2022
+  },
+  "components.BookingForm.field1": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Form message: Sending...",
+    "kind": "text",
+    "default": "Sending...",
+    "max": 2010
+  },
+  "components.BookingForm.field2": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Form message: Booking successful.",
+    "kind": "text",
+    "default": "Booking successful.",
+    "max": 2019
+  },
+  "components.BookingForm.field3": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Form message: Failed to book.",
+    "kind": "text",
+    "default": "Failed to book.",
+    "max": 2015
+  },
+  "components.BookingForm.field4": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Form message: Error occurred.",
+    "kind": "text",
+    "default": "Error occurred.",
+    "max": 2015
+  },
+  "components.BookingForm.field5": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Full Name",
+    "kind": "text",
+    "default": "Full Name",
+    "max": 2009
+  },
+  "components.BookingForm.field6": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "placeholder: John Doe",
+    "kind": "text",
+    "default": "John Doe",
+    "max": 2008
+  },
+  "components.BookingForm.field7": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Email Address",
+    "kind": "text",
+    "default": "Email Address",
+    "max": 2013
+  },
+  "components.BookingForm.field8": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "placeholder: john@example.com",
+    "kind": "text",
+    "default": "john@example.com",
+    "max": 2016
+  },
+  "components.BookingForm.field9": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Phone Number",
+    "kind": "text",
+    "default": "Phone Number",
+    "max": 2012
+  },
+  "components.BookingForm.field10": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "placeholder: +234 801 234 5678",
+    "kind": "text",
+    "default": "+234 801 234 5678",
+    "max": 2017
+  },
+  "components.BookingForm.field11": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Select a Date",
+    "kind": "text",
+    "default": "Select a Date",
+    "max": 2013
+  },
+  "components.BookingForm.field12": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Select a Time",
+    "kind": "text",
+    "default": "Select a Time",
+    "max": 2013
+  },
+  "components.BookingForm.field13": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Select Time",
+    "kind": "text",
+    "default": "Select Time",
+    "max": 2011
+  },
+  "components.BookingForm.field14": {
+    "group": "Appointment form",
+    "source": "components/BookingForm.tsx",
+    "label": "Book Appointment",
+    "kind": "text",
+    "default": "Book Appointment ",
+    "max": 2017
+  },
+  "components.ContactForm.field1": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Form message: Sending...",
+    "kind": "text",
+    "default": "Sending...",
+    "max": 2010
+  },
+  "components.ContactForm.field2": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Form message: Message sent successfully.",
+    "kind": "text",
+    "default": "Message sent successfully.",
+    "max": 2026
+  },
+  "components.ContactForm.field3": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Form message: Failed to send message.",
+    "kind": "text",
+    "default": "Failed to send message.",
+    "max": 2023
+  },
+  "components.ContactForm.field4": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Form message: Error sending message.",
+    "kind": "text",
+    "default": "Error sending message.",
+    "max": 2022
+  },
+  "components.ContactForm.field5": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Full Name",
+    "kind": "text",
+    "default": "Full Name",
+    "max": 2009
+  },
+  "components.ContactForm.field6": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "placeholder: Ugo Ola Manga ",
+    "kind": "text",
+    "default": "Ugo Ola Manga ",
+    "max": 2014
+  },
+  "components.ContactForm.field7": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Email Address",
+    "kind": "text",
+    "default": "Email Address",
+    "max": 2013
+  },
+  "components.ContactForm.field8": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "placeholder: ugoolamanga@example.com",
+    "kind": "text",
+    "default": "ugoolamanga@example.com",
+    "max": 2023
+  },
+  "components.ContactForm.field9": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Phone Number",
+    "kind": "text",
+    "default": "Phone Number",
+    "max": 2012
+  },
+  "components.ContactForm.field10": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "placeholder: +234 801 234 5678",
+    "kind": "text",
+    "default": "+234 801 234 5678",
+    "max": 2017
+  },
+  "components.ContactForm.field11": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Your Message",
+    "kind": "text",
+    "default": "Your Message",
+    "max": 2012
+  },
+  "components.ContactForm.field12": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "placeholder: Tell us how we can help you...",
+    "kind": "text",
+    "default": "Tell us how we can help you...",
+    "max": 2030
+  },
+  "components.ContactForm.field13": {
+    "group": "Contact form",
+    "source": "components/ContactForm.tsx",
+    "label": "Open A Case",
+    "kind": "text",
+    "default": "Open A Case",
+    "max": 2011
+  },
+  "components.Footer.field1": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Let's work together",
+    "kind": "text",
+    "default": "Let's work together",
+    "max": 2019
+  },
+  "components.Footer.field2": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Contact Details",
+    "kind": "text",
+    "default": "Contact Details",
+    "max": 2015
+  },
+  "components.Footer.field3": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Address:",
+    "kind": "text",
+    "default": "Address:",
+    "max": 2008
+  },
+  "components.Footer.field4": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "2c, General Diriyai Lane, G.R.A. Phase 2, Port Harcourt",
+    "kind": "text",
+    "default": "2c, General Diriyai Lane, G.R.A. Phase 2, Port Harcourt ",
+    "max": 2056
+  },
+  "components.Footer.field5": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Telephone:",
+    "kind": "text",
+    "default": "Telephone:",
+    "max": 2010
+  },
+  "components.Footer.field6": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "(234) 809 900 0582",
+    "kind": "text",
+    "default": "(234) 809 900 0582 ",
+    "max": 2019
+  },
+  "components.Footer.field7": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Email:",
+    "kind": "text",
+    "default": "Email:",
+    "max": 2006
+  },
+  "components.Footer.field8": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "info@kkubaniandco.com",
+    "kind": "text",
+    "default": "info@kkubaniandco.com ",
+    "max": 2022
+  },
+  "components.Footer.field9": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Office Hours",
+    "kind": "text",
+    "default": "Office Hours",
+    "max": 2012
+  },
+  "components.Footer.field10": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Monday to Friday:",
+    "kind": "text",
+    "default": "Monday to Friday:",
+    "max": 2017
+  },
+  "components.Footer.field11": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "9:00 am to 4:00 pm",
+    "kind": "text",
+    "default": "9:00 am to 4:00 pm ",
+    "max": 2019
+  },
+  "components.Footer.field12": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Closed on Weekends",
+    "kind": "text",
+    "default": "Closed on Weekends",
+    "max": 2018
+  },
+  "components.Footer.field13": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "Follow Us",
+    "kind": "text",
+    "default": "Follow Us",
+    "max": 2009
+  },
+  "components.Footer.field14": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "href: https://facebook.com/KKubaniandco",
+    "kind": "link",
+    "default": "https://facebook.com/KKubaniandco",
+    "max": 1000
+  },
+  "components.Footer.field15": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "href: https://twitter.com/KKubaniandco",
+    "kind": "link",
+    "default": "https://twitter.com/KKubaniandco",
+    "max": 1000
+  },
+  "components.Footer.field16": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "href: https://instagram.com/KKubaniandco",
+    "kind": "link",
+    "default": "https://instagram.com/KKubaniandco",
+    "max": 1000
+  },
+  "components.Footer.field17": {
+    "group": "Footer",
+    "source": "components/Footer.tsx",
+    "label": "kkubaniandco",
+    "kind": "text",
+    "default": "kkubaniandco",
+    "max": 2012
+  },
+  "components.Hero.field1": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "image: /hero/justice.jpg",
+    "kind": "image",
+    "default": "/hero/justice.jpg",
+    "max": 1000
+  },
+  "heroTitle": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "title: Expert Legal Counsel",
+    "kind": "text",
+    "default": "Expert Legal Counsel",
+    "max": 2020
+  },
+  "heroDescription": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "description: Providing strategic legal solutions tailored to your needs.",
+    "kind": "text",
+    "default": "Providing strategic legal solutions tailored to your needs.",
+    "max": 2059
+  },
+  "components.Hero.field4": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "buttonText: Call K.K.Ubani & Co. Now",
+    "kind": "text",
+    "default": "Call K.K.Ubani & Co. Now",
+    "max": 2024
+  },
+  "components.Hero.field5": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "link: /contact-law-firm",
+    "kind": "link",
+    "default": "/contact",
+    "max": 1000
+  },
+  "components.Hero.field6": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "image: /hero/gavel.jpg",
+    "kind": "image",
+    "default": "/hero/gavel.jpg",
+    "max": 1000
+  },
+  "components.Hero.field7": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "title: Advocating for Justice",
+    "kind": "text",
+    "default": "Advocating for Justice",
+    "max": 2022
+  },
+  "components.Hero.field8": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "description: Committed to protecting your rights with diligence and integ",
+    "kind": "text",
+    "default": "Committed to protecting your rights with diligence and integrity.",
+    "max": 2065
+  },
+  "components.Hero.field9": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "buttonText: Learn More About Our Services",
+    "kind": "text",
+    "default": "Learn More About Our Services",
+    "max": 2029
+  },
+  "components.Hero.field10": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "link: /law-firm-services",
+    "kind": "link",
+    "default": "/law-firm-services",
+    "max": 1000
+  },
+  "components.Hero.field11": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "image: /hero/book.jpg",
+    "kind": "image",
+    "default": "/hero/book.jpg",
+    "max": 1000
+  },
+  "components.Hero.field12": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "title: Your Trusted Legal Partner",
+    "kind": "text",
+    "default": "Your Trusted Legal Partner",
+    "max": 2026
+  },
+  "components.Hero.field13": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "description: Guiding you through complex legal matters with confidence an",
+    "kind": "text",
+    "default": "Guiding you through complex legal matters with confidence and expertise.",
+    "max": 2072
+  },
+  "components.Hero.field14": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "buttonText: Open A Case",
+    "kind": "text",
+    "default": "Open A Case",
+    "max": 2011
+  },
+  "components.Hero.field15": {
+    "group": "Homepage slideshow",
+    "source": "components/Hero.tsx",
+    "label": "link: /contact-law-firm",
+    "kind": "link",
+    "default": "/contact",
+    "max": 1000
+  },
+  "components.Navbar.field1": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /",
+    "kind": "link",
+    "default": "/",
+    "max": 1000
+  },
+  "components.Navbar.field2": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "label: Home",
+    "kind": "text",
+    "default": "Home",
+    "max": 2004
+  },
+  "components.Navbar.field3": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /about",
+    "kind": "link",
+    "default": "/about",
+    "max": 1000
+  },
+  "components.Navbar.field4": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "label: About Our Firm",
+    "kind": "text",
+    "default": "About Our Firm",
+    "max": 2014
+  },
+  "components.Navbar.field5": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /our-attorneys",
+    "kind": "link",
+    "default": "/our-attorneys",
+    "max": 1000
+  },
+  "components.Navbar.field6": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "label: Our Attorneys",
+    "kind": "text",
+    "default": "Our Attorneys",
+    "max": 2013
+  },
+  "components.Navbar.field7": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /law-firm-services",
+    "kind": "link",
+    "default": "/law-firm-services",
+    "max": 1000
+  },
+  "components.Navbar.field8": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "label: Service Areas",
+    "kind": "text",
+    "default": "Service Areas",
+    "max": 2013
+  },
+  "components.Navbar.field9": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /contact",
+    "kind": "link",
+    "default": "/contact",
+    "max": 1000
+  },
+  "components.Navbar.field10": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "label: Contact",
+    "kind": "text",
+    "default": "Contact",
+    "max": 2007
+  },
+  "components.Navbar.field11": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "href: /",
+    "kind": "link",
+    "default": "/",
+    "max": 1000
+  },
+  "components.Navbar.field12": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "src: /kkubani&cologo.png",
+    "kind": "image",
+    "default": "/kkubani&cologo.png",
+    "max": 1000
+  },
+  "components.Navbar.field13": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "alt: Kk Ubani & Co Logo",
+    "kind": "text",
+    "default": "Kk Ubani & Co Logo",
+    "max": 2018
+  },
+  "components.Navbar.field14": {
+    "group": "Navigation",
+    "source": "components/Navbar.tsx",
+    "label": "K.K. Ubani & Co.",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. ",
+    "max": 2017
+  },
+  "components.Services.field1": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Corporate",
+    "kind": "text",
+    "default": "Corporate",
+    "max": 2009
+  },
+  "components.Services.field2": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/corporate.jpg",
+    "kind": "image",
+    "default": "/areas/corporate.jpg",
+    "max": 1000
+  },
+  "components.Services.field3": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Expert legal guidance for corporate governance and complianc",
+    "kind": "text",
+    "default": "Expert legal guidance for corporate governance and compliance.",
+    "max": 2062
+  },
+  "components.Services.field4": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/corporate",
+    "kind": "link",
+    "default": "/law-firm-services/corporate",
+    "max": 1000
+  },
+  "components.Services.field5": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Commercial",
+    "kind": "text",
+    "default": "Commercial",
+    "max": 2010
+  },
+  "components.Services.field6": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/commercial.jpg",
+    "kind": "image",
+    "default": "/areas/commercial.jpg",
+    "max": 1000
+  },
+  "components.Services.field7": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Legal solutions for commercial transactions and trade agreem",
+    "kind": "text",
+    "default": "Legal solutions for commercial transactions and trade agreements.",
+    "max": 2065
+  },
+  "components.Services.field8": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/commercial",
+    "kind": "link",
+    "default": "/law-firm-services/commercial",
+    "max": 1000
+  },
+  "components.Services.field9": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Energy and Natural Resources",
+    "kind": "text",
+    "default": "Energy and Natural Resources",
+    "max": 2028
+  },
+  "components.Services.field10": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/energy.jpg",
+    "kind": "image",
+    "default": "/areas/energy.jpg",
+    "max": 1000
+  },
+  "components.Services.field11": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Advising on energy regulations and natural resource manageme",
+    "kind": "text",
+    "default": "Advising on energy regulations and natural resource management.",
+    "max": 2063
+  },
+  "components.Services.field12": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/energy-and-natural-resources",
+    "kind": "link",
+    "default": "/law-firm-services/energy-and-natural-resources",
+    "max": 1000
+  },
+  "components.Services.field13": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Telecommunication",
+    "kind": "text",
+    "default": "Telecommunication",
+    "max": 2017
+  },
+  "components.Services.field14": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/telecom.jpg",
+    "kind": "image",
+    "default": "/areas/telecom.jpg",
+    "max": 1000
+  },
+  "components.Services.field15": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Legal counsel for telecom operators and regulatory complianc",
+    "kind": "text",
+    "default": "Legal counsel for telecom operators and regulatory compliance.",
+    "max": 2062
+  },
+  "components.Services.field16": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/telecommunication",
+    "kind": "link",
+    "default": "/law-firm-services/telecommunication",
+    "max": 1000
+  },
+  "components.Services.field17": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Aviation",
+    "kind": "text",
+    "default": "Aviation",
+    "max": 2008
+  },
+  "components.Services.field18": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/aviation.jpg",
+    "kind": "image",
+    "default": "/areas/aviation.jpg",
+    "max": 1000
+  },
+  "components.Services.field19": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Expertise in aviation law, compliance, and regulatory matter",
+    "kind": "text",
+    "default": "Expertise in aviation law, compliance, and regulatory matters.",
+    "max": 2062
+  },
+  "components.Services.field20": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/aviation",
+    "kind": "link",
+    "default": "/law-firm-services/aviation",
+    "max": 1000
+  },
+  "components.Services.field21": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Taxation",
+    "kind": "text",
+    "default": "Taxation",
+    "max": 2008
+  },
+  "components.Services.field22": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/taxation.jpg",
+    "kind": "image",
+    "default": "/areas/taxation.jpg",
+    "max": 1000
+  },
+  "components.Services.field23": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Comprehensive tax advisory and compliance services.",
+    "kind": "text",
+    "default": "Comprehensive tax advisory and compliance services.",
+    "max": 2051
+  },
+  "components.Services.field24": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/taxation",
+    "kind": "link",
+    "default": "/law-firm-services/taxation",
+    "max": 1000
+  },
+  "components.Services.field25": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Commercial Litigation",
+    "kind": "text",
+    "default": "Commercial Litigation",
+    "max": 2021
+  },
+  "components.Services.field26": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/litigation.jpg",
+    "kind": "image",
+    "default": "/areas/litigation.jpg",
+    "max": 1000
+  },
+  "components.Services.field27": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Handling complex commercial disputes effectively.",
+    "kind": "text",
+    "default": "Handling complex commercial disputes effectively.",
+    "max": 2049
+  },
+  "components.Services.field28": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/commercial-litigation",
+    "kind": "link",
+    "default": "/law-firm-services/commercial-litigation",
+    "max": 1000
+  },
+  "components.Services.field29": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Alternative Dispute Resolution",
+    "kind": "text",
+    "default": "Alternative Dispute Resolution",
+    "max": 2030
+  },
+  "components.Services.field30": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/adr.webp",
+    "kind": "image",
+    "default": "/areas/adr.webp",
+    "max": 1000
+  },
+  "components.Services.field31": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Expert mediation and arbitration services for dispute resolu",
+    "kind": "text",
+    "default": "Expert mediation and arbitration services for dispute resolution.",
+    "max": 2065
+  },
+  "components.Services.field32": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/alternative-dispute-resolution",
+    "kind": "link",
+    "default": "/law-firm-services/alternative-dispute-resolution",
+    "max": 1000
+  },
+  "components.Services.field33": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Project Finance",
+    "kind": "text",
+    "default": "Project Finance",
+    "max": 2015
+  },
+  "components.Services.field34": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/projectfinance.jpg",
+    "kind": "image",
+    "default": "/areas/projectfinance.jpg",
+    "max": 1000
+  },
+  "components.Services.field35": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Structuring and financing large-scale projects efficiently.",
+    "kind": "text",
+    "default": "Structuring and financing large-scale projects efficiently.",
+    "max": 2059
+  },
+  "components.Services.field36": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/project-finance",
+    "kind": "link",
+    "default": "/law-firm-services/project-finance",
+    "max": 1000
+  },
+  "components.Services.field37": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Shipping and Maritime",
+    "kind": "text",
+    "default": "Shipping and Maritime",
+    "max": 2021
+  },
+  "components.Services.field38": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/shipping.jpg",
+    "kind": "image",
+    "default": "/areas/shipping.jpg",
+    "max": 1000
+  },
+  "components.Services.field39": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Legal services for maritime businesses and shipping operatio",
+    "kind": "text",
+    "default": "Legal services for maritime businesses and shipping operations.",
+    "max": 2063
+  },
+  "components.Services.field40": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/shipping-and-maritime",
+    "kind": "link",
+    "default": "/law-firm-services/shipping-and-maritime",
+    "max": 1000
+  },
+  "components.Services.field41": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Foreign Investment",
+    "kind": "text",
+    "default": "Foreign Investment",
+    "max": 2018
+  },
+  "components.Services.field42": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/investment.jpg",
+    "kind": "image",
+    "default": "/areas/investment.jpg",
+    "max": 1000
+  },
+  "components.Services.field43": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Guiding foreign investors through legal frameworks and compl",
+    "kind": "text",
+    "default": "Guiding foreign investors through legal frameworks and compliance.",
+    "max": 2066
+  },
+  "components.Services.field44": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/foreign-investment",
+    "kind": "link",
+    "default": "/law-firm-services/foreign-investment",
+    "max": 1000
+  },
+  "components.Services.field45": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Banking and Finance",
+    "kind": "text",
+    "default": "Banking and Finance",
+    "max": 2019
+  },
+  "components.Services.field46": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/banking.jpg",
+    "kind": "image",
+    "default": "/areas/banking.jpg",
+    "max": 1000
+  },
+  "components.Services.field47": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Advisory services for banking regulations and financial tran",
+    "kind": "text",
+    "default": "Advisory services for banking regulations and financial transactions.",
+    "max": 2069
+  },
+  "components.Services.field48": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/banking-and-finance",
+    "kind": "link",
+    "default": "/law-firm-services/banking-and-finance",
+    "max": 1000
+  },
+  "components.Services.field49": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Real Estate",
+    "kind": "text",
+    "default": "Real Estate",
+    "max": 2011
+  },
+  "components.Services.field50": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/realestate.jpg",
+    "kind": "image",
+    "default": "/areas/realestate.jpg",
+    "max": 1000
+  },
+  "components.Services.field51": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Legal expertise in property transactions and real estate dev",
+    "kind": "text",
+    "default": "Legal expertise in property transactions and real estate development.",
+    "max": 2069
+  },
+  "components.Services.field52": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/real-estate",
+    "kind": "link",
+    "default": "/law-firm-services/real-estate",
+    "max": 1000
+  },
+  "components.Services.field53": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Labour / Employment",
+    "kind": "text",
+    "default": "Labour / Employment",
+    "max": 2019
+  },
+  "components.Services.field54": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/labour.jpg",
+    "kind": "image",
+    "default": "/areas/labour.jpg",
+    "max": 1000
+  },
+  "components.Services.field55": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Providing legal support for employment laws and workplace po",
+    "kind": "text",
+    "default": "Providing legal support for employment laws and workplace policies.",
+    "max": 2067
+  },
+  "components.Services.field56": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/labour-employment",
+    "kind": "link",
+    "default": "/law-firm-services/labour-employment",
+    "max": 1000
+  },
+  "components.Services.field57": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "title: Intellectual Property",
+    "kind": "text",
+    "default": "Intellectual Property",
+    "max": 2021
+  },
+  "components.Services.field58": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "image: /areas/ip.jpg",
+    "kind": "image",
+    "default": "/areas/ip.jpg",
+    "max": 1000
+  },
+  "components.Services.field59": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "description: Protecting trademarks, patents, and copyrights effectively.",
+    "kind": "text",
+    "default": "Protecting trademarks, patents, and copyrights effectively.",
+    "max": 2059
+  },
+  "components.Services.field60": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "bioUrl: law-firm-services/intellectual-property",
+    "kind": "link",
+    "default": "/law-firm-services/intellectual-property",
+    "max": 1000
+  },
+  "components.Services.field61": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "Section background image",
+    "kind": "image",
+    "default": "/servicesbg.webp",
+    "max": 1000
+  },
+  "components.Services.field62": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "Our Services",
+    "kind": "text",
+    "default": "Our Services ",
+    "max": 2013
+  },
+  "components.Services.field63": {
+    "group": "Service cards",
+    "source": "components/Services.tsx",
+    "label": "Learn more",
+    "kind": "text",
+    "default": "Learn more ",
+    "max": 2011
+  },
+  "components.Solution.field1": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Item 1",
+    "kind": "text",
+    "default": "Intellectual Creativity",
+    "max": 2023
+  },
+  "components.Solution.field2": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Item 2",
+    "kind": "text",
+    "default": "Case Management Acceleration",
+    "max": 2028
+  },
+  "components.Solution.field3": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Item 3",
+    "kind": "text",
+    "default": "Empathy & Focus",
+    "max": 2015
+  },
+  "components.Solution.field4": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Item 4",
+    "kind": "text",
+    "default": "Innovative Expertise",
+    "max": 2020
+  },
+  "components.Solution.field5": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Item 5",
+    "kind": "text",
+    "default": "Revolutionary Simplicity",
+    "max": 2024
+  },
+  "components.Solution.field6": {
+    "group": "Solutions (currently hidden)",
+    "source": "components/Solution.tsx",
+    "label": "Our Solutions",
+    "kind": "text",
+    "default": "Our Solutions",
+    "max": 2013
+  },
+  "components.SubFooter.field1": {
+    "group": "Copyright",
+    "source": "components/SubFooter.tsx",
+    "label": "Copyright © 2025 K.K. Ubani & Co. All Rights Reserved.",
+    "kind": "text",
+    "default": "Copyright © 2025 K.K. Ubani & Co. All Rights Reserved. ",
+    "max": 2055
+  },
+  "components.Testimonial.field1": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "quote: We have been working with K. K. Ubani & Co. for several year",
+    "kind": "text",
+    "default": "We have been working with K. K. Ubani & Co. for several years now, and we are continually impressed with their professionalism and expertise in the legal field. Their dedication to providing top-notch legal services has been instrumental in helping us navigate complex legal matters. We highly recommend K. K. Ubani & Co. to any organization in need of exceptional legal representation.",
+    "max": 2386
+  },
+  "components.Testimonial.field2": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "company: ECOBANK Nigeria Limited:",
+    "kind": "text",
+    "default": "ECOBANK Nigeria Limited:",
+    "max": 2024
+  },
+  "components.Testimonial.field3": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "quote: K. K. Ubani & Co. has been a valuable legal partner for Pola",
+    "kind": "text",
+    "default": "K. K. Ubani & Co. has been a valuable legal partner for Polaris Bank Limited. Their team's in-depth knowledge of the law and their strategic approach to handling legal issues have been crucial in achieving successful outcomes for our organization. We appreciate their commitment to excellence and their unwavering support.",
+    "max": 2322
+  },
+  "components.Testimonial.field4": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "company: Polaris Bank Limited",
+    "kind": "text",
+    "default": "Polaris Bank Limited",
+    "max": 2020
+  },
+  "components.Testimonial.field5": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "quote: K. K. Ubani & Co. has consistently delivered exceptional leg",
+    "kind": "text",
+    "default": "K. K. Ubani & Co. has consistently delivered exceptional legal services to  Industrial Training Fund. Their team's expertise, professionalism, and commitment to excellence have made them a trusted legal partner for our organizations. We are grateful for their guidance and support, and we highly recommend K. K. Ubani & Co. to anyone in need of expert legal representation.",
+    "max": 2373
+  },
+  "components.Testimonial.field6": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "company: Industrial Training Fund.",
+    "kind": "text",
+    "default": "Industrial Training Fund.",
+    "max": 2025
+  },
+  "components.Testimonial.field7": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "What They Say About Us",
+    "kind": "text",
+    "default": "What They Say About Us ",
+    "max": 2023
+  },
+  "components.Testimonial.field8": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "\"",
+    "kind": "text",
+    "default": "\"",
+    "max": 2001
+  },
+  "components.Testimonial.field9": {
+    "group": "Testimonials",
+    "source": "components/Testimonial.tsx",
+    "label": "\"",
+    "kind": "text",
+    "default": "\"",
+    "max": 2001
+  },
+  "components.Topbar.field1": {
+    "group": "Contact and social bar",
+    "source": "components/Topbar.tsx",
+    "label": "href: https://facebook.com/KKubaniandco",
+    "kind": "link",
+    "default": "https://facebook.com/KKubaniandco",
+    "max": 1000
+  },
+  "components.Topbar.field2": {
+    "group": "Contact and social bar",
+    "source": "components/Topbar.tsx",
+    "label": "call",
+    "kind": "text",
+    "default": "call ",
+    "max": 2005
+  },
+  "components.Topbar.field3": {
+    "group": "Contact and social bar",
+    "source": "components/Topbar.tsx",
+    "label": "(234) 809 900 0582",
+    "kind": "text",
+    "default": "(234) 809 900 0582 ",
+    "max": 2019
+  },
+  "components.Topbar.field4": {
+    "group": "Contact and social bar",
+    "source": "components/Topbar.tsx",
+    "label": "info@kkubaniandco.com",
+    "kind": "text",
+    "default": "info@kkubaniandco.com",
+    "max": 2021
+  },
+  "components.Welcome.field1": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "src: /kkubani&cologo.png",
+    "kind": "image",
+    "default": "/kkubani&cologo.png",
+    "max": 1000
+  },
+  "components.Welcome.field2": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "alt: Kk Ubani & Co Logo",
+    "kind": "text",
+    "default": "Kk Ubani & Co Logo",
+    "max": 2018
+  },
+  "components.Welcome.field4": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "Gratias Deo Chambers",
+    "kind": "text",
+    "default": "Gratias Deo Chambers ",
+    "max": 2021
+  },
+  "components.Welcome.field6": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "Get Your Consultation",
+    "kind": "text",
+    "default": "Get Your Consultation ",
+    "max": 2022
+  },
+  "components.Welcome.field7": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "(234) 809 9000 582",
+    "kind": "text",
+    "default": "(234) 809 9000 582 ",
+    "max": 2019
+  },
+  "components.clients.field1": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 1",
+    "kind": "image",
+    "default": "/logos/ecobank.png",
+    "max": 1000
+  },
+  "components.clients.field2": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 2",
+    "kind": "image",
+    "default": "/logos/phed.png",
+    "max": 1000
+  },
+  "components.clients.field3": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 3",
+    "kind": "image",
+    "default": "/logos/polaris.png",
+    "max": 1000
+  },
+  "components.clients.field4": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 4",
+    "kind": "image",
+    "default": "/logos/nimasa.png",
+    "max": 1000
+  },
+  "components.clients.field5": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 5",
+    "kind": "image",
+    "default": "/logos/fedmintrans.png",
+    "max": 1000
+  },
+  "components.clients.field6": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 6",
+    "kind": "image",
+    "default": "/logos/itf.png",
+    "max": 1000
+  },
+  "components.clients.field7": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 7",
+    "kind": "image",
+    "default": "/logos/crc.png",
+    "max": 1000
+  },
+  "components.clients.field8": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 8",
+    "kind": "image",
+    "default": "/logos/railway.png",
+    "max": 1000
+  },
+  "components.clients.field9": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 9",
+    "kind": "image",
+    "default": "/logos/4power.png",
+    "max": 1000
+  },
+  "components.clients.field10": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 10",
+    "kind": "image",
+    "default": "/logos/indorama.png",
+    "max": 1000
+  },
+  "components.clients.field11": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Item 11",
+    "kind": "image",
+    "default": "/logos/rinc.png",
+    "max": 1000
+  },
+  "components.clients.field12": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "Our Clients",
+    "kind": "text",
+    "default": "Our Clients",
+    "max": 2011
+  },
+  "components.clients.field13": {
+    "group": "Client logos",
+    "source": "components/clients.tsx",
+    "label": "alt: Client Logo",
+    "kind": "text",
+    "default": "Client Logo",
+    "max": 2011
+  },
+  "components.trustbadges.field1": {
+    "group": "Trust badges (currently hidden)",
+    "source": "components/trustbadges.tsx",
+    "label": "trustbadges",
+    "kind": "text",
+    "default": "trustbadges",
+    "max": 2011
+  },
+  "pages.about.seo.title": {
+    "group": "About page",
+    "source": "app/about/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "About",
+    "max": 160
+  },
+  "pages.about.seo.description": {
+    "group": "About page",
+    "source": "app/about/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "About K.K. Ubani and Co. legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.booking.seo.title": {
+    "group": "Booking page",
+    "source": "app/booking/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Book An Appointment with K.K. Ubani and Co.",
+    "max": 160
+  },
+  "pages.booking.seo.description": {
+    "group": "Booking page",
+    "source": "app/booking/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Book an appointment with K.K. Ubani and Co. legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.contact.seo.title": {
+    "group": "Contact page",
+    "source": "app/contact/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Contact",
+    "max": 160
+  },
+  "pages.contact.seo.description": {
+    "group": "Contact page",
+    "source": "app/contact/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Contact K.K. Ubani and Co. legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field1": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Alternative Dispute Resolution (ADR) Law",
+    "kind": "text",
+    "default": "Alternative Dispute Resolution (ADR) Law ",
+    "max": 2041
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field2": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Effective & Strategic Conflict Resolution",
+    "kind": "text",
+    "default": "Effective & Strategic Conflict Resolution ",
+    "max": 2042
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field3": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Litigation isn’t always the best option. Our ADR services help clients reso",
+    "kind": "text",
+    "default": "Litigation isn’t always the best option. Our ADR services help clients resolve disputes efficiently through mediation, arbitration, and negotiation. ",
+    "max": 2149
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field4": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Why ADR Matters",
+    "kind": "text",
+    "default": "Why ADR Matters ",
+    "max": 2016
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field5": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "ADR offers a faster, cost-effective, and confidential way to settle dispute",
+    "kind": "text",
+    "default": "ADR offers a faster, cost-effective, and confidential way to settle disputes without resorting to litigation. It is particularly beneficial for commercial conflicts, contract disputes, and corporate disagreements. ",
+    "max": 2214
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field6": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field7": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Mediation & Arbitration",
+    "kind": "text",
+    "default": "Mediation & Arbitration",
+    "max": 2023
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field8": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Providing legally binding dispute resolution outside of court.",
+    "kind": "text",
+    "default": "Providing legally binding dispute resolution outside of court. ",
+    "max": 2063
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field9": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Corporate Dispute Resolution",
+    "kind": "text",
+    "default": "Corporate Dispute Resolution ",
+    "max": 2029
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field10": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Resolving conflicts in partnerships, contracts, and joint ventures.",
+    "kind": "text",
+    "default": "Resolving conflicts in partnerships, contracts, and joint ventures. ",
+    "max": 2068
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field11": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "International Arbitration",
+    "kind": "text",
+    "default": "International Arbitration",
+    "max": 2025
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field12": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Handling cross-border commercial disputes.",
+    "kind": "text",
+    "default": "Handling cross-border commercial disputes. ",
+    "max": 2043
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field13": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.field14": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "Our ADR approach helps clients achieve favorable resolutions while avoiding",
+    "kind": "text",
+    "default": "Our ADR approach helps clients achieve favorable resolutions while avoiding lengthy court proceedings. ",
+    "max": 2103
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.seo.title": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Alternative Dispute Resolution (ADR) law service",
+    "max": 160
+  },
+  "pages.law.firm.services.alternative.dispute.resolution.seo.description": {
+    "group": "Service page · Alternative Dispute Resolution",
+    "source": "app/law-firm-services/alternative-dispute-resolution/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert alternative dispute resolution (adr) legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.aviation.field1": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Aviation Law",
+    "kind": "text",
+    "default": "Aviation Law",
+    "max": 2012
+  },
+  "pages.law.firm.services.aviation.field2": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Expert Legal Services for the Aviation Industry",
+    "kind": "text",
+    "default": "Expert Legal Services for the Aviation Industry ",
+    "max": 2048
+  },
+  "pages.law.firm.services.aviation.field3": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "The aviation sector requires a deep understanding of regulatory policies, l",
+    "kind": "text",
+    "default": "The aviation sector requires a deep understanding of regulatory policies, leasing arrangements, and operational agreements. Our firm provides comprehensive legal services to airlines, operators, and investors. ",
+    "max": 2210
+  },
+  "pages.law.firm.services.aviation.field4": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Why Aviation Law is Important",
+    "kind": "text",
+    "default": "Why Aviation Law is Important ",
+    "max": 2030
+  },
+  "pages.law.firm.services.aviation.field5": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Aviation law ensures the safety, security, and regulation of air travel. It",
+    "kind": "text",
+    "default": "Aviation law ensures the safety, security, and regulation of air travel. It governs aircraft operations, passenger rights, airport usage, and international airspace. With the complexity of global air transport, strong legal frameworks are essential for accident prevention, dispute resolution, and compliance with international aviation standards. It supports smooth airline operations and protects both carriers and passengers. ",
+    "max": 2429
+  },
+  "pages.law.firm.services.aviation.field6": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.aviation.field7": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Aircraft Leasing & Financing",
+    "kind": "text",
+    "default": "Aircraft Leasing & Financing",
+    "max": 2028
+  },
+  "pages.law.firm.services.aviation.field8": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Structuring agreements for aircraft acquisition and leasing.",
+    "kind": "text",
+    "default": "Structuring agreements for aircraft acquisition and leasing. ",
+    "max": 2061
+  },
+  "pages.law.firm.services.aviation.field9": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Regulatory Compliance",
+    "kind": "text",
+    "default": "Regulatory Compliance ",
+    "max": 2022
+  },
+  "pages.law.firm.services.aviation.field10": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Ensuring compliance with Nigerian and international aviation laws.",
+    "kind": "text",
+    "default": "Ensuring compliance with Nigerian and international aviation laws. ",
+    "max": 2067
+  },
+  "pages.law.firm.services.aviation.field11": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Aviation Litigation & Dispute Resolution",
+    "kind": "text",
+    "default": "Aviation Litigation & Dispute Resolution",
+    "max": 2040
+  },
+  "pages.law.firm.services.aviation.field12": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Representing clients in regulatory disputes and contractual disagreements.",
+    "kind": "text",
+    "default": "Representing clients in regulatory disputes and contractual disagreements. ",
+    "max": 2075
+  },
+  "pages.law.firm.services.aviation.field13": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.aviation.field14": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "We provide legal strategies that support seamless aviation operations while",
+    "kind": "text",
+    "default": "We provide legal strategies that support seamless aviation operations while ensuring regulatory compliance and business efficiency. ",
+    "max": 2132
+  },
+  "pages.law.firm.services.aviation.seo.title": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Aviation law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.aviation.seo.description": {
+    "group": "Service page · Aviation",
+    "source": "app/law-firm-services/aviation/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert aviation legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.banking.and.finance.field1": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Banking & Finance Law",
+    "kind": "text",
+    "default": "Banking & Finance Law ",
+    "max": 2022
+  },
+  "pages.law.firm.services.banking.and.finance.field2": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Comprehensive Legal Support for Financial Transactions",
+    "kind": "text",
+    "default": "Comprehensive Legal Support for Financial Transactions ",
+    "max": 2055
+  },
+  "pages.law.firm.services.banking.and.finance.field3": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "K.K. Ubani & Co. provides expert legal services for banking, financial tran",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides expert legal services for banking, financial transactions, and investment management, ensuring compliance with regulatory requirements and industry best practices. ",
+    "max": 2190
+  },
+  "pages.law.firm.services.banking.and.finance.field4": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Why Banking & Finance Law Matters?",
+    "kind": "text",
+    "default": "Why Banking & Finance Law Matters? ",
+    "max": 2035
+  },
+  "pages.law.firm.services.banking.and.finance.field5": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Financial transactions require robust legal frameworks to protect instituti",
+    "kind": "text",
+    "default": "Financial transactions require robust legal frameworks to protect institutions, investors, and individuals. Regulatory non-compliance can lead to significant legal and financial risks. ",
+    "max": 2185
+  },
+  "pages.law.firm.services.banking.and.finance.field6": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.banking.and.finance.field7": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Regulatory Compliance",
+    "kind": "text",
+    "default": "Regulatory Compliance",
+    "max": 2021
+  },
+  "pages.law.firm.services.banking.and.finance.field8": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Advising financial institutions on compliance with Nigerian banking regulat",
+    "kind": "text",
+    "default": "Advising financial institutions on compliance with Nigerian banking regulations. ",
+    "max": 2081
+  },
+  "pages.law.firm.services.banking.and.finance.field9": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Loan & Credit Agreements",
+    "kind": "text",
+    "default": "Loan & Credit Agreements",
+    "max": 2024
+  },
+  "pages.law.firm.services.banking.and.finance.field10": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Structuring and negotiating loan facilities and credit transactions.",
+    "kind": "text",
+    "default": "Structuring and negotiating loan facilities and credit transactions. ",
+    "max": 2069
+  },
+  "pages.law.firm.services.banking.and.finance.field11": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Investment Advisory",
+    "kind": "text",
+    "default": "Investment Advisory",
+    "max": 2019
+  },
+  "pages.law.firm.services.banking.and.finance.field12": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Providing legal support for investments, securities, and asset management.",
+    "kind": "text",
+    "default": "Providing legal support for investments, securities, and asset management. ",
+    "max": 2075
+  },
+  "pages.law.firm.services.banking.and.finance.field13": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.banking.and.finance.field14": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "Our team ensures financial transactions are legally sound, protecting clien",
+    "kind": "text",
+    "default": "Our team ensures financial transactions are legally sound, protecting clients from risks and regulatory penalties. ",
+    "max": 2115
+  },
+  "pages.law.firm.services.banking.and.finance.seo.title": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Banking and finance law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.banking.and.finance.seo.description": {
+    "group": "Service page · Banking And Finance",
+    "source": "app/law-firm-services/banking-and-finance/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert banking and finance legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.commercial.field1": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Commercial Law",
+    "kind": "text",
+    "default": "Commercial Law ",
+    "max": 2015
+  },
+  "pages.law.firm.services.commercial.field2": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Trusted Legal Advisors for Commercial Transactions",
+    "kind": "text",
+    "default": "Trusted Legal Advisors for Commercial Transactions ",
+    "max": 2051
+  },
+  "pages.law.firm.services.commercial.field3": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Our commercial law services ensure smooth business transactions, contract e",
+    "kind": "text",
+    "default": "Our commercial law services ensure smooth business transactions, contract enforcement, and legal risk mitigation for entrepreneurs and corporations. We assist clients in drafting, reviewing, and enforcing contracts, ensuring business operations run seamlessly ",
+    "max": 2260
+  },
+  "pages.law.firm.services.commercial.field4": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Why Commercial Law is Important",
+    "kind": "text",
+    "default": "Why Commercial Law is Important ",
+    "max": 2032
+  },
+  "pages.law.firm.services.commercial.field5": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "A strong commercial legal foundation is crucial for any business. Poorly dr",
+    "kind": "text",
+    "default": "A strong commercial legal foundation is crucial for any business. Poorly drafted contracts, regulatory non-compliance, or business disputes can lead to significant financial losses. Our legal expertise helps businesses safeguard their interests and maintain competitive advantage ",
+    "max": 2280
+  },
+  "pages.law.firm.services.commercial.field6": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.commercial.field7": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Contract Drafting & Negotiation",
+    "kind": "text",
+    "default": "Contract Drafting & Negotiation",
+    "max": 2031
+  },
+  "pages.law.firm.services.commercial.field8": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Creating legally sound agreements to protect business interests.",
+    "kind": "text",
+    "default": "Creating legally sound agreements to protect business interests. ",
+    "max": 2065
+  },
+  "pages.law.firm.services.commercial.field9": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Business Transactions & Dispute Resolution",
+    "kind": "text",
+    "default": "Business Transactions & Dispute Resolution",
+    "max": 2042
+  },
+  "pages.law.firm.services.commercial.field10": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Assisting in corporate deals, supplier agreements, and dispute resolution.",
+    "kind": "text",
+    "default": "Assisting in corporate deals, supplier agreements, and dispute resolution. ",
+    "max": 2075
+  },
+  "pages.law.firm.services.commercial.field11": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Trade & Commerce Regulations",
+    "kind": "text",
+    "default": "Trade & Commerce Regulations",
+    "max": 2028
+  },
+  "pages.law.firm.services.commercial.field12": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Ensuring businesses comply with Nigeria’s commercial and trade laws.",
+    "kind": "text",
+    "default": "Ensuring businesses comply with Nigeria’s commercial and trade laws. ",
+    "max": 2069
+  },
+  "pages.law.firm.services.commercial.field13": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.commercial.field14": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "We offer tailored legal solutions that support businesses in achieving thei",
+    "kind": "text",
+    "default": "We offer tailored legal solutions that support businesses in achieving their commercial objectives while minimizing legal risks. ",
+    "max": 2129
+  },
+  "pages.law.firm.services.commercial.seo.title": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Commercial law service",
+    "max": 160
+  },
+  "pages.law.firm.services.commercial.seo.description": {
+    "group": "Service page · Commercial",
+    "source": "app/law-firm-services/commercial/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert corporate legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.commercial.litigation.field1": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Commercial Litigation",
+    "kind": "text",
+    "default": "Commercial Litigation ",
+    "max": 2022
+  },
+  "pages.law.firm.services.commercial.litigation.field2": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Resolving Business Disputes Efficiently",
+    "kind": "text",
+    "default": "Resolving Business Disputes Efficiently ",
+    "max": 2040
+  },
+  "pages.law.firm.services.commercial.litigation.field3": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Our firm specializes in handling commercial disputes through litigation and",
+    "kind": "text",
+    "default": "Our firm specializes in handling commercial disputes through litigation and alternative dispute resolution (ADR). We represent clients in high-stakes business disputes, contractual breaches, and corporate conflicts ",
+    "max": 2215
+  },
+  "pages.law.firm.services.commercial.litigation.field4": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Why Commercial Litigation Matters",
+    "kind": "text",
+    "default": "Why Commercial Litigation Matters ",
+    "max": 2034
+  },
+  "pages.law.firm.services.commercial.litigation.field5": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Legal disputes can disrupt business operations and damage reputations. Our ",
+    "kind": "text",
+    "default": "Legal disputes can disrupt business operations and damage reputations. Our experienced litigators work to resolve disputes effectively while protecting our clients’ interests. ",
+    "max": 2176
+  },
+  "pages.law.firm.services.commercial.litigation.field6": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.commercial.litigation.field7": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Contract Disputes",
+    "kind": "text",
+    "default": "Contract Disputes",
+    "max": 2017
+  },
+  "pages.law.firm.services.commercial.litigation.field8": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Resolving breaches of business agreements and enforcement of contractual te",
+    "kind": "text",
+    "default": "Resolving breaches of business agreements and enforcement of contractual terms. ",
+    "max": 2080
+  },
+  "pages.law.firm.services.commercial.litigation.field9": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Shareholder & Partnership Disputes",
+    "kind": "text",
+    "default": "Shareholder & Partnership Disputes ",
+    "max": 2035
+  },
+  "pages.law.firm.services.commercial.litigation.field10": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Protecting stakeholder interests in corporate conflicts.",
+    "kind": "text",
+    "default": "Protecting stakeholder interests in corporate conflicts. ",
+    "max": 2057
+  },
+  "pages.law.firm.services.commercial.litigation.field11": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Debt Recovery & Enforcemen",
+    "kind": "text",
+    "default": "Debt Recovery & Enforcemen",
+    "max": 2026
+  },
+  "pages.law.firm.services.commercial.litigation.field12": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Assisting clients in recovering outstanding debts through legal channels.",
+    "kind": "text",
+    "default": "Assisting clients in recovering outstanding debts through legal channels. ",
+    "max": 2074
+  },
+  "pages.law.firm.services.commercial.litigation.field13": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.commercial.litigation.field14": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "We prioritize cost-effective and timely dispute resolution strategies, ensu",
+    "kind": "text",
+    "default": "We prioritize cost-effective and timely dispute resolution strategies, ensuring minimal disruption to business operations. ",
+    "max": 2123
+  },
+  "pages.law.firm.services.commercial.litigation.seo.title": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Commercial Litigation law service",
+    "max": 160
+  },
+  "pages.law.firm.services.commercial.litigation.seo.description": {
+    "group": "Service page · Commercial Litigation",
+    "source": "app/law-firm-services/commercial-litigation/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert Commercial litigation  legal services Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.corporate.field1": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Corporate Law",
+    "kind": "text",
+    "default": "Corporate Law ",
+    "max": 2014
+  },
+  "pages.law.firm.services.corporate.field2": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Expert Corporate Legal Services in Nigeria",
+    "kind": "text",
+    "default": "Expert Corporate Legal Services in Nigeria ",
+    "max": 2043
+  },
+  "pages.law.firm.services.corporate.field3": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "K.K. Ubani & Co. provides comprehensive corporate legal services, ensuring ",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides comprehensive corporate legal services, ensuring businesses operate within the legal framework while optimizing their operations. We help clients navigate complex regulations, mergers, acquisitions, and compliance matters. Our legal team is dedicated to offering innovative solutions that support corporate growth and stability. ",
+    "max": 2355
+  },
+  "pages.law.firm.services.corporate.field4": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Why Corporate Law Matters",
+    "kind": "text",
+    "default": "Why Corporate Law Matters ",
+    "max": 2026
+  },
+  "pages.law.firm.services.corporate.field5": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Corporate law is the backbone of any business entity. Whether you're launch",
+    "kind": "text",
+    "default": "Corporate law is the backbone of any business entity. Whether you're launching a startup, expanding internationally, or restructuring your company, compliance with Nigerian corporate regulations is essential. Failure to adhere to legal requirements can result in penalties, loss of business opportunities, or litigation. ",
+    "max": 2321
+  },
+  "pages.law.firm.services.corporate.field6": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.corporate.field7": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Business Formation & Structuring",
+    "kind": "text",
+    "default": "Business Formation & Structuring",
+    "max": 2032
+  },
+  "pages.law.firm.services.corporate.field8": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "– Guidance on choosing the right business entity and structuring operations",
+    "kind": "text",
+    "default": "– Guidance on choosing the right business entity and structuring operations for tax and legal efficiency. ",
+    "max": 2106
+  },
+  "pages.law.firm.services.corporate.field9": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Corporate Governance & Compliance",
+    "kind": "text",
+    "default": "Corporate Governance & Compliance",
+    "max": 2033
+  },
+  "pages.law.firm.services.corporate.field10": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "– Ensuring businesses adhere to regulatory requirements, board governance b",
+    "kind": "text",
+    "default": "– Ensuring businesses adhere to regulatory requirements, board governance best practices, and corporate policies. ",
+    "max": 2114
+  },
+  "pages.law.firm.services.corporate.field11": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Mergers & Acquisitions",
+    "kind": "text",
+    "default": "Mergers & Acquisitions",
+    "max": 2022
+  },
+  "pages.law.firm.services.corporate.field12": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "– Legal support for mergers, acquisitions, due diligence, and contract nego",
+    "kind": "text",
+    "default": "– Legal support for mergers, acquisitions, due diligence, and contract negotiations. ",
+    "max": 2085
+  },
+  "pages.law.firm.services.corporate.field13": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Regulatory Approvals & Licensing",
+    "kind": "text",
+    "default": "Regulatory Approvals & Licensing",
+    "max": 2032
+  },
+  "pages.law.firm.services.corporate.field14": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "– Assistance in obtaining the necessary business permits and regulatory app",
+    "kind": "text",
+    "default": "– Assistance in obtaining the necessary business permits and regulatory approvals. ",
+    "max": 2083
+  },
+  "pages.law.firm.services.corporate.field15": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.corporate.field16": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "We provide strategic legal solutions tailored to your business needs, ensur",
+    "kind": "text",
+    "default": "We provide strategic legal solutions tailored to your business needs, ensuring full compliance and risk management. Our corporate law experts offer sound legal advice to protect your company's interests and help you achieve sustainable growth. ",
+    "max": 2244
+  },
+  "pages.law.firm.services.corporate.seo.title": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Corporate Law Services",
+    "max": 160
+  },
+  "pages.law.firm.services.corporate.seo.description": {
+    "group": "Service page · Corporate",
+    "source": "app/law-firm-services/corporate/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert corporate legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field1": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Energy & Natural Resources Law",
+    "kind": "text",
+    "default": "Energy & Natural Resources Law ",
+    "max": 2031
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field2": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Legal Solutions for the Energy Sector",
+    "kind": "text",
+    "default": "Legal Solutions for the Energy Sector ",
+    "max": 2038
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field3": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "The energy and natural resources sector is one of the most regulated indust",
+    "kind": "text",
+    "default": "The energy and natural resources sector is one of the most regulated industries in Nigeria. K.K. Ubani & Co. provides specialized legal services to oil, gas, and renewable energy companies, ensuring compliance and smooth project execution. ",
+    "max": 2240
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field4": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Why Energy Law Matters",
+    "kind": "text",
+    "default": "Why Energy Law Matters ",
+    "max": 2023
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field5": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Energy companies face complex regulatory frameworks, contractual obligation",
+    "kind": "text",
+    "default": "Energy companies face complex regulatory frameworks, contractual obligations, and environmental compliance requirements. Legal guidance is crucial for mitigating risks and ensuring project success. ",
+    "max": 2198
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field6": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field7": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Oil & Gas Contracts",
+    "kind": "text",
+    "default": "Oil & Gas Contracts",
+    "max": 2019
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field8": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Drafting and negotiating agreements for exploration, production, and distri",
+    "kind": "text",
+    "default": "Drafting and negotiating agreements for exploration, production, and distribution. ",
+    "max": 2083
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field9": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Energy Regulations & Compliance",
+    "kind": "text",
+    "default": "Energy Regulations & Compliance",
+    "max": 2031
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field10": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Ensuring businesses adhere to government policies and environmental regulat",
+    "kind": "text",
+    "default": "Ensuring businesses adhere to government policies and environmental regulations. ",
+    "max": 2081
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field11": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Renewable Energy Projects",
+    "kind": "text",
+    "default": "Renewable Energy Projects ",
+    "max": 2026
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field12": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Providing legal guidance for solar, wind, and hydro projects.",
+    "kind": "text",
+    "default": "Providing legal guidance for solar, wind, and hydro projects. ",
+    "max": 2062
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field13": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.energy.and.natural.resources.field14": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "We help businesses navigate the regulatory environment and maximize investm",
+    "kind": "text",
+    "default": "We help businesses navigate the regulatory environment and maximize investment returns while ensuring compliance with industry standards. ",
+    "max": 2138
+  },
+  "pages.law.firm.services.energy.and.natural.resources.seo.title": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Energy and Natural Resources",
+    "max": 160
+  },
+  "pages.law.firm.services.energy.and.natural.resources.seo.description": {
+    "group": "Service page · Energy And Natural Resources",
+    "source": "app/law-firm-services/energy-and-natural-resources/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert energy and natural resources legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.entertainment.field1": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Entertainment Law",
+    "kind": "text",
+    "default": "Entertainment Law ",
+    "max": 2018
+  },
+  "pages.law.firm.services.entertainment.field2": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Legal Protection for Creatives and Media Professionals",
+    "kind": "text",
+    "default": "Legal Protection for Creatives and Media Professionals ",
+    "max": 2055
+  },
+  "pages.law.firm.services.entertainment.field3": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "K.K. Ubani & Co. offers specialized legal services for artists, musicians, ",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. offers specialized legal services for artists, musicians, filmmakers, producers, and digital creators, safeguarding intellectual property, managing contracts, and resolving entertainment-related disputes. ",
+    "max": 2222
+  },
+  "pages.law.firm.services.entertainment.field4": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Why Entertainment Law Matters",
+    "kind": "text",
+    "default": "Why Entertainment Law Matters ",
+    "max": 2030
+  },
+  "pages.law.firm.services.entertainment.field5": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "The entertainment industry is fast-paced and highly competitive. Creatives ",
+    "kind": "text",
+    "default": "The entertainment industry is fast-paced and highly competitive. Creatives need legal protection to secure rights, profits, and creative control over their work. From contracts to copyright and licensing, strong legal guidance prevents exploitation and fosters career growth. ",
+    "max": 2276
+  },
+  "pages.law.firm.services.entertainment.field6": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.entertainment.field7": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Contract Drafting & Negotiation",
+    "kind": "text",
+    "default": "Contract Drafting & Negotiation",
+    "max": 2031
+  },
+  "pages.law.firm.services.entertainment.field8": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Crafting agreements for talent, production, licensing, publishing, and endo",
+    "kind": "text",
+    "default": "Crafting agreements for talent, production, licensing, publishing, and endorsement deals. ",
+    "max": 2090
+  },
+  "pages.law.firm.services.entertainment.field9": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Copyright & IP Protection",
+    "kind": "text",
+    "default": "Copyright & IP Protection",
+    "max": 2025
+  },
+  "pages.law.firm.services.entertainment.field10": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Securing intellectual property rights and managing royalties and licensing.",
+    "kind": "text",
+    "default": "Securing intellectual property rights and managing royalties and licensing. ",
+    "max": 2076
+  },
+  "pages.law.firm.services.entertainment.field11": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Dispute Resolution",
+    "kind": "text",
+    "default": "Dispute Resolution ",
+    "max": 2019
+  },
+  "pages.law.firm.services.entertainment.field12": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Resolving conflicts related to ownership, royalties, and content distributi",
+    "kind": "text",
+    "default": "Resolving conflicts related to ownership, royalties, and content distribution. ",
+    "max": 2079
+  },
+  "pages.law.firm.services.entertainment.field13": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.entertainment.field14": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "We understand the unique legal challenges of the entertainment industry and",
+    "kind": "text",
+    "default": "We understand the unique legal challenges of the entertainment industry and provide creatives with the legal tools to protect their work, manage contracts confidently, and thrive in their careers. ",
+    "max": 2197
+  },
+  "pages.law.firm.services.entertainment.seo.title": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Entertainment law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.entertainment.seo.description": {
+    "group": "Service page · Entertainment",
+    "source": "app/law-firm-services/entertainment/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert Entertainment legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.foreign.investment.field1": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Foreign Investment Law",
+    "kind": "text",
+    "default": "Foreign Investment Law ",
+    "max": 2023
+  },
+  "pages.law.firm.services.foreign.investment.field2": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Legal Solutions for International Investors",
+    "kind": "text",
+    "default": "Legal Solutions for International Investors ",
+    "max": 2044
+  },
+  "pages.law.firm.services.foreign.investment.field3": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "We assist foreign investors in navigating Nigerian business laws, ensuring ",
+    "kind": "text",
+    "default": "We assist foreign investors in navigating Nigerian business laws, ensuring seamless market entry, regulatory compliance, and risk mitigation. ",
+    "max": 2142
+  },
+  "pages.law.firm.services.foreign.investment.field4": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Why Foreign Investment Law Matters?",
+    "kind": "text",
+    "default": "Why Foreign Investment Law Matters? ",
+    "max": 2036
+  },
+  "pages.law.firm.services.foreign.investment.field5": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "International investments require a strong legal foundation to prevent regu",
+    "kind": "text",
+    "default": "International investments require a strong legal foundation to prevent regulatory issues and optimize business operations. ",
+    "max": 2123
+  },
+  "pages.law.firm.services.foreign.investment.field6": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.foreign.investment.field7": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Market Entry Strategy",
+    "kind": "text",
+    "default": "Market Entry Strategy",
+    "max": 2021
+  },
+  "pages.law.firm.services.foreign.investment.field8": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Structuring investments for legal and tax efficiency.",
+    "kind": "text",
+    "default": "Structuring investments for legal and tax efficiency. ",
+    "max": 2054
+  },
+  "pages.law.firm.services.foreign.investment.field9": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Regulatory Compliance",
+    "kind": "text",
+    "default": "Regulatory Compliance ",
+    "max": 2022
+  },
+  "pages.law.firm.services.foreign.investment.field10": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Navigating foreign direct investment laws.",
+    "kind": "text",
+    "default": "Navigating foreign direct investment laws. ",
+    "max": 2043
+  },
+  "pages.law.firm.services.foreign.investment.field11": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Joint Ventures & Mergers",
+    "kind": "text",
+    "default": "Joint Ventures & Mergers",
+    "max": 2024
+  },
+  "pages.law.firm.services.foreign.investment.field12": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Structuring profitable partnerships and acquisitions.",
+    "kind": "text",
+    "default": "Structuring profitable partnerships and acquisitions. ",
+    "max": 2054
+  },
+  "pages.law.firm.services.foreign.investment.field13": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.foreign.investment.field14": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "Our legal team ensures secure investments and regulatory compliance, making",
+    "kind": "text",
+    "default": "Our legal team ensures secure investments and regulatory compliance, making Nigeria’s business environment accessible to global investors ",
+    "max": 2138
+  },
+  "pages.law.firm.services.foreign.investment.seo.title": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Foreign investment law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.foreign.investment.seo.description": {
+    "group": "Service page · Foreign Investment",
+    "source": "app/law-firm-services/foreign-investment/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert foreign investment legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.intellectual.property.field1": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Intellectual Property Law",
+    "kind": "text",
+    "default": "Intellectual Property Law ",
+    "max": 2026
+  },
+  "pages.law.firm.services.intellectual.property.field2": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Protecting Your Innovations and Creative Works",
+    "kind": "text",
+    "default": "Protecting Your Innovations and Creative Works ",
+    "max": 2047
+  },
+  "pages.law.firm.services.intellectual.property.field3": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "At K.K. Ubani & Co., we help businesses and individuals secure and enforce ",
+    "kind": "text",
+    "default": "At K.K. Ubani & Co., we help businesses and individuals secure and enforce their intellectual property rights. Our legal team specializes in trademarks, copyrights, patents, and trade secrets, ensuring our clients maintain exclusive control over their innovations and brand assets. ",
+    "max": 2282
+  },
+  "pages.law.firm.services.intellectual.property.field4": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Why Intellectual Property Law Matters?",
+    "kind": "text",
+    "default": "Why Intellectual Property Law Matters? ",
+    "max": 2039
+  },
+  "pages.law.firm.services.intellectual.property.field5": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Intellectual property (IP) is a valuable asset for businesses and creatives",
+    "kind": "text",
+    "default": "Intellectual property (IP) is a valuable asset for businesses and creatives. Unauthorized use or infringement can lead to financial losses, brand dilution, and competitive disadvantages. Proper IP protection safeguards your work, ensuring legal exclusivity and monetization rights ",
+    "max": 2281
+  },
+  "pages.law.firm.services.intellectual.property.field6": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.intellectual.property.field7": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Trademark Registration & Enforcement",
+    "kind": "text",
+    "default": "Trademark Registration & Enforcement",
+    "max": 2036
+  },
+  "pages.law.firm.services.intellectual.property.field8": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Securing brand identity through trademark filings, renewals, and litigation",
+    "kind": "text",
+    "default": "Securing brand identity through trademark filings, renewals, and litigation against infringers. ",
+    "max": 2096
+  },
+  "pages.law.firm.services.intellectual.property.field9": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Patent Protection & Licensing",
+    "kind": "text",
+    "default": "Patent Protection & Licensing",
+    "max": 2029
+  },
+  "pages.law.firm.services.intellectual.property.field10": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Assisting inventors in patent applications, licensing agreements, and infri",
+    "kind": "text",
+    "default": "Assisting inventors in patent applications, licensing agreements, and infringement cases. ",
+    "max": 2090
+  },
+  "pages.law.firm.services.intellectual.property.field11": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Copyright Law & Creative Rights",
+    "kind": "text",
+    "default": "Copyright Law & Creative Rights",
+    "max": 2031
+  },
+  "pages.law.firm.services.intellectual.property.field12": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Protecting original works, including literature, music, software, and artis",
+    "kind": "text",
+    "default": "Protecting original works, including literature, music, software, and artistic creations. ",
+    "max": 2090
+  },
+  "pages.law.firm.services.intellectual.property.field13": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Trade Secrets & Confidentiality Agreements",
+    "kind": "text",
+    "default": "Trade Secrets & Confidentiality Agreements ",
+    "max": 2043
+  },
+  "pages.law.firm.services.intellectual.property.field14": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Safeguarding proprietary business information through legally binding agree",
+    "kind": "text",
+    "default": "Safeguarding proprietary business information through legally binding agreements. ",
+    "max": 2082
+  },
+  "pages.law.firm.services.intellectual.property.field15": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.intellectual.property.field16": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "We provide expert legal guidance in securing, enforcing, and monetizing int",
+    "kind": "text",
+    "default": "We provide expert legal guidance in securing, enforcing, and monetizing intellectual property rights, ensuring our clients maintain a competitive edge in their industries. ",
+    "max": 2172
+  },
+  "pages.law.firm.services.intellectual.property.seo.title": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Intellectual property law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.intellectual.property.seo.description": {
+    "group": "Service page · Intellectual Property",
+    "source": "app/law-firm-services/intellectual-property/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert Intellectual property services in Lagos, Port Harcourt and Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.labour.employment.field1": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Labour & Employment Law",
+    "kind": "text",
+    "default": "Labour & Employment Law ",
+    "max": 2024
+  },
+  "pages.law.firm.services.labour.employment.field2": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Protecting Employers and Employees",
+    "kind": "text",
+    "default": "Protecting Employers and Employees ",
+    "max": 2035
+  },
+  "pages.law.firm.services.labour.employment.field3": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "K.K. Ubani & Co. provides expert legal guidance on employment rights, workp",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides expert legal guidance on employment rights, workplace policies, and labor disputes, ensuring compliance with Nigerian labor laws. ",
+    "max": 2156
+  },
+  "pages.law.firm.services.labour.employment.field4": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Why Labour Law Matters?",
+    "kind": "text",
+    "default": "Why Labour Law Matters? ",
+    "max": 2024
+  },
+  "pages.law.firm.services.labour.employment.field5": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "A well-structured employment framework is essential for maintaining a produ",
+    "kind": "text",
+    "default": "A well-structured employment framework is essential for maintaining a productive work environment. Employers must adhere to labor laws regarding hiring, termination, employee rights, and workplace disputes. ",
+    "max": 2207
+  },
+  "pages.law.firm.services.labour.employment.field6": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.labour.employment.field7": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Employment Contracts & Policies",
+    "kind": "text",
+    "default": "Employment Contracts & Policies",
+    "max": 2031
+  },
+  "pages.law.firm.services.labour.employment.field8": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Drafting and reviewing contracts, employee handbooks, and workplace policie",
+    "kind": "text",
+    "default": "Drafting and reviewing contracts, employee handbooks, and workplace policies. ",
+    "max": 2078
+  },
+  "pages.law.firm.services.labour.employment.field9": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Workplace Dispute Resolution",
+    "kind": "text",
+    "default": "Workplace Dispute Resolution",
+    "max": 2028
+  },
+  "pages.law.firm.services.labour.employment.field10": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Handling wrongful termination, discrimination claims, and labor disputes.",
+    "kind": "text",
+    "default": "Handling wrongful termination, discrimination claims, and labor disputes. ",
+    "max": 2074
+  },
+  "pages.law.firm.services.labour.employment.field11": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Regulatory Compliance",
+    "kind": "text",
+    "default": "Regulatory Compliance",
+    "max": 2021
+  },
+  "pages.law.firm.services.labour.employment.field12": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Ensuring businesses comply with Nigerian labor laws and international labor",
+    "kind": "text",
+    "default": "Ensuring businesses comply with Nigerian labor laws and international labor standards. ",
+    "max": 2087
+  },
+  "pages.law.firm.services.labour.employment.field13": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.labour.employment.field14": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "We provide strategic legal advice to businesses and employees, ensuring fai",
+    "kind": "text",
+    "default": "We provide strategic legal advice to businesses and employees, ensuring fair labor practices and workplace stability. ",
+    "max": 2118
+  },
+  "pages.law.firm.services.labour.employment.seo.title": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Labour and Employment law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.labour.employment.seo.description": {
+    "group": "Service page · Labour Employment",
+    "source": "app/law-firm-services/labour-employment/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert labour and employment services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.seo.title": {
+    "group": "Service page · Overview",
+    "source": "app/law-firm-services/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Law Firm Services",
+    "max": 160
+  },
+  "pages.law.firm.services.seo.description": {
+    "group": "Service page · Overview",
+    "source": "app/law-firm-services/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Number 1 law firm services with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.project.finance.field1": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Project Finance Law",
+    "kind": "text",
+    "default": "Project Finance Law ",
+    "max": 2020
+  },
+  "pages.law.firm.services.project.finance.field2": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Legal Advisory for Large-Scale Projects",
+    "kind": "text",
+    "default": "Legal Advisory for Large-Scale Projects ",
+    "max": 2040
+  },
+  "pages.law.firm.services.project.finance.field3": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "We provide legal support for infrastructure projects, public-private partne",
+    "kind": "text",
+    "default": "We provide legal support for infrastructure projects, public-private partnerships (PPP), and private-sector investments in Nigeria. ",
+    "max": 2132
+  },
+  "pages.law.firm.services.project.finance.field4": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Why Project Finance Matters",
+    "kind": "text",
+    "default": "Why Project Finance Matters ",
+    "max": 2028
+  },
+  "pages.law.firm.services.project.finance.field5": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Large-scale infrastructure projects require careful legal structuring to mi",
+    "kind": "text",
+    "default": "Large-scale infrastructure projects require careful legal structuring to mitigate risks, ensure compliance, and secure funding. ",
+    "max": 2128
+  },
+  "pages.law.firm.services.project.finance.field6": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.project.finance.field7": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "PPP Agreements",
+    "kind": "text",
+    "default": "PPP Agreements",
+    "max": 2014
+  },
+  "pages.law.firm.services.project.finance.field8": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Structuring partnerships between public and private entities.",
+    "kind": "text",
+    "default": "Structuring partnerships between public and private entities. ",
+    "max": 2062
+  },
+  "pages.law.firm.services.project.finance.field9": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Risk Assessment & Mitigation",
+    "kind": "text",
+    "default": "Risk Assessment & Mitigation ",
+    "max": 2029
+  },
+  "pages.law.firm.services.project.finance.field10": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Identifying and minimizing legal risks in project financing.",
+    "kind": "text",
+    "default": "Identifying and minimizing legal risks in project financing. ",
+    "max": 2061
+  },
+  "pages.law.firm.services.project.finance.field11": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Regulatory Compliance",
+    "kind": "text",
+    "default": "Regulatory Compliance",
+    "max": 2021
+  },
+  "pages.law.firm.services.project.finance.field12": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Ensuring projects meet Nigerian and international legal standards.",
+    "kind": "text",
+    "default": "Ensuring projects meet Nigerian and international legal standards. ",
+    "max": 2067
+  },
+  "pages.law.firm.services.project.finance.field13": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.project.finance.field14": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "We provide comprehensive legal solutions to support successful project exec",
+    "kind": "text",
+    "default": "We provide comprehensive legal solutions to support successful project execution and financing. ",
+    "max": 2096
+  },
+  "pages.law.firm.services.project.finance.seo.title": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Project Finance law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.project.finance.seo.description": {
+    "group": "Service page · Project Finance",
+    "source": "app/law-firm-services/project-finance/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert  project finance legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.real.estate.field1": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Real Estate Law",
+    "kind": "text",
+    "default": "Real Estate Law ",
+    "max": 2016
+  },
+  "pages.law.firm.services.real.estate.field2": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Legal Expertise in Property Transactions and Real Estate Development",
+    "kind": "text",
+    "default": "Legal Expertise in Property Transactions and Real Estate Development ",
+    "max": 2069
+  },
+  "pages.law.firm.services.real.estate.field3": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "K.K. Ubani & Co. provides legal services in real estate transactions, prope",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides legal services in real estate transactions, property acquisitions, lease agreements, land use, and development projects. Our firm ensures that real estate dealings comply with Nigerian property laws while safeguarding our clients’ investments. ",
+    "max": 2270
+  },
+  "pages.law.firm.services.real.estate.field4": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Why Real Estate Law Matters?",
+    "kind": "text",
+    "default": "Why Real Estate Law Matters? ",
+    "max": 2029
+  },
+  "pages.law.firm.services.real.estate.field5": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Real estate investments require thorough legal scrutiny to avoid disputes, ",
+    "kind": "text",
+    "default": "Real estate investments require thorough legal scrutiny to avoid disputes, fraud, and regulatory issues. Whether buying, selling, leasing, or developing property, legal expertise is essential to ensure a seamless process and avoid litigation. ",
+    "max": 2243
+  },
+  "pages.law.firm.services.real.estate.field6": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.real.estate.field7": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Property Acquisition & Sales",
+    "kind": "text",
+    "default": "Property Acquisition & Sales",
+    "max": 2028
+  },
+  "pages.law.firm.services.real.estate.field8": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Assisting individuals and businesses in purchasing and selling real estate ",
+    "kind": "text",
+    "default": "Assisting individuals and businesses in purchasing and selling real estate properties. ",
+    "max": 2087
+  },
+  "pages.law.firm.services.real.estate.field9": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Lease & Tenancy Agreements",
+    "kind": "text",
+    "default": "Lease & Tenancy Agreements",
+    "max": 2026
+  },
+  "pages.law.firm.services.real.estate.field10": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Drafting and reviewing lease contracts for residential, commercial, and ind",
+    "kind": "text",
+    "default": "Drafting and reviewing lease contracts for residential, commercial, and industrial properties. ",
+    "max": 2095
+  },
+  "pages.law.firm.services.real.estate.field11": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Real Estate Development & Land Use",
+    "kind": "text",
+    "default": "Real Estate Development & Land Use",
+    "max": 2034
+  },
+  "pages.law.firm.services.real.estate.field12": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Providing legal support for large-scale developments, zoning laws, and land",
+    "kind": "text",
+    "default": "Providing legal support for large-scale developments, zoning laws, and land use regulations. ",
+    "max": 2093
+  },
+  "pages.law.firm.services.real.estate.field13": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Mortgage & Financing Agreements",
+    "kind": "text",
+    "default": "Mortgage & Financing Agreements",
+    "max": 2031
+  },
+  "pages.law.firm.services.real.estate.field14": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Structuring legal frameworks for property financing, including mortgages an",
+    "kind": "text",
+    "default": "Structuring legal frameworks for property financing, including mortgages and loans. ",
+    "max": 2084
+  },
+  "pages.law.firm.services.real.estate.field15": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Title Verification & Due Diligence",
+    "kind": "text",
+    "default": "Title Verification & Due Diligence",
+    "max": 2034
+  },
+  "pages.law.firm.services.real.estate.field16": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Conducting thorough legal checks to verify property ownership and prevent l",
+    "kind": "text",
+    "default": "Conducting thorough legal checks to verify property ownership and prevent land disputes. ",
+    "max": 2089
+  },
+  "pages.law.firm.services.real.estate.field17": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.real.estate.field18": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "We help clients navigate the complexities of real estate transactions with ",
+    "kind": "text",
+    "default": "We help clients navigate the complexities of real estate transactions with strategic legal advice, ensuring compliance, security, and profitability in every deal. ",
+    "max": 2163
+  },
+  "pages.law.firm.services.real.estate.seo.title": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Real estate law service | K.K. Ubani & Co. ",
+    "max": 160
+  },
+  "pages.law.firm.services.real.estate.seo.description": {
+    "group": "Service page · Real Estate",
+    "source": "app/law-firm-services/real-estate/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert real estate legal services in Lagos, Port Harcourt and Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.shipping.and.maritime.field1": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Shipping & Maritime Law",
+    "kind": "text",
+    "default": "Shipping & Maritime Law ",
+    "max": 2024
+  },
+  "pages.law.firm.services.shipping.and.maritime.field2": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Legal Solutions for the Maritime Industry",
+    "kind": "text",
+    "default": "Legal Solutions for the Maritime Industry ",
+    "max": 2042
+  },
+  "pages.law.firm.services.shipping.and.maritime.field3": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "K.K. Ubani & Co. provides expert legal services for shipping, admiralty, an",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides expert legal services for shipping, admiralty, and maritime transactions, ensuring compliance with international and Nigerian maritime laws. ",
+    "max": 2167
+  },
+  "pages.law.firm.services.shipping.and.maritime.field4": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Why Shipping Law Matters",
+    "kind": "text",
+    "default": "Why Shipping Law Matters ",
+    "max": 2025
+  },
+  "pages.law.firm.services.shipping.and.maritime.field5": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Large-scale infrastructure projects require careful legal structuring to mi",
+    "kind": "text",
+    "default": "Large-scale infrastructure projects require careful legal structuring to mitigate risks, ensure compliance, and secure funding. ",
+    "max": 2128
+  },
+  "pages.law.firm.services.shipping.and.maritime.field6": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.shipping.and.maritime.field7": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Admiralty & Maritime Litigation",
+    "kind": "text",
+    "default": "Admiralty & Maritime Litigation",
+    "max": 2031
+  },
+  "pages.law.firm.services.shipping.and.maritime.field8": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Representing clients in shipping disputes and vessel claims",
+    "kind": "text",
+    "default": "Representing clients in shipping disputes and vessel claims ",
+    "max": 2060
+  },
+  "pages.law.firm.services.shipping.and.maritime.field9": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Cargo & Freight Disputes",
+    "kind": "text",
+    "default": "Cargo & Freight Disputes ",
+    "max": 2025
+  },
+  "pages.law.firm.services.shipping.and.maritime.field10": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Handling legal issues related to cargo damage and freight claims.",
+    "kind": "text",
+    "default": "Handling legal issues related to cargo damage and freight claims. ",
+    "max": 2066
+  },
+  "pages.law.firm.services.shipping.and.maritime.field11": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Ship Financing & Registration",
+    "kind": "text",
+    "default": "Ship Financing & Registration",
+    "max": 2029
+  },
+  "pages.law.firm.services.shipping.and.maritime.field12": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Assisting with vessel acquisition, leasing, and compliance.",
+    "kind": "text",
+    "default": "Assisting with vessel acquisition, leasing, and compliance. ",
+    "max": 2060
+  },
+  "pages.law.firm.services.shipping.and.maritime.field13": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.shipping.and.maritime.field14": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "Our maritime law experts provide strategic legal support to shipping compan",
+    "kind": "text",
+    "default": "Our maritime law experts provide strategic legal support to shipping companies, vessel owners, and port operators, ensuring compliance and business protection. ",
+    "max": 2160
+  },
+  "pages.law.firm.services.shipping.and.maritime.seo.title": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Shipping and maritime law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.shipping.and.maritime.seo.description": {
+    "group": "Service page · Shipping And Maritime",
+    "source": "app/law-firm-services/shipping-and-maritime/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert shipping and maritime legal services Lagos, Port Harcourt and Abuja in Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.taxation.field1": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Taxation Law",
+    "kind": "text",
+    "default": "Taxation Law",
+    "max": 2012
+  },
+  "pages.law.firm.services.taxation.field2": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Tax Compliance and Advisory Services",
+    "kind": "text",
+    "default": "Tax Compliance and Advisory Services ",
+    "max": 2037
+  },
+  "pages.law.firm.services.taxation.field3": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "K.K. Ubani & Co. provides expert legal support in taxation, ensuring busine",
+    "kind": "text",
+    "default": "K.K. Ubani & Co. provides expert legal support in taxation, ensuring businesses comply with Nigerian tax laws while optimizing tax efficiency. We assist in tax structuring, compliance, audits, and dispute resolution. ",
+    "max": 2217
+  },
+  "pages.law.firm.services.taxation.field4": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Why Taxation Law Matters",
+    "kind": "text",
+    "default": "Why Taxation Law Matters ",
+    "max": 2025
+  },
+  "pages.law.firm.services.taxation.field5": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Tax laws in Nigeria are constantly evolving, and non-compliance can lead to",
+    "kind": "text",
+    "default": "Tax laws in Nigeria are constantly evolving, and non-compliance can lead to significant penalties. Businesses must navigate corporate taxes, VAT, and personal tax obligations while maximizing deductions and exemptions. ",
+    "max": 2219
+  },
+  "pages.law.firm.services.taxation.field6": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.taxation.field7": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Tax Compliance & Advisory",
+    "kind": "text",
+    "default": "Tax Compliance & Advisory",
+    "max": 2025
+  },
+  "pages.law.firm.services.taxation.field8": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Helping businesses stay compliant with Nigerian tax regulations.",
+    "kind": "text",
+    "default": "Helping businesses stay compliant with Nigerian tax regulations. ",
+    "max": 2065
+  },
+  "pages.law.firm.services.taxation.field9": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Tax Dispute Resolution",
+    "kind": "text",
+    "default": "Tax Dispute Resolution ",
+    "max": 2023
+  },
+  "pages.law.firm.services.taxation.field10": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Representing clients in tax audits, appeals, and litigation.",
+    "kind": "text",
+    "default": "Representing clients in tax audits, appeals, and litigation. ",
+    "max": 2061
+  },
+  "pages.law.firm.services.taxation.field11": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Corporate Tax Structuring",
+    "kind": "text",
+    "default": "Corporate Tax Structuring",
+    "max": 2025
+  },
+  "pages.law.firm.services.taxation.field12": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Advising businesses on tax-efficient structures for growth and sustainabili",
+    "kind": "text",
+    "default": "Advising businesses on tax-efficient structures for growth and sustainability. ",
+    "max": 2079
+  },
+  "pages.law.firm.services.taxation.field13": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.taxation.field14": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "We help businesses reduce tax liabilities while ensuring full compliance wi",
+    "kind": "text",
+    "default": "We help businesses reduce tax liabilities while ensuring full compliance with Nigeria’s taxation laws ",
+    "max": 2102
+  },
+  "pages.law.firm.services.taxation.seo.title": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Taxation law service",
+    "max": 160
+  },
+  "pages.law.firm.services.taxation.seo.description": {
+    "group": "Service page · Taxation",
+    "source": "app/law-firm-services/taxation/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert taxation legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.law.firm.services.telecommunication.field1": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Telecommunication Law",
+    "kind": "text",
+    "default": "Telecommunication Law ",
+    "max": 2022
+  },
+  "pages.law.firm.services.telecommunication.field2": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Legal Support for Telecom Companies",
+    "kind": "text",
+    "default": "Legal Support for Telecom Companies ",
+    "max": 2036
+  },
+  "pages.law.firm.services.telecommunication.field3": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "With the increasing reliance on digital communication, the telecommunicatio",
+    "kind": "text",
+    "default": "With the increasing reliance on digital communication, the telecommunications industry faces unique regulatory challenges. We provide expert legal guidance on licensing, compliance, and dispute resolution in Nigeria’s telecom sector. ",
+    "max": 2234
+  },
+  "pages.law.firm.services.telecommunication.field4": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Why Telecommunication Law is Important",
+    "kind": "text",
+    "default": "Why Telecommunication Law is Important ",
+    "max": 2039
+  },
+  "pages.law.firm.services.telecommunication.field5": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Important Telecommunication law ensures fair competition, protects consumer",
+    "kind": "text",
+    "default": "Important Telecommunication law ensures fair competition, protects consumer rights, and regulates licensing and spectrum use. It plays a key role in national security, emergency services, and the development of digital infrastructure. With telecom being the backbone of modern communication and commerce, clear legal frameworks are essential for innovation, investment, and connectivity. ",
+    "max": 2388
+  },
+  "pages.law.firm.services.telecommunication.field6": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Our Expertise",
+    "kind": "text",
+    "default": "Our Expertise ",
+    "max": 2014
+  },
+  "pages.law.firm.services.telecommunication.field7": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Licensing & Regulatory Compliance",
+    "kind": "text",
+    "default": "Licensing & Regulatory Compliance ",
+    "max": 2034
+  },
+  "pages.law.firm.services.telecommunication.field8": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Helping businesses secure necessary telecom licenses and approvals.",
+    "kind": "text",
+    "default": "Helping businesses secure necessary telecom licenses and approvals. ",
+    "max": 2068
+  },
+  "pages.law.firm.services.telecommunication.field9": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Contract Negotiations",
+    "kind": "text",
+    "default": "Contract Negotiations",
+    "max": 2021
+  },
+  "pages.law.firm.services.telecommunication.field10": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Drafting agreements for infrastructure development and service provisions.",
+    "kind": "text",
+    "default": "Drafting agreements for infrastructure development and service provisions. ",
+    "max": 2075
+  },
+  "pages.law.firm.services.telecommunication.field11": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Consumer Protection & Disputes",
+    "kind": "text",
+    "default": "Consumer Protection & Disputes",
+    "max": 2030
+  },
+  "pages.law.firm.services.telecommunication.field12": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Resolving telecom-related disputes and regulatory issues.",
+    "kind": "text",
+    "default": "Resolving telecom-related disputes and regulatory issues. ",
+    "max": 2058
+  },
+  "pages.law.firm.services.telecommunication.field13": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "Why Choose Us?",
+    "kind": "text",
+    "default": "Why Choose Us? ",
+    "max": 2015
+  },
+  "pages.law.firm.services.telecommunication.field14": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "We have extensive knowledge of Nigeria’s telecommunications landscape, ensu",
+    "kind": "text",
+    "default": "We have extensive knowledge of Nigeria’s telecommunications landscape, ensuring compliance with industry regulations and protecting business interests. ",
+    "max": 2152
+  },
+  "pages.law.firm.services.telecommunication.seo.title": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Telecommunication law service ",
+    "max": 160
+  },
+  "pages.law.firm.services.telecommunication.seo.description": {
+    "group": "Service page · Telecommunication",
+    "source": "app/law-firm-services/telecommunication/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Expert telecommunication legal services in Lagos, Port Harcourt and Abuja Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.our.attorneys.emeka.peters.field1": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "src: /our-attorneys/emeka.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/emeka.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.emeka.peters.field2": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "alt: Emeka M. Peters",
+    "kind": "text",
+    "default": "Emeka M. Peters",
+    "max": 2015
+  },
+  "pages.our.attorneys.emeka.peters.field3": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "Emeka M. Peters",
+    "kind": "text",
+    "default": "Emeka M. Peters",
+    "max": 2015
+  },
+  "pages.our.attorneys.emeka.peters.field4": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "Senior associate",
+    "kind": "text",
+    "default": "Senior associate ",
+    "max": 2017
+  },
+  "pages.our.attorneys.emeka.peters.field5": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "Emeka is a Member of the Firm’s Property Law and Real estate Practice. He i",
+    "kind": "text",
+    "default": "Emeka is a Member of the Firm’s Property Law and Real estate Practice. He is an ambitious lawyer who constantly seeks and enjoys practical challenges in the legal profession. He has a special penchant for Real Estate, Estate Management and general Property Law. ",
+    "max": 2262
+  },
+  "pages.our.attorneys.emeka.peters.field6": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "His core areas of practice also include Energy Law, Business Law, Aviation ",
+    "kind": "text",
+    "default": "His core areas of practice also include Energy Law, Business Law, Aviation Law, Debt Recovery, Banking and General Commercial Law, Alternative Dispute Resolution, Intellectual Property Law as well as Communication Law. Since he joined the Firm, he has worked on several litigation matters in adverse areas of practice. ",
+    "max": 2319
+  },
+  "pages.our.attorneys.emeka.peters.field7": {
+    "group": "Attorney page · Emeka Peters",
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "label": "He obtained his LL.B. from the University of Uyo, Uyo, Akwa Ibom State, and",
+    "kind": "text",
+    "default": "He obtained his LL.B. from the University of Uyo, Uyo, Akwa Ibom State, and his B.L., Nigerian Law School Abuja. He is also a memeber of the Nigerian Bar Association, Port Harcourt Branch. ",
+    "max": 2189
+  },
+  "pages.our.attorneys.james.uro.field1": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "src: /our-attorneys/james.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/james.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.james.uro.field2": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "alt: Emeka M. Peters",
+    "kind": "text",
+    "default": "Emeka M. Peters",
+    "max": 2015
+  },
+  "pages.our.attorneys.james.uro.field3": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "James E.Uro",
+    "kind": "text",
+    "default": "James E.Uro",
+    "max": 2011
+  },
+  "pages.our.attorneys.james.uro.field4": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "Litigation manager",
+    "kind": "text",
+    "default": "Litigation manager ",
+    "max": 2019
+  },
+  "pages.our.attorneys.james.uro.field5": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "James E. Uro, Esq. is a highly accomplished legal professional with a stron",
+    "kind": "text",
+    "default": "James E. Uro, Esq. is a highly accomplished legal professional with a strong academic background and a passion for the practice of law. Graduating with First Class Honours from the Nigerian Law School, he has consistently demonstrated exceptional skills and expertise in various areas of law, particularly in Corporate/Commercial Law, Asset Recovery, Energy Law, Competition Law, Tax Law, Property Law, Election Petition, and Litigation. He holds a Master's Degree in Corporate/Commercial Law. ",
+    "max": 2494
+  },
+  "pages.our.attorneys.james.uro.field6": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "James E. Uro is known for his dedication to his clients' interests, meticul",
+    "kind": "text",
+    "default": "James E. Uro is known for his dedication to his clients' interests, meticulous attention to detail, and ability to unravel complex legal challenges. He is an avid learner who stays updated with the latest legal developments and continuously seeks innovative approaches to provide effective legal solutions. ",
+    "max": 2307
+  },
+  "pages.our.attorneys.james.uro.field7": {
+    "group": "Attorney page · James Uro",
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "label": "With his extensive knowledge and expertise, James E. Uro, Esq. is a valuabl",
+    "kind": "text",
+    "default": "With his extensive knowledge and expertise, James E. Uro, Esq. is a valuable asset to any legal team or organization seeking a skilled and versatile legal professional. ",
+    "max": 2169
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field1": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "src: /kennethkelechiubani.PNG",
+    "kind": "image",
+    "default": "/kennethkelechiubani.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field2": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "alt: Kenneth Kelechi Ubani",
+    "kind": "text",
+    "default": "Kenneth Kelechi Ubani",
+    "max": 2021
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field3": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "Kenneth K. Ubani",
+    "kind": "text",
+    "default": "Kenneth K. Ubani ",
+    "max": 2017
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field4": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "Principal Partner",
+    "kind": "text",
+    "default": "Principal Partner ",
+    "max": 2018
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field5": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "Kenneth is a member of the International Bar Association (IBA) and the Nige",
+    "kind": "text",
+    "default": "Kenneth is a member of the International Bar Association (IBA) and the Nigerian Bar Association NBA. ",
+    "max": 2101
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field6": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "He is an astute commercial litigator who holds over two decades of erudite ",
+    "kind": "text",
+    "default": "He is an astute commercial litigator who holds over two decades of erudite expertise and experience in the legal practice drawn from commercial transactions and dispute resolution in Nigeria Prior to joining the firm, he was an Associate and later Deputy Managing Solicitor at T. O. Waamah & Associates between 2003 -2008, and Partner at Sterling Law Alliance ",
+    "max": 2360
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field7": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "He has variously applied his skills and expertise to the betterment of his ",
+    "kind": "text",
+    "default": "He has variously applied his skills and expertise to the betterment of his clients’ businesses. He was recently involved in a claim of about =N3.5B= involving the Niger Delta Development Commission (NDDC). He was also recently involved in a debt recovery claim to the tune of over =N20B= involving Asset Management Corporation of Nigeria (AMCON) against her debtors. He has represented various financial institutions including Central Bank of Nigeria (CBN), defunct Skye Bank, Nigeria Deposit Insurance Corporation (NDIC) etc. Added to his archives are representations for the Federal and State Government agencies including Nigerian National Petroleum Corporation (NNPC), Port Harcourt Refining Company Limited, Pipeline Product Marketing Company Limited etc. He has also been involved in a revenue case between the Rivers State Government and the Federal Government of Nigeria. ",
+    "max": 2880
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.field8": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "He has also negotiated and documented energy deals between a foremost Energ",
+    "kind": "text",
+    "default": "He has also negotiated and documented energy deals between a foremost Energy Company in the South/South part of Nigeria and has also been part of resolving commercial and labour disputes arising from such deals either by Alternative Dispute Resolution or Litigation. He had also recently represented the foremost gas exploration company in Nigeria, Nigeria Liquified Natural Gas Limited (NLNG) from the trial Court to the Supreme Court. He therefore, possess vast degree of commercial law experiences which he will deploy to our clients’ advantage. ",
+    "max": 2549
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.seo.title": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Kenneth K. Ubani - Principal Partner ",
+    "max": 160
+  },
+  "pages.our.attorneys.kenneth.kelechi.ubani.seo.description": {
+    "group": "Attorney page · Kenneth Kelechi Ubani",
+    "source": "app/our-attorneys/kenneth-kelechi-ubani/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "He has also been involved in a revenue case between the Rivers State Government and the Federal Government of Nigeria. ",
+    "max": 500
+  },
+  "pages.our.attorneys.field1": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "name: Kenneth K. Ubani",
+    "kind": "text",
+    "default": "Kenneth K. Ubani",
+    "max": 2016
+  },
+  "pages.our.attorneys.field2": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "office: Principal Partner",
+    "kind": "text",
+    "default": "Principal Partner",
+    "max": 2017
+  },
+  "pages.our.attorneys.field3": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "image: /our-attorneys/kennethkelechiubani.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/kennethkelechiubani.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.field4": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "bioUrl: /our-attorneys/kenneth-kelechi-ubani",
+    "kind": "link",
+    "default": "/our-attorneys/kenneth-kelechi-ubani",
+    "max": 1000
+  },
+  "pages.our.attorneys.field5": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "intro: Kenneth K. Ubani is a seasoned corporate lawyer with 15+ yea",
+    "kind": "text",
+    "default": "Kenneth K. Ubani is a seasoned corporate lawyer with 15+ years of experience in litigation, business law, and regulatory compliance.",
+    "max": 2132
+  },
+  "pages.our.attorneys.field6": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "name: Victor Ubochi",
+    "kind": "text",
+    "default": "Victor Ubochi",
+    "max": 2013
+  },
+  "pages.our.attorneys.field7": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "office: Senior Associate",
+    "kind": "text",
+    "default": "Senior Associate",
+    "max": 2016
+  },
+  "pages.our.attorneys.field8": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "image: /our-attorneys/victor.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/victor.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.field9": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "bioUrl: /our-attorneys/victor-ubochi",
+    "kind": "link",
+    "default": "/our-attorneys/victor-ubochi",
+    "max": 1000
+  },
+  "pages.our.attorneys.field10": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "intro: Throughout his career, he has been extensively involved in s",
+    "kind": "text",
+    "default": "Throughout his career, he has been extensively involved in settling high-ranking and sensitive legal claims for multinational corporations",
+    "max": 2138
+  },
+  "pages.our.attorneys.field11": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "name: Emeka M. Peters",
+    "kind": "text",
+    "default": "Emeka M. Peters",
+    "max": 2015
+  },
+  "pages.our.attorneys.field12": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "office: Senior Associate",
+    "kind": "text",
+    "default": "Senior Associate",
+    "max": 2016
+  },
+  "pages.our.attorneys.field13": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "image: /our-attorneys/emeka.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/emeka.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.field14": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "bioUrl: /our-attorneys/emeka-peters",
+    "kind": "link",
+    "default": "/our-attorneys/emeka-peters",
+    "max": 1000
+  },
+  "pages.our.attorneys.field15": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "intro: Emeka is a Member of the Firm’s Property Law and Real estate",
+    "kind": "text",
+    "default": "Emeka is a Member of the Firm’s Property Law and Real estate Practice.",
+    "max": 2070
+  },
+  "pages.our.attorneys.field16": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "name: James E.Uro",
+    "kind": "text",
+    "default": "James E.Uro",
+    "max": 2011
+  },
+  "pages.our.attorneys.field17": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "office: Litigation Manager",
+    "kind": "text",
+    "default": "Litigation Manager",
+    "max": 2018
+  },
+  "pages.our.attorneys.field18": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "image: /our-attorneys/james.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/james.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.field19": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "bioUrl: /our-attorneys/james-uro",
+    "kind": "link",
+    "default": "/our-attorneys/james-uro",
+    "max": 1000
+  },
+  "pages.our.attorneys.field20": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "intro: James E. Uro is known for his dedication to his clients' int",
+    "kind": "text",
+    "default": "James E. Uro is known for his dedication to his clients' interests, meticulous attention to detail, and ability to unravel complex legal challenges",
+    "max": 2147
+  },
+  "pages.our.attorneys.field21": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "Our Attorneys",
+    "kind": "text",
+    "default": "Our Attorneys ",
+    "max": 2014
+  },
+  "pages.our.attorneys.field22": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "Read Full Bio",
+    "kind": "text",
+    "default": "Read Full Bio ",
+    "max": 2014
+  },
+  "pages.our.attorneys.seo.title": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Our Attorneys",
+    "max": 160
+  },
+  "pages.our.attorneys.seo.description": {
+    "group": "Attorney page · Overview",
+    "source": "app/our-attorneys/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Attorneys/ Lawyers at K.K. Ubani and Co. legal services in Lagos, Port Harcourt, Abuja, Nigeria. Navigate regulations, mergers, acquisitions, and compliance with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "pages.our.attorneys.victor.ubochi.field1": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "src: /our-attorneys/victor.PNG",
+    "kind": "image",
+    "default": "/our-attorneys/victor.PNG",
+    "max": 1000
+  },
+  "pages.our.attorneys.victor.ubochi.field2": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "alt: Victor Ubochi",
+    "kind": "text",
+    "default": "Victor Ubochi",
+    "max": 2013
+  },
+  "pages.our.attorneys.victor.ubochi.field3": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Victor Ubochi",
+    "kind": "text",
+    "default": "Victor Ubochi",
+    "max": 2013
+  },
+  "pages.our.attorneys.victor.ubochi.field4": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Senior associate",
+    "kind": "text",
+    "default": "Senior associate ",
+    "max": 2017
+  },
+  "pages.our.attorneys.victor.ubochi.field5": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Victor Ubochi Esq., is a highly skilled and accomplished Legal Practitioner",
+    "kind": "text",
+    "default": "Victor Ubochi Esq., is a highly skilled and accomplished Legal Practitioner who was called to the Nigerian Bar in 2018, and holds a Masters degree in law from the prestigious Rivers State University. With over 5 years of legal experience, he has established himself as a prominent figure in the field, specializing in Banking Law and its relations, Litigation, Maritime claims, Criminal law, Civil Law and various other major areas of law. ",
+    "max": 2440
+  },
+  "pages.our.attorneys.victor.ubochi.field6": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Throughout his career, he has been extensively involved in settling high-ra",
+    "kind": "text",
+    "default": "Throughout his career, he has been extensively involved in settling high-ranking and sensitive legal claims for multinational corporations. His strong negotiation and analytical skills have consistently allowed him to achieve favorable outcomes for his clients. His ability to handle complex legal matters with precision and efficiency has earned him a reputation for being reliable and trustworthy. ",
+    "max": 2400
+  },
+  "pages.our.attorneys.victor.ubochi.field7": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Empowered by his comprehensive knowledge of Banking Law, he has successfull",
+    "kind": "text",
+    "default": "Empowered by his comprehensive knowledge of Banking Law, he has successfully represented clients in various financial institutions, ensuring compliance with regulatory requirements, drafting and reviewing legal documents, and providing advice on risk management. His expertise in this domain extends to areas such as credit facilities, debt restructuring, loan recovery, and corporate finance. ",
+    "max": 2394
+  },
+  "pages.our.attorneys.victor.ubochi.field8": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "Victor's expertise in Maritime claims has solidified his reputation as a kn",
+    "kind": "text",
+    "default": "Victor's expertise in Maritime claims has solidified his reputation as a knowledgeable legal professional in this specialized area. His ability to navigate international laws and regulations governing maritime disputes, coupled with his strategic thinking, enables him to provide invaluable advice and representation to his clients in this complex field. ",
+    "max": 2355
+  },
+  "pages.our.attorneys.victor.ubochi.field9": {
+    "group": "Attorney page · Victor Ubochi",
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "label": "With his impressive track record, he is an asset to any organization seekin",
+    "kind": "text",
+    "default": "With his impressive track record, he is an asset to any organization seeking a legal practitioner who possesses a deep understanding of various areas of law, proven negotiation skills, and a dedication to achieving favorable outcomes for clients which is why we have great satisfaction having him under our employ at K. K. UBANI AND CO. ",
+    "max": 2337
+  },
+  "pages.seo.title": {
+    "group": "Home page SEO",
+    "source": "app/page.tsx",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "K.K. Ubani & Co.",
+    "max": 160
+  },
+  "pages.seo.description": {
+    "group": "Home page SEO",
+    "source": "app/page.tsx",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Number 1 law firm with K.K. Ubani & Co.",
+    "max": 500
+  },
+  "notFound.field1": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "404",
+    "kind": "text",
+    "default": "404",
+    "max": 2500
+  },
+  "notFound.field2": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "Court's Out! The Verdict: Page Not Found",
+    "kind": "text",
+    "default": "Court's Out! The Verdict: Page Not Found",
+    "max": 2500
+  },
+  "notFound.field3": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "It seems like you've been sentenced to a missing page.",
+    "kind": "text",
+    "default": "It seems like you've been sentenced to a missing page.",
+    "max": 2500
+  },
+  "notFound.field4": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "/court-gavel.png",
+    "kind": "image",
+    "default": "/court-gavel.png",
+    "max": 1000
+  },
+  "notFound.field5": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "Court Gavel",
+    "kind": "text",
+    "default": "Court Gavel",
+    "max": 2500
+  },
+  "notFound.field6": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "Judicial Humor to Lighten the Sentence",
+    "kind": "text",
+    "default": "Judicial Humor to Lighten the Sentence",
+    "max": 2500
+  },
+  "notFound.field7": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "\"Why don’t judges ever get lost? They always know where the court is!\"",
+    "kind": "text",
+    "default": "\"Why don’t judges ever get lost? They always know where the court is!\"",
+    "max": 2500
+  },
+  "notFound.field8": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "\"I tried to sue the airport for misplacing my luggage, but I lost the case.\"",
+    "kind": "text",
+    "default": "\"I tried to sue the airport for misplacing my luggage, but I lost the case.\"",
+    "max": 2500
+  },
+  "notFound.field9": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "\"Why did the judge bring a pencil to court? In case they had to draw a conclusio",
+    "kind": "text",
+    "default": "\"Why did the judge bring a pencil to court? In case they had to draw a conclusion!\"",
+    "max": 2500
+  },
+  "notFound.field10": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "\"A lawyer walked into a bar... but quickly exited, realizing it was a case of mi",
+    "kind": "text",
+    "default": "\"A lawyer walked into a bar... but quickly exited, realizing it was a case of mistaken identity.\"",
+    "max": 2500
+  },
+  "notFound.field11": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "\"The courtroom was silent... until the gavel dropped. It was a hammer time momen",
+    "kind": "text",
+    "default": "\"The courtroom was silent... until the gavel dropped. It was a hammer time moment!\"",
+    "max": 2500
+  },
+  "notFound.field12": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "/",
+    "kind": "link",
+    "default": "/",
+    "max": 1000
+  },
+  "notFound.field13": {
+    "source": "app/not-found.tsx",
+    "group": "Page not found",
+    "label": "Return to Court (Home Page)",
+    "kind": "text",
+    "default": "Return to Court (Home Page)",
+    "max": 2500
+  },
+  "welcomeTitle": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "Welcome to K.K. Ubani & Co.",
+    "kind": "text",
+    "default": "Welcome to K.K. Ubani & Co.",
+    "max": 2028
+  },
+  "welcomeSubtitle": {
+    "group": "Homepage welcome",
+    "source": "components/Welcome.tsx",
+    "label": "...all round legal service at its optimum",
+    "kind": "text",
+    "default": "...all round legal service at its optimum",
+    "max": 2042
+  },
+  "pages.our.attorneys.emeka.peters.seo.title": {
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "group": "Attorney page · Emeka Peters",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Emeka M. Peters | K.K. Ubani & Co.",
+    "max": 160
+  },
+  "pages.our.attorneys.emeka.peters.seo.description": {
+    "source": "app/our-attorneys/emeka-peters/page.tsx",
+    "group": "Attorney page · Emeka Peters",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Learn about Emeka M. Peters, Senior Associate at K.K. Ubani & Co., and his work in property law and real estate practice.",
+    "max": 500
+  },
+  "pages.our.attorneys.james.uro.seo.title": {
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "group": "Attorney page · James Uro",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "James E. Uro | K.K. Ubani & Co.",
+    "max": 160
+  },
+  "pages.our.attorneys.james.uro.seo.description": {
+    "source": "app/our-attorneys/james-uro/page.tsx",
+    "group": "Attorney page · James Uro",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Meet James E. Uro, Litigation Manager at K.K. Ubani & Co., and learn about his experience supporting litigation and client matters.",
+    "max": 500
+  },
+  "pages.our.attorneys.victor.ubochi.seo.title": {
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "group": "Attorney page · Victor Ubochi",
+    "label": "SEO title",
+    "kind": "text",
+    "default": "Victor Ubochi | K.K. Ubani & Co.",
+    "max": 160
+  },
+  "pages.our.attorneys.victor.ubochi.seo.description": {
+    "source": "app/our-attorneys/victor-ubochi/page.tsx",
+    "group": "Attorney page · Victor Ubochi",
+    "label": "SEO description",
+    "kind": "text",
+    "default": "Meet Victor Ubochi, Senior Associate at K.K. Ubani & Co., and learn about his experience in commercial litigation, banking and maritime claims.",
+    "max": 500
+  }
+}

@@ -1,3 +1,4 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import AboutUs from "@/components/AboutUs";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonial";
@@ -7,7 +8,7 @@ import { Metadata } from "next";
 import ClientLogos from "@/components/clients";
 import OurServices from "@/components/Services";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
@@ -43,21 +44,31 @@ export const metadata: Metadata = {
   },
 };
 
-const page = () => {
+const page = async () => {
+  const t = await siteCopy();
+
   return (
     <>
-
-
       <div className="pt-10">
         <AboutUs />
       </div>
       <Testimonials />
-      <ClientLogos/>
-      <Hero/>
-      <OurServices/>
-
+      <ClientLogos />
+      <Hero />
+      <OurServices />
     </>
   );
 };
 
 export default page;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.about.seo.title"),
+    description: t("pages.about.seo.description"),
+    alternates: { canonical: "/about" },
+  };
+}

@@ -1,10 +1,11 @@
+import { siteCopy } from "@/lib/jktl/public-content";
 import OurServices from "@/components/Services";
 import Testimonials from "@/components/Testimonial";
 import React from "react";
 
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   alternates: {
     canonical: "https://www.kkubaniandco.com/law-firm-services/",
     languages: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "Law Firm Services",
   description: "Number 1 law firm services with K.K. Ubani & Co.",
   generator: "",
@@ -47,7 +48,9 @@ export const metadata: Metadata = {
   },
 };
 
-const pages = () => {
+const pages = async () => {
+  const t = await siteCopy();
+
   return (
     <div>
       <OurServices />
@@ -57,3 +60,14 @@ const pages = () => {
 };
 
 export default pages;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await siteCopy();
+  return {
+    ...baseMetadata,
+    metadataBase: new URL("https://www.kkubaniandco.com"),
+    title: t("pages.law.firm.services.seo.title"),
+    description: t("pages.law.firm.services.seo.description"),
+    alternates: { canonical: "/law-firm-services" },
+  };
+}
