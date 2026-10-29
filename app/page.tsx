@@ -1,3 +1,4 @@
+import { publishedHomepage } from "@/lib/jktl/content-store";
 import type { Metadata } from "next";
 import AboutUs from "@/components/AboutUs";
 import ClientLogos from "@/components/clients";
@@ -5,7 +6,6 @@ import Hero from "@/components/Hero";
 import OurServices from "@/components/Services";
 
 import Welcome from "@/components/Welcome";
-
 
 import React from "react";
 import Testimonials from "../components/Testimonial";
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "en-GB": "/en-GB",
     },
   },
-  
+
   title: "K.K. Ubani & Co.",
   description: "Number 1 law firm with K.K. Ubani & Co.",
   generator: "",
@@ -37,11 +37,13 @@ export const metadata: Metadata = {
   },
 };
 
-const page = () => {
+export const dynamic = "force-dynamic";
+const page = async () => {
+  const content = await publishedHomepage();
   return (
     <div>
-      <Hero />
-      <Welcome />
+      <Hero content={content} />
+      <Welcome content={content} />
       <AboutUs />
       <BookingButton />
       <OurServices />

@@ -36,7 +36,8 @@ const slides = [
   },
 ];
 
-export default function Hero() {
+export default function Hero({content}:{content?:{heroTitle:string;heroDescription:string}}) {
+  const displaySlides = slides.map((slide,i)=>i === 0 && content ? {...slide,title:content.heroTitle,description:content.heroDescription} : slide);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function Hero() {
     <Carousel className="w-full h-[500px] relative">
       <CarouselContent>
         <AnimatePresence mode="wait">
-          {slides.map((slide, index) =>
+          {displaySlides.map((slide, index) =>
             index === currentIndex ? (
               <CarouselItem key={index} className="relative w-full h-[500px]">
                 <motion.div

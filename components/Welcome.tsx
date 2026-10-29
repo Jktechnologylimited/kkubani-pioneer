@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-export default function Welcome() {
+export default function Welcome({content}:{content?:{welcomeTitle:string;welcomeSubtitle:string}}) {
   return (
     <div className="flex flex-col items-center text-center p-8 bg-gray-100">
       {/* Logo */}
@@ -29,7 +29,7 @@ export default function Welcome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Welcome to K.K. Ubani & Co.
+        {content?.welcomeTitle || "Welcome to K.K. Ubani & Co."}
       </motion.h1>
 
       {/* Gratias Deo Chambers */}
@@ -57,7 +57,7 @@ export default function Welcome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        ...all round legal service at its optimum
+        {content?.welcomeSubtitle || "...all round legal service at its optimum"}
       </motion.p>
 
       {/* Call to Action */}
