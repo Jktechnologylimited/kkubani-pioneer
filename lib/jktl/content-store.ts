@@ -1,62 +1,63 @@
 import "server-only";
-import { get, put } from "@vercel/blob";
+import { defaults, initialRecord, record, fields } from "./content-model.mjs";
 import {
-  defaults,
-  initialRecord,
-  record,
-  change,
-  MAX_RECORD_BYTES,
-} from "./content-model.mjs";
-export async function readContent(projectId: string) {
-  if (!process.env.BLOB_READ_WRITE_TOKEN)
-    throw Error("Website content storage is not configured");
-  const value = await get(`jktl-content/${projectId}.json`, {
-    access: "private",
-    useCache: false,
-    abortSignal: AbortSignal.timeout(8000),
-  });
-  if (!value) return { data: initialRecord(projectId), etag: null };
-  if (value.statusCode !== 200 || value.blob.size > MAX_RECORD_BYTES)
-    throw Error("Invalid website content record");
-  const raw = await new Response(value.stream).text();
-  if (new TextEncoder().encode(raw).length > MAX_RECORD_BYTES)
-    throw Error("Invalid website content record");
-  return { data: record(JSON.parse(raw), projectId), etag: value.blob.etag };
+  businessStorage,
+  storageConfigured,
+  type SiteIdentity,
+} from "./business-storage";
+export async function readContent(projectId: string, identity: SiteIdentity) {
+  if (projectId !== process.env.JKTL_CUSTOM_PROJECT_ID)
+    throw Error("Invalid website project");
+  const value = await (
+    await businessStorage("content", { view: "draft" }, {}, identity)
+  ).json();
+  return {
+    data: value === null ? initialRecord(projectId) : record(value, projectId),
+  };
 }
 export async function saveContent(
   projectId: string,
   input: unknown,
   revision: number,
   mode: string,
-  identity: {
-    userId: string;
-    organizationId: string;
-    scope: readonly string[];
-  },
+  identity: SiteIdentity,
 ) {
-  const current = await readContent(projectId),
-    next = change(current.data, input, revision, mode, identity);
-  try {
-    await put(`jktl-content/${projectId}.json`, JSON.stringify(next), {
-      access: "private",
-      addRandomSuffix: false,
-      contentType: "application/json",
-      ...(current.etag ? { ifMatch: current.etag } : { allowOverwrite: false }),
-      abortSignal: AbortSignal.timeout(8000),
-    });
-  } catch {
-    throw Error("Save was not confirmed. Reload the editor before retrying.");
-  }
+  if (
+    projectId !== process.env.JKTL_CUSTOM_PROJECT_ID ||
+    !Number.isSafeInteger(revision) ||
+    !["draft", "publish"].includes(mode) ||
+    !identity.scope.includes("content:write") ||
+    (mode === "publish" && !identity.scope.includes("content:publish"))
+  )
+    throw Error("Content operation is not authorized");
+  const approved = fields(input);
+  const response = await businessStorage(
+    "content",
+    {},
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ fields: approved, revision, mode }),
+    },
+    identity,
+  );
+  const next = record(await response.json(), projectId);
+  if (next.revision !== revision + 1)
+    throw Error("Unexpected saved revision. Reload before retrying.");
   return next;
 }
-export async function publishedHomepage() {
-  const project = process.env.JKTL_CUSTOM_PROJECT_ID;
-  if (!project || !process.env.BLOB_READ_WRITE_TOKEN) return defaults;
+export async function publishedHomepage(): Promise<Record<string, string>> {
+  if (!storageConfigured()) return defaults;
   try {
-    return (await readContent(project)).data.published || defaults;
+    const result = await (
+      await businessStorage("content", { view: "published" })
+    ).json();
+    return (
+      result.published === null ? defaults : fields(result.published)
+    ) as Record<string, string>;
   } catch {
     console.warn(
-      "JKTL homepage content unavailable; preserving original website defaults",
+      "JKTL published content unavailable; preserving original website defaults",
     );
     return defaults;
   }

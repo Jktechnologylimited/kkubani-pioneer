@@ -1,4 +1,4 @@
-import { get } from "@vercel/blob";
+import { businessStorage } from "@/lib/jktl/business-storage";
 import { mediaFile, MAX_IMAGE_BYTES } from "@/lib/jktl/media-model.mjs";
 export const runtime = "nodejs";
 export async function GET(
@@ -7,25 +7,18 @@ export async function GET(
 ) {
   try {
     const file = mediaFile((await context.params).file),
-      project = process.env.JKTL_CUSTOM_PROJECT_ID;
-    if (!project || !process.env.BLOB_READ_WRITE_TOKEN) throw Error();
-    const result = await get(`jktl-content/${project}/images/${file}`, {
-      access: "private",
-      useCache: true,
-      abortSignal: AbortSignal.timeout(8000),
-    });
-    if (
-      !result ||
-      result.statusCode !== 200 ||
-      result.blob.size > MAX_IMAGE_BYTES
-    )
-      throw Error();
+      response = await businessStorage("media", {
+        mediaId: file.split(".")[0],
+      });
     const type = file.endsWith(".jpg")
       ? "image/jpeg"
       : file.endsWith(".png")
         ? "image/png"
         : "image/webp";
-    return new Response(result.stream, {
+    if (response.headers.get("Content-Type") !== type) throw Error();
+    const bytes = await response.arrayBuffer();
+    if (bytes.byteLength > MAX_IMAGE_BYTES) throw Error();
+    return new Response(bytes, {
       headers: {
         "Content-Type": type,
         "X-Content-Type-Options": "nosniff",

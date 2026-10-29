@@ -8,7 +8,9 @@ The full existing public website is editable through 538 explicitly registered f
 
 Content is React-escaped text, never executable HTML. Image URLs are limited to local images, authenticated uploads served through the fixed public image route and images.unsplash.com. Link schemes and destinations are validated server-side. New PNG/JPEG/WebP uploads are limited to 3 MB with signature checks; SVG/HTML are rejected. Website imagery is public content, not a confidential document upload facility.
 
-The site had no database or existing CMS. This adapter uses one private Vercel Blob JSON object per stable Business project UUID. Draft, published content, revision and the latest 100 audit entries are stored together. Writes use ETag preconditions (or create-only for the first write); an ambiguous save requires a reload before retrying. Publication invalidates the site layout; public pages and server metadata read the published snapshot at request time. The same request snapshot feeds server pages and client components for consistent server-rendered content. If private storage is unavailable, it falls back to the original text and emits a generic diagnostic. It does not fetch Business during public page loads.
+The site had no database or existing CMS. Content and uploaded website images now use JKTL Business's existing PostgreSQL database through a server-only, per-project API. Migration 063 adds tenant-bound content and media tables. The site receives no Business database password or storage token. Draft, published content, revision and the latest 100 actor audit entries are updated atomically. Revision checks reject stale writes; an ambiguous save requires a reload before retrying and is never automatically repeated.
+
+Publishing invalidates the site's layout. Public pages and server metadata read the published snapshot through the authenticated Business connection; drafts require the active client's current read permission. The same request snapshot feeds server pages and client components. If Business or its database is unavailable, public pages fall back to original text and emit a generic diagnostic, while editing fails closed. This means published content availability depends on Business; independent source deployments and stable project IDs are retained.
 
 The version-1 four-field document is upgraded in memory while retaining published values, draft, revision and audit. Only a later explicitly authorized save writes version 2.
 
@@ -23,9 +25,8 @@ Configure on this website's existing deployment, never with a NEXT_PUBLIC prefix
 - `JKTL_CUSTOM_ORGANIZATION_ID`: the approved client organization UUID.
 - `JKTL_CUSTOM_API_KEY`: the per-project integration key generated once in Business.
 - `JKTL_CMS_SESSION_SECRET`: a new random secret of at least 32 characters.
-- `BLOB_READ_WRITE_TOKEN`: a private Blob store bound to this website.
 
-Do not commit values. Business stores the key hash, not this website's Blob token. Preserve the project/organization UUIDs and Blob store across deployments; the deployment URL/commit is not the identity. A new integration key invalidates the old one.
+Do not commit values. Business stores the integration key hash and tenant-scoped content/media. Preserve the project/organization UUIDs across deployments; the deployment URL/commit is not the identity. A new integration key invalidates the old one.
 
 ## Connect and validate
 
@@ -46,6 +47,12 @@ The readiness confirmation is an operator assertion, not an automatic production
 
 ## Full-site expansion validation
 
-The production build and TypeScript checks passed. Eight automated tests cover schema/security/storage/session/backward compatibility and all-public-page SEO/sitemap coverage. Chromium verified the original homepage on desktop/mobile, all 26 public sitemap routes returning HTTP 200, the gated/noindex editor and invalid media denial. A separate isolated browser fixture with mocked save/upload actions verified section navigation/search, draft-versus-publish behavior, replacement-image controls and read-only restrictions. Server-render tests confirmed changed fixture content appears in homepage, service page, attorney biography, footer and metadata HTML.
+The production build and TypeScript checks passed. Nine automated tests cover schema/security/storage/session/backward compatibility and all-public-page SEO/sitemap coverage. Chromium verified the original homepage on desktop/mobile, all 26 public sitemap routes returning HTTP 200, the gated/noindex editor and invalid media denial. A separate isolated browser fixture with mocked save/upload actions verified section navigation/search, draft-versus-publish behavior, replacement-image controls and read-only restrictions. Server-render tests confirmed changed fixture content appears in homepage, service page, attorney biography, footer and metadata HTML.
 
-These are local/code validations. No production storage write, live client invitation, actual client login, or deployed publication has been claimed. The private environment checklist must be completed and the approved owner pilot validated before live use.
+These are local/code validations. Migration 063 was applied to the existing Business database; existing owner/project records were verified and preserved. No production website content write, live client invitation, actual client login, or deployed publication has been claimed. The private environment checklist must be completed and the approved owner pilot validated before live use.
+
+## PostgreSQL storage protocol
+
+`GET /api/custom/cms/content?projectId=…&view=published` returns only published fields to the website server authenticated by its project key. Draft reads and all writes additionally require `x-jktl-user-id` and `x-jktl-organization-id`, current Business membership and the relevant content scopes. `POST` accepts fields, expected revision and draft/publish mode; conflicts return 409. Generic transport bounds supplement the website's exact field schema.
+
+`/api/custom/cms/media` stores/retrieves project-bound PNG/JPEG/WebP data with server authorization and upload size/signature checks. The website serves its public image URLs through a credential-free image proxy. Integration credentials never reach browser JavaScript. No automatic copy/import of an earlier external storage store is performed; existing production data would need a separately verified import. No such production content store was configured or written during this pilot.

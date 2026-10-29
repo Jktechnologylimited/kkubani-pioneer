@@ -5,13 +5,12 @@ In **Vercel → existing K.K. Ubani project → Settings → Environment Variabl
 | Name | Value/source |
 | --- | --- |
 | `JKTL_CMS_ENABLED` | `true` when ready for the controlled connection test |
-| `JKTL_CUSTOM_PROJECT_ID` | Stable project UUID shown by Business → Team → Custom Projects, K.K. Ubani project |
-| `JKTL_CUSTOM_ORGANIZATION_ID` | Client organization UUID shown in the same Business screen |
+| `JKTL_CUSTOM_PROJECT_ID` | `a88f0b0d-6c51-43d2-8a8d-00e37c18c339` (verified existing project) |
+| `JKTL_CUSTOM_ORGANIZATION_ID` | `5efc5a2b-3117-4993-9d04-cfd5db0bd5b3` (verified existing client) |
 | `JKTL_CUSTOM_API_KEY` | Generate the project's integration key in Business; copy the one-time value directly into Vercel |
 | `JKTL_CMS_SESSION_SECRET` | Generate a new private value with `openssl rand -hex 32` and save the output directly in Vercel |
-| `BLOB_READ_WRITE_TOKEN` | In this Vercel project, connect/create a **private Vercel Blob store**. Vercel supplies this variable. Use the same store across deployments. |
 
-Do not put the Business DATABASE_URL, GitHub credentials, Vercel API tokens or the client's SMTP password into these fields. Existing SMTP settings remain unchanged. Integration IDs are references; the API key, session secret and storage token are private. Preview deployments must not share the production content store/project credentials; otherwise preview edits could affect production.
+Do not put the Business DATABASE_URL, GitHub credentials, Vercel API tokens or the client's SMTP password into these fields. Existing SMTP settings remain unchanged. Integration IDs are references; the API key, session secret and storage token are private. Preview deployments must not share production project credentials; otherwise preview edits could affect production.
 
 In **Business → Team → Custom Projects**, use:
 
@@ -24,8 +23,8 @@ In **Business → Team → Custom Projects**, use:
 
 The account must be invited/activated through the existing secure Business invitation flow, not by emailing a password. Readiness confirmations are operator assertions, not proof of a completed live test. Verify draft, publication, revocation, support and independent redeployment before declaring the connection live. No billing price is assumed or automatically charged.
 
-## Database environment distinction
+## Database verification
 
-The running Codex process and the saved cloud configuration were checked on 29 October 2026: this process has no DATABASE_URL, and the saved cloud secrets list is empty. A variable stored only in Vercel does not reach Codex. To allow live client registration from this workspace, save DATABASE_URL as a secret in the **Codex cloud environment used by this conversation**, then start/restart a workspace with that configuration. Do not paste the value into chat. No connection string is included in this guide.
+The Business database connection is now available and was verified through the workspace proxy. Migration 063 has been applied, and the existing K.K. Ubani owner, client organization and project were found and preserved. No duplicate account/project was created. The site does not need DATABASE_URL.
 
-Until the database binding and website settings are available, the code can be built/tested, but no live client record or invitation is claimed to exist.
+The existing project currently has no integration key, no confirmed CMS connection and an owner invitation that has not been activated. Generate the integration key in Business, add the five website settings above and deploy both applications. Configure the approved field groups/scopes, then perform the controlled client invitation/editor validation. No live client email was sent or website content changed during these storage changes.

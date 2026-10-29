@@ -1,6 +1,6 @@
 "use server";
 import { randomUUID } from "node:crypto";
-import { put } from "@vercel/blob";
+import { businessStorage } from "@/lib/jktl/business-storage";
 import { MAX_IMAGE_BYTES, imageType } from "@/lib/jktl/media-model.mjs";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
@@ -39,7 +39,7 @@ export async function leaveEditor() {
 }
 export async function uploadWebsiteImage(data: FormData) {
   try {
-    const { config } = await requireCms("content:write");
+    const { identity } = await requireCms("content:write");
     const image = data.get("image");
     if (
       !(image instanceof File) ||
@@ -50,13 +50,16 @@ export async function uploadWebsiteImage(data: FormData) {
     const buffer = Buffer.from(await image.arrayBuffer()),
       format = imageType(buffer),
       name = randomUUID() + "." + format.ext;
-    await put(`jktl-content/${config.projectId}/images/${name}`, buffer, {
-      access: "private",
-      addRandomSuffix: false,
-      allowOverwrite: false,
-      contentType: format.type,
-      abortSignal: AbortSignal.timeout(8000),
-    });
+    await businessStorage(
+      "media",
+      { mediaId: name.split(".")[0] },
+      {
+        method: "POST",
+        headers: { "Content-Type": format.type },
+        body: new Uint8Array(buffer),
+      },
+      identity,
+    );
     return { ok: true as const, url: "/api/jktl/media/" + name };
   } catch {
     return {

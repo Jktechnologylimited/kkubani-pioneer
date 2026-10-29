@@ -111,60 +111,60 @@ test("Business reauthorization narrows session scopes and fails closed on revoke
   );
 });
 
-// Exercise the production storage adapter with a private-Blob contract mock.
+// Exercise the production adapter with an authenticated Business API contract mock.
 import ts from "typescript";
 import { readFileSync } from "node:fs";
 import * as contentModel from "../lib/jktl/content-model.mjs";
-test("private storage uses conditional writes and preserves the confirmed public snapshot", async () => {
+test("Business storage preserves published content, rejects stale saves and never retries ambiguous writes", async () => {
   let stored = null,
-    etag = null,
-    fail = false;
+    fail = false,
+    calls = 0;
   const code = ts.transpileModule(
-    readFileSync(
-      new URL("../lib/jktl/content-store.ts", import.meta.url),
-      "utf8",
-    ),
-    {
-      compilerOptions: {
-        module: ts.ModuleKind.CommonJS,
-        target: ts.ScriptTarget.ES2022,
+      readFileSync(
+        new URL("../lib/jktl/content-store.ts", import.meta.url),
+        "utf8",
+      ),
+      {
+        compilerOptions: {
+          module: ts.ModuleKind.CommonJS,
+          target: ts.ScriptTarget.ES2022,
+        },
       },
-    },
-  ).outputText;
-  const m = { exports: {} };
-  const blob = {
-    get: async (path, options) => {
-      assert.equal(options.access, "private");
-      assert.equal(options.useCache, false);
-      return stored
-        ? {
-            statusCode: 200,
-            blob: { size: JSON.stringify(stored).length, etag },
-            stream: new Response(JSON.stringify(stored)).body,
-          }
-        : null;
-    },
-    put: async (path, value, options) => {
-      assert.equal(options.access, "private");
-      if (fail) throw Error("ambiguous");
-      if (etag) assert.equal(options.ifMatch, etag);
-      else assert.equal(options.allowOverwrite, false);
-      stored = JSON.parse(value);
-      etag = "revision-" + stored.revision;
+    ).outputText,
+    m = { exports: {} };
+  const bridge = {
+    storageConfigured: () => true,
+    businessStorage: async (resource, query, options = {}, who) => {
+      assert.equal(resource, "content");
+      assert.equal(who.organizationId, identity.organizationId);
+      if (options.method === "POST") {
+        calls++;
+        const input = JSON.parse(options.body);
+        stored = contentModel.change(
+          stored || contentModel.initialRecord(project),
+          input.fields,
+          input.revision,
+          input.mode,
+          who,
+        );
+        if (fail) throw Error("Save not confirmed. Reload before retrying.");
+        return Response.json(stored);
+      }
+      return Response.json(stored);
     },
   };
   new Function("require", "module", "exports", code)(
-    (name) =>
-      name === "server-only"
+    (n) =>
+      n === "server-only"
         ? {}
-        : name === "@vercel/blob"
-          ? blob
+        : n === "./business-storage"
+          ? bridge
           : contentModel,
     m,
     m.exports,
   );
-  const old = process.env.BLOB_READ_WRITE_TOKEN;
-  process.env.BLOB_READ_WRITE_TOKEN = "test-only";
+  const old = process.env.JKTL_CUSTOM_PROJECT_ID;
+  process.env.JKTL_CUSTOM_PROJECT_ID = project;
   try {
     const api = m.exports;
     await api.saveContent(
@@ -181,14 +181,17 @@ test("private storage uses conditional writes and preserves the confirmed public
     await api.saveContent(project, defaults, 1, "draft", identity);
     assert.equal(stored.published.heroTitle, "Published title");
     fail = true;
+    const before = calls;
     await assert.rejects(
       () => api.saveContent(project, defaults, 2, "publish", identity),
       /Reload/,
     );
-    assert.equal(stored.revision, 2);
+    assert.equal(calls, before + 1);
+    assert.equal((await api.readContent(project, identity)).data.revision, 3);
+    await assert.rejects(() => api.readContent(org, identity));
   } finally {
-    if (old === undefined) delete process.env.BLOB_READ_WRITE_TOKEN;
-    else process.env.BLOB_READ_WRITE_TOKEN = old;
+    if (old === undefined) delete process.env.JKTL_CUSTOM_PROJECT_ID;
+    else process.env.JKTL_CUSTOM_PROJECT_ID = old;
   }
 });
 import { manifest, validImage, validLink } from "../lib/jktl/content-model.mjs";
@@ -329,4 +332,11 @@ test("all existing public routes retain editable server metadata and sitemap dis
       (r) => !r.loc.includes("/jktl-cms") && !r.loc.includes("/api/"),
     ),
   );
+});
+test('storage transport keeps credentials server-side and fixed to Business without retries',async()=>{
+ const code=ts.transpileModule(readFileSync(new URL('../lib/jktl/business-storage.ts',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,m={exports:{}};
+ new Function('require','module','exports',code)(()=>({}),m,m.exports);
+ const oldProject=process.env.JKTL_CUSTOM_PROJECT_ID,oldKey=process.env.JKTL_CUSTOM_API_KEY,oldFetch=globalThis.fetch;
+ process.env.JKTL_CUSTOM_PROJECT_ID=project;process.env.JKTL_CUSTOM_API_KEY=key;let calls=0;
+ try{globalThis.fetch=async(url,options)=>{calls++;assert.equal(url.origin,'https://business.jktl.com.ng');assert.equal(url.searchParams.get('projectId'),project);assert.equal(options.headers.get('Authorization'),'Bearer '+key);assert.equal(options.headers.get('x-jktl-user-id'),identity.userId);assert.equal(options.redirect,'error');assert.equal(options.cache,'no-store');return new Response('unavailable',{status:503})};await assert.rejects(()=>m.exports.businessStorage('content',{view:'draft'},{},identity));assert.equal(calls,1);}finally{globalThis.fetch=oldFetch;if(oldProject===undefined)delete process.env.JKTL_CUSTOM_PROJECT_ID;else process.env.JKTL_CUSTOM_PROJECT_ID=oldProject;if(oldKey===undefined)delete process.env.JKTL_CUSTOM_API_KEY;else process.env.JKTL_CUSTOM_API_KEY=oldKey;}
 });

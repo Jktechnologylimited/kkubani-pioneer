@@ -9,8 +9,7 @@ export function cmsConfig() {
     !/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i.test(projectId) ||
     !/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i.test(organizationId) ||
     !/^[a-f0-9]{64}$/.test(apiKey) ||
-    secret.length < 32 ||
-    !process.env.BLOB_READ_WRITE_TOKEN
+    secret.length < 32
   )
     throw Error("Website editing is not connected yet. Contact JKTL support.");
   return { projectId, organizationId, apiKey, secret };

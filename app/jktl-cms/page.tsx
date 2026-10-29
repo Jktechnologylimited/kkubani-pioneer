@@ -12,7 +12,7 @@ export default async function Page() {
   let content;
   try {
     const { config, identity } = await requireCms();
-    const snapshot = await readContent(config.projectId);
+    const snapshot = await readContent(config.projectId, identity);
     content = (
       <HomepageEditor
         draft={snapshot.data.draft}
