@@ -860,3 +860,5 @@ html {
   margin-top: 8px;
   border-radius: 4px;
 }
+
+.chat-avatar{flex-shrink:0;border-radius:50%;overflow:hidden;border:2px solid #ffffff66}.chat-trigger>svg{flex-shrink:0;border-radius:50%}

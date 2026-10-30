@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { MessageCircle, X, Send, ArrowLeft, CalendarDays } from "lucide-react";
+import { X, Send, ArrowLeft, CalendarDays } from "lucide-react";
 import { useSiteCopy } from "@/lib/jktl/site-copy";
 import { answerQuestion } from "@/lib/assistant";
 import BookingForm from "./BookingForm";
+import CounselAvatar from "./CounselAvatar";
 type Message = { role: "assistant" | "user"; text: string; source?: string };
 export default function ChatAssistant() {
   const t = useSiteCopy(),
@@ -20,6 +21,14 @@ export default function ChatAssistant() {
       text: "Welcome to K.K. Ubani & Co. I’m Counsel AI, the firm’s automated website assistant. Ask about our services or request a consultation. Please don’t share confidential case details here.",
     },
   ]);
+  const hasInteracted = useRef(false);
+  const manualOpen = useRef(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!hasInteracted.current) setOpen(true);
+    }, 15_000);
+    return () => clearTimeout(timer);
+  }, []);
   const replyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   useEffect(
     () => () => {
@@ -31,7 +40,7 @@ export default function ChatAssistant() {
     field = useRef<HTMLInputElement>(null),
     trigger = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    if (open && !booking) field.current?.focus();
+    if (open && !booking && manualOpen.current) field.current?.focus();
   }, [open, booking]);
   useEffect(() => {
     if (open)
@@ -41,6 +50,7 @@ export default function ChatAssistant() {
       });
   }, [messages, open, reduced, typing, human]);
   const close = () => {
+    hasInteracted.current = true;
     setOpen(false);
     trigger.current?.focus();
   };
@@ -84,7 +94,7 @@ export default function ChatAssistant() {
           >
             <header className="chat-header">
               <div className="chat-avatar">
-                <MessageCircle size={21} />
+                <CounselAvatar />
               </div>
               <div>
                 <strong>Counsel AI</strong>
@@ -199,11 +209,16 @@ export default function ChatAssistant() {
       <button
         ref={trigger}
         className="chat-trigger"
-        onClick={() => (open ? close() : setOpen(true))}
+        onClick={() => {
+          hasInteracted.current = true;
+          manualOpen.current = true;
+          if (open) close();
+          else setOpen(true);
+        }}
         aria-expanded={open}
         aria-controls="firm-assistant"
       >
-        {open ? <X size={20} /> : <MessageCircle size={20} />}
+        {open ? <X size={20} /> : <CounselAvatar size={36} />}
         <span>{open ? "Close" : "Chat with Counsel AI"}</span>
       </button>
     </div>
