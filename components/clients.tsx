@@ -21,7 +21,7 @@ export default function ClientLogos() {
   ];
 
   return (
-    <div className="relative overflow-hidden bg-gray-100 py-6">
+    <div className="relative overflow-hidden bg-blue-50 py-6">
       <h2 className="text-4xl font-bold text-center mb-10">
         {t("components.clients.field12")}
       </h2>

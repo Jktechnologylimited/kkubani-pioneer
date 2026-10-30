@@ -9,7 +9,7 @@ export default function OrangeButton() {
   return (
     <div className="flex justify-center items-center py-10">
       <Link href={t("components.BookingButton.field1")} passHref>
-        <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+        <Button className="bg-orange-700 hover:bg-orange-800 text-white">
           {t("components.BookingButton.field2")}
         </Button>
       </Link>

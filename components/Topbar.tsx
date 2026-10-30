@@ -6,7 +6,7 @@ const Topbar = () => {
   const t = useSiteCopy();
 
   return (
-    <div className="bg-gray-900 text-white py-2 px-4 flex justify-between items-center md:text-sm text-xs">
+    <div className="bg-blue-700 text-white py-2 px-4 flex justify-between items-center md:text-sm text-xs">
       {/* Left Side - Social Media Icons */}
       <div className="flex gap-4">
         <a
@@ -35,7 +35,7 @@ const Topbar = () => {
         <div className="flex items-center gap-2">
           <Phone size={18} />
           <span>
-            <span className="border rounded-2xl px-1 bg-orange-500 hover:bg-yellow-200 capitalize font-bold text-gray-900">
+            <span className="capitalize font-bold text-white">
               {" "}
               {t("components.Topbar.field2")}
             </span>{" "}

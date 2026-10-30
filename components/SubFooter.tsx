@@ -5,7 +5,7 @@ const SubFooter = () => {
 
   return (
     <>
-      <div className="bg-gray-900 text-white text-center py-4 text-sm">
+      <div className="site-subfooter text-center py-4 text-sm">
         {t("components.SubFooter.field1")}
       </div>
     </>

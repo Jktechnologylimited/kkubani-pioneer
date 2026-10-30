@@ -71,7 +71,7 @@ const KennethBio = async () => {
           {t("pages.our.attorneys.kenneth.kelechi.ubani.field4")}
         </p>
 
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-blue-50 p-6 rounded-lg shadow-md">
           <p className="text-lg  text-gray-700 leading-relaxed">
             {t("pages.our.attorneys.kenneth.kelechi.ubani.field5")}
             <br />

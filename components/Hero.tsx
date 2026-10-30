@@ -26,7 +26,7 @@ export default function Hero() {
           <h1>{t("heroTitle")}</h1>
           <p className="hero-description">{t("heroDescription")}</p>
           <div className="hero-actions">
-            <Link className="brass-button" href="/booking">
+            <Link className="cta-button" href="/booking">
               Arrange a consultation <ArrowUpRight size={18} />
             </Link>
             <Link className="hero-secondary" href="/law-firm-services">

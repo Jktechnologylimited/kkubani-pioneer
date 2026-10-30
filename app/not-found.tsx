@@ -5,7 +5,7 @@ import React from "react";
 const Custom404 = async () => {
   const t = await siteCopy();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen pt-40 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-40 bg-blue-50">
       <div className="text-center">
         <h1 className="text-6xl font-extrabold text-red-600 mb-6">
           {t("notFound.field1")}

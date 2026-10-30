@@ -113,7 +113,7 @@ export default function OurServices() {
     <div
       className="practice-section"
       style={{
-        backgroundColor: "#102c3b",
+        backgroundColor: "#1d4ed8",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -144,7 +144,7 @@ export default function OurServices() {
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
               <Link href={service.bioUrl} rel="noopener noreferrer ">
-                <Button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 shadow-sm transition-colors">
+                <Button className="mt-4 bg-orange-700 hover:bg-orange-800 text-white font-semibold text-sm px-5 shadow-sm transition-colors">
                   {t("components.Services.field63")}
                 </Button>
               </Link>

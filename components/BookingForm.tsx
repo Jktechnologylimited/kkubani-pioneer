@@ -143,7 +143,7 @@ export default function BookingForm({
           ? "I understand this is a simulation only."
           : "I agree to be contacted about this meeting request."}
       </label>
-      <button className="brass-button" disabled={busy}>
+      <button className="cta-button" disabled={busy}>
         {busy
           ? "Sending request…"
           : simulation

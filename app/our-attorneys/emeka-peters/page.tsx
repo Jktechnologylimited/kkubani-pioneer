@@ -26,7 +26,7 @@ const EmekaBio = async () => {
           {t("pages.our.attorneys.emeka.peters.field4")}
         </p>
 
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-blue-50 p-6 rounded-lg shadow-md">
           <p className="text-lg  text-gray-700 leading-relaxed">
             {t("pages.our.attorneys.emeka.peters.field5")}
             <br />

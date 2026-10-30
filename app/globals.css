@@ -52,7 +52,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #c2410c;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -63,7 +63,7 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: #1d4ed8;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -124,12 +124,12 @@
 
 /* Firm identity */
 :root {
-  --ink: #102c3b;
-  --brass: #b89258;
-  --ivory: #f7f5f0;
+  --ink: #1d4ed8;
+  --cta: #c2410c;
+  --surface: #ffffff;
 }
 body {
-  background: var(--ivory);
+  background: var(--surface);
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -171,21 +171,21 @@ html {
   display: flex;
   gap: 12px;
   align-items: center;
-  color: var(--brass);
+  color: var(--ink);
   margin-bottom: 22px;
 }
 .eyebrow span {
   width: 28px;
   height: 1px;
-  background: var(--brass);
+  background: var(--ink);
 }
-.brass-button {
+.cta-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-  background: var(--brass);
-  color: #102431;
+  background: var(--cta);
+  color: #ffffff;
   padding: 16px 23px;
   font:
     600 13px/1.4 Arial,
@@ -195,8 +195,8 @@ html {
     transform 0.2s;
   border: 0;
 }
-.brass-button:hover {
-  background: #d0ae7a;
+.cta-button:hover {
+  background: #9a3412;
   transform: translateY(-2px);
 }
 .text-link {
@@ -205,16 +205,16 @@ html {
   gap: 12px;
   font-size: 13px;
   font-weight: 600;
-  border-bottom: 1px solid var(--brass);
+  border-bottom: 1px solid var(--cta);
   padding: 8px 0;
 }
 .legal-nav {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: #fbfaf7f5;
+  background: #fffffff5;
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid #102c3b16;
+  border-bottom: 1px solid #1d4ed816;
 }
 .nav-inner {
   max-width: 1320px;
@@ -252,13 +252,15 @@ html {
 }
 .nav-links > a:hover,
 .nav-links > a[aria-current="page"] {
-  color: #94703c;
+  color: #1d4ed8;
 }
 .nav-consult {
+  background: var(--cta);
+  color: white;
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid #b8925870;
+  border: 1px solid #c2410c70;
   padding: 12px 17px;
 }
 .mobile-menu {
@@ -283,9 +285,9 @@ html {
 .hero-shade {
   background: linear-gradient(
     90deg,
-    #081e2bf5 0%,
-    #0a2334db 42%,
-    #0a23345c 100%
+    #0b1f4bf5 0%,
+    #1d4ed8db 42%,
+    #1d4ed85c 100%
   );
 }
 .hero-inner {
@@ -325,10 +327,10 @@ html {
   gap: 12px;
 }
 .hero-note {
-  border-left: 1px solid #b8925866;
+  border-left: 1px solid #c2410c66;
   padding-left: 24px;
   min-width: 230px;
-  color: #ddc59e;
+  color: #ffffff;
 }
 .hero-note p {
   font-size: 14px;
@@ -379,7 +381,7 @@ html {
   font-size: 12px;
   letter-spacing: 0.08em;
   margin: 20px 0;
-  color: #7c6a50;
+  color: #1d4ed8;
 }
 .practice-section {
   padding: 80px 24px;
@@ -390,9 +392,9 @@ html {
 }
 .practice-card {
   display: flex;
-  background: #fbfaf7;
+  background: #ffffff;
   overflow: hidden;
-  border: 1px solid #ddd9cf;
+  border: 1px solid #bfdbfe;
   transition: transform 0.25s;
 }
 .practice-card:hover {
@@ -408,7 +410,7 @@ html {
   line-height: 1.7;
 }
 .practice-card button {
-  background: var(--ink);
+  background: var(--cta);
   border-radius: 0;
   font-size: 11px;
 }
@@ -417,8 +419,8 @@ html {
   max-width: 660px;
   margin: 0 auto;
   padding: 40px;
-  border: 1px solid #e1ddd3;
-  box-shadow: 0 16px 60px #102c3b08;
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 16px 60px #1d4ed808;
   display: grid;
   gap: 19px;
 }
@@ -440,8 +442,8 @@ html {
 .meeting-form select {
   width: 100%;
   min-width: 0;
-  border: 1px solid #d4d9da;
-  background: #fafbf9;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
   padding: 12px;
   color: var(--ink);
   border-radius: 3px;
@@ -481,15 +483,15 @@ html {
   gap: 12px;
 }
 .chat-trigger {
-  background: var(--ink);
+  background: var(--cta);
   color: white;
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 17px 22px;
-  border: 1px solid #c9ab76;
+  border: 1px solid #c2410c;
   border-radius: 40px;
-  box-shadow: 0 8px 30px #102c3b33;
+  box-shadow: 0 8px 30px #1d4ed833;
   font-size: 13px;
 }
 .chat-panel {
@@ -497,7 +499,7 @@ html {
   max-width: calc(100vw - 32px);
   max-height: calc(100dvh - 120px);
   background: #fff;
-  border: 1px solid #dedbd2;
+  border: 1px solid #bfdbfe;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 20px 80px #00172540;
@@ -529,7 +531,7 @@ html {
   padding: 6px;
 }
 .chat-avatar {
-  color: #d4b680;
+  color: #ffffff;
 }
 .chat-messages {
   overflow-y: auto;
@@ -551,7 +553,7 @@ html {
   overflow-wrap: anywhere;
 }
 .chat-message.assistant {
-  background: #f2f3ef;
+  background: #eff6ff;
   border-bottom-left-radius: 2px;
 }
 .chat-message.user {
@@ -570,13 +572,13 @@ html {
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid #d8d8cc;
+  border: 1px solid #bfdbfe;
   border-radius: 20px;
   padding: 7px 11px;
   font-size: 10px;
 }
 .chat-suggestions button:hover {
-  background: #f1e9dc;
+  background: #dbeafe;
 }
 .chat-input {
   display: flex;
@@ -626,7 +628,7 @@ html {
 .compact .meeting-row {
   grid-template-columns: 1fr;
 }
-.compact .brass-button {
+.compact .cta-button {
   font-size: 12px;
 }
 @media (max-width: 1050px) {
@@ -657,7 +659,7 @@ html {
     top: 100%;
     left: 0;
     right: 0;
-    background: #fbfaf7;
+    background: #ffffff;
     padding: 24px;
     border-bottom: 1px solid #ddd;
   }
@@ -677,7 +679,7 @@ html {
     min-height: 590px;
   }
   .hero-shade {
-    background: linear-gradient(90deg, #081e2bf0, #0a2334aa);
+    background: linear-gradient(90deg, #0b1f4bf0, #1d4ed8aa);
   }
   .hero-actions {
     gap: 22px;
@@ -730,8 +732,8 @@ html {
   justify-content: space-between;
   gap: 12px;
   padding: 10px 16px;
-  background: #f7f2e8;
-  border-bottom: 1px solid #e9dfce;
+  background: #eff6ff;
+  border-bottom: 1px solid #bfdbfe;
   font-size: 11px;
   flex-shrink: 0;
 }
@@ -743,11 +745,54 @@ html {
 .simulator-toolbar span {
   font-size: 9px;
   letter-spacing: 0.08em;
-  color: #735a35;
+  color: #1d4ed8;
 }
 .meeting-form .simulation-notice {
-  border: 1px solid #d9c6a4;
+  border: 1px solid #bfdbfe;
   padding: 12px;
-  background: #faf5e9;
-  color: #695331;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+/* Shared three-color identity: blue, dark blue, orange CTAs. */
+:root {
+  --footer-blue: #0b1f4b;
+}
+.legal-hero .eyebrow {
+  color: white;
+}
+.legal-hero .eyebrow span {
+  background: white;
+}
+.nav-links > .nav-consult:hover {
+  background: #9a3412;
+  color: white;
+}
+.hero-secondary {
+  background: var(--cta);
+  color: white;
+  padding: 16px 23px;
+}
+.hero-secondary:hover,
+.chat-trigger:hover,
+.practice-card button:hover {
+  background: #9a3412;
+}
+.site-footer {
+  background: var(--footer-blue);
+  color: white;
+}
+.footer-card {
+  background: transparent;
+  border: 1px solid #ffffff33;
+}
+.site-subfooter {
+  background: var(--footer-blue);
+  color: white;
+  border-top: 1px solid #ffffff33;
+  margin-top: 32px;
+}
+.chat-input button {
+  color: white;
+  background: var(--cta);
 }
