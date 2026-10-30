@@ -1,5 +1,43 @@
-export function answerQuestion(message: string, copy: (key: string) => string) {
+import { manifest } from "./jktl/content-model.mjs";
+type Answer = {
+  text: string;
+  booking: boolean;
+  human?: boolean;
+  source?: string;
+};
+export function answerQuestion(
+  message: string,
+  copy: (key: string) => string,
+): Answer {
   const q = message.toLowerCase();
+  if (
+    /human|real person|someone|agent|receptionist|live chat|speak to|talk to/.test(
+      q,
+    )
+  )
+    return {
+      text: "Of course. You can contact a member of the team below. I’m the automated website assistant; email info@kkubaniandco.com and a team member will reply when available.",
+      booking: false,
+      human: true,
+    };
+  if (/hours|opening|open today|weekend|office time/.test(q))
+    return {
+      text: `Our published office hours are ${copy("components.Footer.field10")} ${copy("components.Footer.field11")}. ${copy("components.Footer.field12")}.`,
+      booking: false,
+      source: "/contact",
+    };
+  if (/where|address|location|located/.test(q))
+    return {
+      text: `You can find the firm at ${copy("components.Footer.field4")}. Would you like to request a meeting before visiting?`,
+      booking: false,
+      source: "/contact",
+    };
+  if (/about|who are you|your firm|experience/.test(q))
+    return {
+      text: copy("components.AboutUs.field5"),
+      booking: false,
+      source: "/about",
+    };
   if (/book|meeting|appointment|consultation|schedule/.test(q))
     return {
       text: "I can help you request a consultation. Choose your preferred date and time below. The firm will confirm availability; submitting a request does not reserve a slot.",
@@ -61,6 +99,57 @@ export function answerQuestion(message: string, copy: (key: string) => string) {
       text: "Hello! I can explain the firm’s services, share contact details, or help request a meeting. What would you like to do?",
       booking: false,
     };
+  // Retrieve only public, substantive website copy. Form statuses and placeholders
+  // are deliberately excluded from the answer index.
+  const stop = new Set([
+    "what",
+    "does",
+    "your",
+    "with",
+    "that",
+    "this",
+    "have",
+    "tell",
+    "about",
+    "please",
+    "could",
+    "would",
+    "they",
+    "their",
+  ]);
+  const words = q.match(/[a-z]{4,}/g)?.filter((w) => !stop.has(w)) || [];
+  const candidates = Object.entries(manifest)
+    .filter(
+      ([key, field]) =>
+        field.kind === "text" &&
+        !/seo/.test(key) &&
+        (field.source.startsWith("app/") ||
+          field.source === "components/AboutUs.tsx"),
+    )
+    .map(([key, field]) => {
+      const text = copy(key);
+      return {
+        text,
+        source: field.source,
+        score:
+          text.length > 100
+            ? words.filter((w) => text.toLowerCase().includes(w)).length
+            : 0,
+      };
+    })
+    .filter((entry) => entry.score >= 2)
+    .sort((a, b) => b.score - a.score);
+  if (candidates[0]) {
+    const best = candidates[0];
+    const source = best.source.startsWith("app/")
+      ? "/" + best.source.replace(/^app\//, "").replace(/\/?page\.tsx$/, "")
+      : "/about";
+    return {
+      text: `Here’s what our website says: ${best.text}`,
+      booking: false,
+      source,
+    };
+  }
   return {
     text: "I can help with the firm’s services, contact details and meeting requests. I cannot give legal advice or assess a case. For a question specific to your circumstances, please request a consultation with the team.",
     booking: false,

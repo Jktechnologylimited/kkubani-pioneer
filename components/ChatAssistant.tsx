@@ -5,20 +5,28 @@ import { MessageCircle, X, Send, ArrowLeft, CalendarDays } from "lucide-react";
 import { useSiteCopy } from "@/lib/jktl/site-copy";
 import { answerQuestion } from "@/lib/assistant";
 import BookingForm from "./BookingForm";
-type Message = { role: "assistant" | "user"; text: string };
+type Message = { role: "assistant" | "user"; text: string; source?: string };
 export default function ChatAssistant() {
   const t = useSiteCopy(),
     reduced = useReducedMotion();
   const [open, setOpen] = useState(false),
     [booking, setBooking] = useState(false),
-    [simulation, setSimulation] = useState(false),
+    [typing, setTyping] = useState(false),
+    [human, setHuman] = useState(false),
     [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      text: "Welcome to K.K. Ubani & Co. I’m the website assistant. Ask about our services or request a consultation. Please don’t share confidential case details here.",
+      text: "Welcome to K.K. Ubani & Co. I’m Counsel AI, the firm’s automated website assistant. Ask about our services or request a consultation. Please don’t share confidential case details here.",
     },
   ]);
+  const replyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(
+    () => () => {
+      if (replyTimer.current) clearTimeout(replyTimer.current);
+    },
+    [],
+  );
   const end = useRef<HTMLDivElement>(null),
     field = useRef<HTMLInputElement>(null),
     trigger = useRef<HTMLButtonElement>(null);
@@ -31,29 +39,41 @@ export default function ChatAssistant() {
         behavior: reduced ? "instant" : "smooth",
         block: "nearest",
       });
-  }, [messages, open, reduced]);
+  }, [messages, open, reduced, typing, human]);
   const close = () => {
     setOpen(false);
     trigger.current?.focus();
   };
   function send(text: string) {
-    if (!text.trim()) return;
-    const result = answerQuestion(text, t);
+    if (!text.trim() || typing) return;
+    const result = answerQuestion(text.slice(0, 500), t);
     setMessages((m) => [
       ...m,
       { role: "user", text: text.trim().slice(0, 500) },
-      { role: "assistant", text: result.text },
     ]);
     setInput("");
-    if (result.booking) setBooking(true);
+    setTyping(true);
+    replyTimer.current = setTimeout(
+      () => {
+        setMessages((m) => [
+          ...m,
+          { role: "assistant", text: result.text, source: result.source },
+        ]);
+        setTyping(false);
+        if (result.human) setHuman(true);
+        // Keep the answer visible; the visitor opens the request form explicitly.
+      },
+      reduced ? 300 : Math.min(1600, 600 + result.text.length * 3),
+    );
   }
+
   return (
     <div className="chat-widget">
       <AnimatePresence>
         {open && (
           <motion.section
             id="firm-assistant"
-            aria-label="Firm website assistant"
+            aria-label="Counsel AI assistant"
             className="chat-panel"
             initial={{ opacity: 0, y: reduced ? 0 : 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,53 +87,24 @@ export default function ChatAssistant() {
                 <MessageCircle size={21} />
               </div>
               <div>
-                <strong>K.K. Ubani & Co.</strong>
-                <span>Website assistant · here to guide you</span>
+                <strong>Counsel AI</strong>
+                <span>K.K. Ubani & Co. · automated assistant</span>
               </div>
               <button onClick={close} aria-label="Close assistant">
                 <X size={20} />
               </button>
             </header>
-            <div className="simulator-toolbar">
-              <button
-                aria-pressed={simulation}
-                onClick={() => {
-                  setSimulation(!simulation);
-                  setBooking(false);
-                  setInput("");
-                  setMessages([
-                    {
-                      role: "assistant",
-                      text: !simulation
-                        ? "Simulator started. Try a question below or practice requesting a meeting. Answers use predefined firm information, not a live AI model. No email will be sent in simulator mode."
-                        : "You’re back in the website assistant. Meeting requests use the firm’s email service when configured.",
-                    },
-                  ]);
-                }}
-              >
-                {simulation ? "Exit simulator" : "Try chatbot simulator"}
-              </button>
-              <span>{simulation ? "DEMO MODE" : "Website assistant"}</span>
-            </div>
             {booking ? (
               <div className="chat-booking">
                 <button className="text-link" onClick={() => setBooking(false)}>
                   <ArrowLeft size={16} /> Back to conversation
                 </button>
-                <h3>
-                  {simulation
-                    ? "Practice a meeting request."
-                    : "Let’s find time to talk."}
-                </h3>
+                <h3>Let’s find time to talk.</h3>
                 <p>
                   Request a preferred time in Lagos (WAT). The firm will confirm
                   availability.
                 </p>
-                <BookingForm
-                  key={simulation ? "demo" : "live"}
-                  compact
-                  simulation={simulation}
-                />
+                <BookingForm compact />
               </div>
             ) : (
               <>
@@ -126,26 +117,52 @@ export default function ChatAssistant() {
                   {messages.map((m, i) => (
                     <div key={i} className={`chat-message ${m.role}`}>
                       {m.text}
+                      {m.source && (
+                        <a className="chat-source" href={m.source}>
+                          Read more on our website ↗
+                        </a>
+                      )}
                     </div>
                   ))}
+                  {typing && (
+                    <div className="chat-typing" role="status">
+                      <span aria-hidden="true">
+                        <i />
+                        <i />
+                        <i />
+                      </span>{" "}
+                      Counsel AI is typing…
+                    </div>
+                  )}
+                  {human && (
+                    <div className="human-handoff">
+                      <strong>Talk to our team</strong>
+                      <p>
+                        Email info@kkubaniandco.com to speak with a member of the team.
+                        This opens your email app. The team will reply by email when available.
+                      </p>
+                      <a href="mailto:info@kkubaniandco.com?subject=Website%20enquiry%20%E2%80%94%20speak%20with%20the%20team">
+                        Email a team member ↗
+                      </a>
+                    </div>
+                  )}
                   <div ref={end} />
                 </div>
                 <div className="chat-suggestions">
-                  {(simulation
-                    ? [
-                        "Corporate services",
-                        "What are your fees?",
-                        "Contact the firm",
-                      ]
-                    : ["Our services", "Contact the firm"]
-                  ).map((q) => (
-                    <button key={q} onClick={() => send(q)}>
+                  {["Our services", "Contact the firm"].map((q) => (
+                    <button key={q} disabled={typing} onClick={() => send(q)}>
                       {q}
                     </button>
                   ))}
-                  <button onClick={() => setBooking(true)}>
+                  <button disabled={typing} onClick={() => setBooking(true)}>
                     <CalendarDays size={13} />{" "}
-                    {simulation ? "Simulate a meeting" : "Request a meeting"}
+                    Request a meeting
+                  </button>
+                  <button
+                    disabled={typing}
+                    onClick={() => send("Talk to a human")}
+                  >
+                    Talk to a human
                   </button>
                 </div>
                 <form
@@ -163,7 +180,10 @@ export default function ChatAssistant() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                   />
-                  <button aria-label="Send message" disabled={!input.trim()}>
+                  <button
+                    aria-label="Send message"
+                    disabled={!input.trim() || typing}
+                  >
                     <Send size={18} />
                   </button>
                 </form>
@@ -184,7 +204,7 @@ export default function ChatAssistant() {
         aria-controls="firm-assistant"
       >
         {open ? <X size={20} /> : <MessageCircle size={20} />}
-        <span>{open ? "Close" : "Ask us a question"}</span>
+        <span>{open ? "Close" : "Chat with Counsel AI"}</span>
       </button>
     </div>
   );

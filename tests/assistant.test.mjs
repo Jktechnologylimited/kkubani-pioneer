@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import ts from "typescript";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
-import { defaults } from "../lib/jktl/content-model.mjs";
+import { defaults, manifest } from "../lib/jktl/content-model.mjs";
 const require = createRequire(import.meta.url);
 function load(path, deps = {}) {
   const module = { exports: {} };
@@ -21,7 +21,9 @@ function load(path, deps = {}) {
   )((n) => (n in deps ? deps[n] : require(n)), module, module.exports);
   return module.exports;
 }
-const { answerQuestion } = load("../lib/assistant.ts");
+const { answerQuestion } = load("../lib/assistant.ts", {
+  "./jktl/content-model.mjs": { manifest },
+});
 const copy = (k) => defaults[k] || "";
 test("assistant uses firm contact information and explains meeting confirmation", () => {
   assert.match(answerQuestion("contact", copy).text, /info@kkubaniandco.com/);
@@ -129,4 +131,18 @@ test("booking uses Resend and never reports failed delivery as success", async (
     if (previousKey === undefined) delete process.env.RESEND_API_KEY;
     else process.env.RESEND_API_KEY = previousKey;
   }
+});
+
+test("assistant uses current website hours and offers an honest human handoff", () => {
+  const edited = (k) =>
+    k === "components.Footer.field11" ? "10am–3pm" : copy(k);
+  assert.match(answerQuestion("office hours", edited).text, /10am–3pm/);
+  assert.equal(
+    answerQuestion("where are you located?", copy).source,
+    "/contact",
+  );
+  const human = answerQuestion("I want to chat with a human", copy);
+  assert.equal(human.human, true);
+  assert.match(human.text, /automated website assistant/);
+  assert.equal(answerQuestion("tell me about the firm", copy).source, "/about");
 });

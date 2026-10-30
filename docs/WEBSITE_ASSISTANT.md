@@ -9,3 +9,5 @@ The `/api/send-booking` route validates contact details and future dates before 
 For automatic confirmed bookings, connect a scheduling provider or supply the firm's scheduling URL. Before exposing email requests to heavy public traffic, configure deployment-level rate limits and bot protection for `/api/send-booking`.
 
 Validation: `node --test tests/*.test.mjs` and `./node_modules/.bin/tsc --noEmit`. Resend is mocked in tests; they do not send email. Production compilation still requires Google Fonts network access as described in the environment setup.
+
+The chat displays an automated typing indicator before replies. It answers office hours, location and firm information directly from current public copy, and retrieves substantive public page text for broader matching questions with source links. It remains an automated, deterministic assistant; it does not impersonate staff. “Talk to a human” opens an email to info@kkubaniandco.com with a website enquiry subject. The team replies by email when available; no live agent is claimed to be present in the chat.
