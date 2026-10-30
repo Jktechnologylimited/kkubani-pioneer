@@ -3,6 +3,7 @@ import { publishedSite } from "@/lib/jktl/public-content";
 // import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google"; // Replace with your desired font
 import "./globals.css";
+import ChatAssistant from "@/components/ChatAssistant";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
@@ -43,6 +44,7 @@ export default async function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ChatAssistant />
         </SiteContent>
       </body>
     </html>

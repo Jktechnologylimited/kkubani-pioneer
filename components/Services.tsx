@@ -3,10 +3,11 @@ import { useSiteCopy } from "@/lib/jktl/site-copy";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export default function OurServices() {
   const t = useSiteCopy();
+  const reduced = useReducedMotion();
 
   const services = [
     {
@@ -110,9 +111,9 @@ export default function OurServices() {
 
   return (
     <div
-      className="py-16 px-8"
+      className="practice-section"
       style={{
-        backgroundImage: `url(${t("components.Services.field61")})`,
+        backgroundColor: "#102c3b",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -124,10 +125,11 @@ export default function OurServices() {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="flex bg-white shadow-lg rounded-lg overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="practice-card"
+            initial={reduced ? false : { opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
           >
             <div className="w-1/3">
               <Image
